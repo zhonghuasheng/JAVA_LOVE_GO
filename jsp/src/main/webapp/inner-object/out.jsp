@@ -21,6 +21,7 @@
       out.clearBuffer();
       out.println("after clear");
       out.println("<br/>");
+      out.newLine();
       out.println(out.getBufferSize());
       out.println("<br/>");
       out.flush(); //冲洗的意思，将buffer（缓存）从内存中冲出去
