@@ -6,9 +6,9 @@
     <title>Insert title here</title>
   </head>
   <body>
-    <form action="answer-response-sendRedirect.jsp">
-       User Name: <input type="text" name="userName" />
-       <input type="submit">Submit</input>
-    </form>
+    <%
+        out.println(session.getAttribute("test"));
+        out.println(session.getMaxInactiveInterval());
+    %>
   </body>
 </html>

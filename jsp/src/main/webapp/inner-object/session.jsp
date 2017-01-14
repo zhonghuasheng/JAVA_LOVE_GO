@@ -6,9 +6,10 @@
     <title>Insert title here</title>
   </head>
   <body>
-    <form action="answer-response-sendRedirect.jsp">
-       User Name: <input type="text" name="userName" />
-       <input type="submit">Submit</input>
-    </form>
+    <%
+        session.setMaxInactiveInterval(10);
+        session.setAttribute("test", "test");
+    %>
+    <a href="answer-session.jsp">Go to answer-session.jsp</a>
   </body>
 </html>

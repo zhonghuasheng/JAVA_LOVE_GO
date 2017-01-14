@@ -6,9 +6,13 @@
     <title>Insert title here</title>
   </head>
   <body>
-    <form action="answer-response-sendRedirect.jsp">
-       User Name: <input type="text" name="userName" />
-       <input type="submit">Submit</input>
-    </form>
+    <%
+        out.println(pageContext.getRequest());
+        out.println(pageContext.getResponse());
+        out.println(pageContext.getSession());
+        out.println(pageContext.getPage());
+        out.println(pageContext.getOut());
+        out.println(pageContext.getServletConfig());
+    %>
   </body>
 </html>
