@@ -12,43 +12,49 @@ import java.sql.Statement;
  */
 public class App 
 {
-    private static final String driver = "org.postgresql.Driver";
-    private static final String url = "jdbc:postgresql://localhost/jsp";
-    private static final String user = "postgres";
-    private static final String password = "postgres";
-    private static Connection conn = null;
-
-    static {
-        try {
-            Class.forName(driver);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static Connection getConnection() {
-        if (conn == null) {
-            try {
-                conn = DriverManager.getConnection(url, user, password);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
-        return conn;
-    }
-
     public static void main( String[] args ) throws SQLException
     {
-        Connection con = getConnection();
-        Statement statement = con.createStatement();
-        String sql = "SELECT * FROM company";
-        ResultSet rs = statement.executeQuery(sql);
+        /*
+         * 1. 加载驱动程序到DriverManager
+         */
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Class not found");
+        }
 
+        /*
+         * 2. 提供JDBC连接的URL。书写格式： 协议：子协议：//数据源标识/数据库名称
+         */
+        String url = "jdbc:postgresql://localhost/jsp";
+        String userName = "postgres";
+        String password = "postgres";
+
+        /*
+         * 3. 获取Connection对象
+         */
+        Connection connection = DriverManager.getConnection(url, userName, password);
+
+        /*
+         * 4. 创建Statement对象
+         */
+        Statement statement = connection.createStatement();
+
+        /*
+         * 5. 执行Query语句
+         */
+        ResultSet rs = statement.executeQuery("SELECT * FROM company");
+
+        /*
+         * 6. 处理结果集
+         */
         while(rs.next()) {
             System.out.println(rs.getInt("id"));
         }
 
+        /*
+         * 7. 关闭资源
+         */
         if (rs != null) {
             rs.close();
         }
@@ -57,8 +63,8 @@ public class App
             statement.close();
         }
 
-        if (conn != null) {
-            conn.close();
+        if (connection != null) {
+            connection.close();
         }
     }
 }
