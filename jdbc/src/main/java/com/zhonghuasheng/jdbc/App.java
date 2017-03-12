@@ -49,7 +49,7 @@ public class App
          * 6. 处理结果集
          */
         while(rs.next()) {
-            System.out.println(rs.getInt("id"));
+            System.out.println(rs.getInt(1));
         }
 
         /*
