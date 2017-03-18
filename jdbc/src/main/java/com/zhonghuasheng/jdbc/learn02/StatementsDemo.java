@@ -1,4 +1,4 @@
-package com.zhonghuasheng.jdbc;
+package com.zhonghuasheng.jdbc.learn02;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

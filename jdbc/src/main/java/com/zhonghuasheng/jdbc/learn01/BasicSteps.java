@@ -1,4 +1,4 @@
-package com.zhonghuasheng.jdbc;
+package com.zhonghuasheng.jdbc.learn01;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,7 @@ import java.sql.Statement;
  * Hello world!
  *
  */
-public class App 
+public class BasicSteps 
 {
     public static void main( String[] args ) throws SQLException
     {
