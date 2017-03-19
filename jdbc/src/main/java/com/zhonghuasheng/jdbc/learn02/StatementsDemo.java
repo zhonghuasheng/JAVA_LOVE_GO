@@ -34,13 +34,93 @@ public class StatementsDemo {
         sb.append(");");
 
         Connection connection = getConnection();
-        Statement statement;
+        Statement statement = null;
+
         try {
             statement = connection.createStatement();
             statement.executeUpdate(sb.toString());
             System.out.println("Succeed");
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            closeResource(connection, statement, null);
+        }
+    }
+
+    public static void executeDelete() {
+        Connection connection = getConnection();
+        Statement statement = null;
+
+        try {
+            statement = connection.createStatement();
+            int result = statement.executeUpdate("DELETE FROM public.company WHERE id = 12;");
+            System.out.println(result);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeResource(connection, statement, null);
+        }
+    }
+
+    public static void executeUpdate() {
+        Connection connection = getConnection();
+        Statement statement = null;
+
+        try {
+            statement = connection.createStatement();
+            int i = statement.executeUpdate("UPDATE public.company SET name = 'abc' WHERE id = 1;");
+            System.out.println(i); // 返回结果是1
+            int j = statement.executeUpdate("UPDATE public.company SET name = 'abc' WHERE id = 12345;");
+            System.out.println(j); // 返回结果是0
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeResource(connection, statement, null);
+        }
+    }
+
+    public static void executeSelect() {
+        Connection connection = getConnection();
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery("SELECT * FROM public.company;");
+
+            while(resultSet.next()) {
+                System.out.println(resultSet.getString("name"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeResource(connection, statement, resultSet);
+        }
+    }
+
+    public static void closeResource(Connection connection, Statement statement, ResultSet resultSet) {
+        if (resultSet != null) {
+            try {
+                resultSet.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if (statement != null) {
+            try {
+                statement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if (connection != null) {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -65,7 +145,16 @@ public class StatementsDemo {
     }
 
     public static void main(String[] args) {
+        System.out.println("Execute delete===");
+        executeDelete();
         executePreparedStatement();
+        System.out.println("Execute insert===");
         executeInsert();
+        System.out.println("Execute update===");
+        executeUpdate();
+        System.out.println("Execute delete===");
+        executeDelete();
+        System.out.println("Execute select===");
+        executeSelect();
     }
 }
