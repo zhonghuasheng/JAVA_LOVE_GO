@@ -10,7 +10,44 @@
            http://www.springframework.org/schema/context    
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-  <bean id="propertyConfigurer" >
-  
+  <!-- 引入jdbc配置文件 -->
+  <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="locations">
+      <list>
+         <value>classpath:properties/*.properties</value>
+      </list>
+    </property>
   </bean>
+
+  <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName">
+      <value>${jdbc_driverClassName}</value>
+    </property>
+    <property name="url">
+      <value>${jdbc_url}</value>
+    </property>
+    <property name="username">
+      <value>${jdbc_username}</value>
+    </property>
+    <property name="password">
+      <value>${jdbc_password}</value>
+    </property>
+  </bean>
+
+
+
+  <!-- 配置mybatis的文件 -->
+  <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <property name="dataSource" ref="dataSource"/>
+    <property name="mapperLocations" value="classpath*:mybatis/mapper/*.xml"/>
+    <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
+  </bean>
+
+  <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    <property name="basePackage" value="com.ssm.dao"/>
+  </bean>
+
+  <!-- 自动扫描注解bean -->
+  <context:component-scan base-package="com.ssm.service" />
 </beans>

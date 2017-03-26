@@ -75,10 +75,6 @@ public class PreparedStatementDemo {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        for (int i = 0; i < 100; i++) {
-            
-        }
     }
 
     public static void main(String[] args) {
