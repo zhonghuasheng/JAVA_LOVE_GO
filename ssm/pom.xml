@@ -131,4 +131,7 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+    <build>
+    <finalName>ssm</finalName>
+  </build>
 </project>
