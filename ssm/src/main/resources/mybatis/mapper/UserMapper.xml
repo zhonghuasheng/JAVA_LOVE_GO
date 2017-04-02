@@ -10,6 +10,6 @@
   </resultMap>
 
   <select id="getUserById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    SELECT * FROM t_user WHERE USER_ID = #{userId}
+    SELECT * FROM t_user WHERE USER_ID = #{userId jdbcType="INTEGER"}
   </select>
 </mapper>
