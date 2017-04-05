@@ -1,15 +1,15 @@
 package com.musicstore.model;
 
 public class Genre {
-    private int GenreId;
+    private long genreId;
     private String name;
     private String description;
 
-    public int getGenreId() {
-        return GenreId;
+    public long getGenreId() {
+        return genreId;
     }
-    public void setGenreId(int genreId) {
-        GenreId = genreId;
+    public void setGenreId(long genreId) {
+        this.genreId = genreId;
     }
     public String getName() {
         return name;
