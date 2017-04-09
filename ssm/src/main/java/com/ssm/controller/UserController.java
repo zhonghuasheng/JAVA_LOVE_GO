@@ -15,11 +15,12 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    @RequestMapping("/")
+    @RequestMapping("/user")
     public ModelAndView getIndex() {
-        ModelAndView mav = new ModelAndView("index");
+        ModelAndView mav = new ModelAndView("user/index");
         User user = userService.getUserById(1);
         mav.addObject("user", user);
+
         return mav;
     }
 }

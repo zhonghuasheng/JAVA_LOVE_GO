@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
     <!-- Spring - Mybatis整合部分 -->
     <!-- 1. 配置数据库参数 -->
-    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigure"
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigure">
         <property name="locations">
             <list>
                 <value>classpath:properties/jdbc.properties</value>

@@ -6,6 +6,9 @@
     <title>Insert title here</title>
   </head>
   <body>
-    Hello
+     ${user.userId}<br>  
+     ${user.userName}<br>  
+     ${user.userPassword}<br>  
+     ${user.userEmail}<br>  
   </body>
 </html>
