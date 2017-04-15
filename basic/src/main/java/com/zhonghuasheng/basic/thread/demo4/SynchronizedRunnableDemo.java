@@ -1,6 +1,6 @@
 package com.zhonghuasheng.basic.thread.demo4;
 
-public class SynchronizedDemo {
+public class SynchronizedRunnableDemo {
 
     public static void main(String[] args) {
         Runnable demo = new MyRunnable();
