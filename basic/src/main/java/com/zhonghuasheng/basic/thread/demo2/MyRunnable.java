@@ -1,6 +1,6 @@
 package com.zhonghuasheng.basic.thread.demo2;
 
-public class MyThread implements Runnable {
+public class MyRunnable implements Runnable {
 
     private int ticket = 10;
 
