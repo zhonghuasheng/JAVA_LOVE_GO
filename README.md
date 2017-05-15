@@ -5,7 +5,7 @@
 #### Collections
 
 ##### Interface [`Iterator`](./basic/src/main/java/com/zhonghuasheng/sourcecode/java/util/Iterator.md)
-* [ListIterator]()
+* Interface [ListIterator](./basic/src/main/java/com/zhonghuasheng/sourcecode/java/util/ListIterator.md)
 
 ###### `Collection` deponds on-> `Iterator`
 
