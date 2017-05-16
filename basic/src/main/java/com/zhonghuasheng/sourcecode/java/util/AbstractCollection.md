@@ -8,7 +8,7 @@
 * public boolean contains(Object o) 值相等
 * public Object[] toArray()
 * public <T> T[] toArray(T[] a)
-* public boolean add(E e)
+* public boolean add(E e) 未实现 会抛出UnsupportedOperationException
 * public boolean remove(Object o)
 * public boolean containsAll(Collection<?> c)
 * public boolean addAll(Collection<? extends E> c)
