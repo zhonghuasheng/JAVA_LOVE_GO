@@ -7,5 +7,4 @@ public class ArrayListDemo extends ArrayList {
     public int getElementDataSize(ArrayList arrayList) {
         return 0;
     }
-
 }
