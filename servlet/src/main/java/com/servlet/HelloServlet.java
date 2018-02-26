@@ -1,6 +1,7 @@
 package com.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -24,8 +25,9 @@ public class HelloServlet extends HttpServlet {
     /**
      * @see Servlet#init(ServletConfig)
      */
+    @Override
     public void init(ServletConfig config) throws ServletException {
-        System.out.println("init(ServeltConfig config)");
+        System.out.println("init(ServeltConfig config) 2");
     }
 
     /**

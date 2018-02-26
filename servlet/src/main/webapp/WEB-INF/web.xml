@@ -9,9 +9,19 @@
     <display-name>HelloServlet</display-name>
     <description></description>
     <servlet-class>com.servlet.HelloServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomDispatcherServlet</servlet-name>
+    <display-name>Custom Dispatcher Servlet</display-name>
+    <servlet-class>com.servlet.CustomDispatcherServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/helloservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomDispatcherServlet</servlet-name>
+    <url-pattern>/customDispatcherServlet</url-pattern>
   </servlet-mapping>
 </web-app>
