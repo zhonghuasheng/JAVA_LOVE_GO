@@ -9,14 +9,11 @@ import javax.servlet.http.HttpServlet;
 
 public class CustomDispatcherServlet extends HttpServlet {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	@Override
-	public void service(ServletRequest req, ServletResponse res)
-	        throws ServletException, IOException {
-		System.out.print("test");
-	}
+    @Override
+    public void service(ServletRequest req, ServletResponse res)
+            throws ServletException, IOException {
+        System.out.print("test");
+    }
 }

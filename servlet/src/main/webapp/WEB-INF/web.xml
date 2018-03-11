@@ -9,7 +9,6 @@
     <display-name>HelloServlet</display-name>
     <description></description>
     <servlet-class>com.servlet.HelloServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet>
     <servlet-name>CustomDispatcherServlet</servlet-name>
