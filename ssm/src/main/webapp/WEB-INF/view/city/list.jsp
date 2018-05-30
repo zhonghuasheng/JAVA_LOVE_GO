@@ -7,8 +7,8 @@
     <title>Insert title here</title>
   </head>
   <body>
-    <c:foreach items="${cities}" var="city">
+    <c:forEach items="${cities}" var="city">
         <label>${city.getClassName() }</label>
-    </c:foreach>
+    </c:forEach>
   </body>
 </html>
