@@ -1,61 +1,61 @@
-package com.zhonghuasheng.sourcecode.java.lang;
+/*package com.zhonghuasheng.sourcecode.java.lang;
 
-/**
+*//**
  * Class {@code Object} is the root of the class hierarchy.
  * Every class has {@code Object} as a superclass. All objects,
  * including arrays, implement the methods of this class.
- */
+ *//*
 public class Object {
 
-    /*
+    
     * 带native修饰的都是本地方法，所谓本地方法是不通过Java语言实现的方法，但是可以通过JNI(JAVA Native Interface)，像调用JAVA方法那样调用这些方法。
     * 这种技术的出现在很大程度上丰富了Java语言的功能，
     *
-    */
+    
     private static native void registerNatives();
     static {
         registerNatives();
     }
 
-    /**
+    *//**
      * 返回此对象的运行时类(每个类的Class类对象)
-     */
+     *//*
     public final native Class<?> getClass();
 
-    /**
+    *//**
      * 返回此对象的hash值
-     */
+     *//*
     public native int hashCode();
 
-    /**
+    *//**
      * Note that it is generally necessary to override the {@code hashCode}
      * method whenever this method is overridden, so as to maintain the
      * general contract for the {@code hashCode} method, which states
      * that equal objects must have equal hash codes.
      * 如果不重写改方法，equals比较的时两个对象的内存地址
-     */
+     *//*
     public boolean equals(Object obj) {
         return (this == obj);
     }
 
-    /**
+    *//**
      * Creates and returns a copy of this object.
      * 创建并返回此对象的一个副本
      * @exception  CloneNotSupportedException  if the object's class does not
      *               support the {@code Cloneable} interface.
-     */
+     *//*
     protected native Object clone() throws CloneNotSupportedException;
 
-    /**
+    *//**
      * Returns a string representation of the object.
      * getClass().getName() + '@' + Integer.toHexString(hashCode())
      * 返回对象的字符串表示
-     */
+     *//*
     public String toString() {
         return getClass().getName() + "@" + Integer.toHexString(hashCode());
     }
 
-    /**
+    *//**
      * Wakes up a single thread that is waiting on this object's
      * monitor. If any threads are waiting on this object, one of them
      * is chosen to be awakened. The choice is arbitrary and occurs at
@@ -87,10 +87,10 @@ public class Object {
      * @see        java.lang.Object#notifyAll()
      * @see        java.lang.Object#wait()
      * 唤醒在此对象监视器上等待的单个线程
-     */
+     *//*
     public final native void notify();
 
-    /**
+    *//**
      * Wakes up all threads that are waiting on this object's monitor. A
      * thread waits on an object's monitor by calling one of the
      * {@code wait} methods.
@@ -112,10 +112,10 @@ public class Object {
      * @see        java.lang.Object#notify()
      * @see        java.lang.Object#wait()
      * 唤醒在此对象监视器上等待的所有线程
-     */
+     *//*
     public final native void notifyAll();
 
-    /**
+    *//**
      * Causes the current thread to wait until either another thread invokes the
      * {@link java.lang.Object#notify()} method or the
      * {@link java.lang.Object#notifyAll()} method for this object, or a
@@ -199,10 +199,10 @@ public class Object {
      *             this exception is thrown.
      * @see        java.lang.Object#notify()
      * @see        java.lang.Object#notifyAll()
-     */
+     *//*
     public final native void wait(long timeout) throws InterruptedException;
 
-    /**
+    *//**
      * Causes the current thread to wait until another thread invokes the
      * {@link java.lang.Object#notify()} method or the
      * {@link java.lang.Object#notifyAll()} method for this object, or
@@ -263,7 +263,7 @@ public class Object {
      *             was waiting for a notification.  The <i>interrupted
      *             status</i> of the current thread is cleared when
      *             this exception is thrown.
-     */
+     *//*
     public final void wait(long timeout, int nanos) throws InterruptedException {
         if (timeout < 0) {
             throw new IllegalArgumentException("timeout value is negative");
@@ -281,7 +281,7 @@ public class Object {
         wait(timeout);
     }
 
-    /**
+    *//**
      * Causes the current thread to wait until another thread invokes the
      * {@link java.lang.Object#notify()} method or the
      * {@link java.lang.Object#notifyAll()} method for this object.
@@ -318,12 +318,12 @@ public class Object {
      *             this exception is thrown.
      * @see        java.lang.Object#notify()
      * @see        java.lang.Object#notifyAll()
-     */
+     *//*
     public final void wait() throws InterruptedException {
         wait(0);
     }
 
-    /**
+    *//**
      * Called by the garbage collector on an object when garbage collection
      * determines that there are no more references to the object.
      * A subclass overrides the {@code finalize} method to dispose of
@@ -369,6 +369,7 @@ public class Object {
      * ignored.
      *
      * @throws Throwable the {@code Exception} raised by this method
-     */
+     *//*
     protected void finalize() throws Throwable { }
 }
+*/
