@@ -44,18 +44,6 @@ public class ClassUtil {
             String accessible = method.isAccessible() ? "public" : "private";
 
             System.out.print(accessible + " " + method.getName() + " " + returnType.getName() + "(");
-
-            Parameter[] parameters = method.getParameters();
-            for (int j = 0; j < parameters.length; j++) {
-                Parameter parameter = parameters[j];
-                System.out.print(parameter.getType().getName() + " " + parameter.getName());
-
-                if (j < parameters.length - 1) {
-                    System.out.print(", ");
-                }
-            }
-
-            System.out.println(")");
         }
     }
 }
