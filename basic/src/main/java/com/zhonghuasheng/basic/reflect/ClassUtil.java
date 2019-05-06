@@ -2,7 +2,8 @@ package com.zhonghuasheng.basic.reflect;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
+
+import org.omg.Dynamic.Parameter;
 
 public class ClassUtil {
 
