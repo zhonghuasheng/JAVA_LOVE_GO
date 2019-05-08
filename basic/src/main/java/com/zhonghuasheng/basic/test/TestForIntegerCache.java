@@ -33,5 +33,7 @@ public class TestForIntegerCache {
         String x6 = "abcd";
         System.out.println(x5 == x6); // true
 
+        System.out.println(Integer.MAX_VALUE); // 2 sup 31 -1  2147483647
+        System.out.println(Integer.MIN_VALUE); // -2 sup 31  -2147483648
     }
 }

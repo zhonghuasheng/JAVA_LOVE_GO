@@ -1,9 +1,10 @@
 package com.zhonghuasheng.basic.collection.list.arraylist;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import com.zhonghuasheng.basic.collection.list.arraylist.model.People;
+
+import static com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver.iterator;
 
 public class main {
 
@@ -18,6 +19,43 @@ public class main {
         peopleList2.add(people);
 
         System.out.println(peopleList1.equals(peopleList2));
+
+        // get(int index) 说明List是有序的。这里的索引参数是int，因为Collection的最大size是Integer.MAX_VALUE
+        peopleList1.get(0);
+
+        // 无序
+        HashSet<String> hashSet = new HashSet<String>();
+        hashSet.add("a");
+        hashSet.add("b");
+        hashSet.add("c");
+        hashSet.add("d");
+        Iterator iteratorHashSet = hashSet.iterator();
+
+        while (iteratorHashSet.hasNext()) {
+            System.out.println(iteratorHashSet.next());
+        }
+
+        System.out.println("--华丽分割线--");
+
+        // 有序
+        LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
+        linkedHashSet.add("a");
+        linkedHashSet.add("b");
+        linkedHashSet.add("c");
+        linkedHashSet.add("d");
+
+        Iterator<String> iterator = linkedHashSet.iterator();
+
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
+        // ArrayList扩容
+        System.out.println((10 + (10 >> 1))); // 15
+        System.out.println((15 + (15 >> 1))); // 22
+
+        HashMap<String, String> hashMap = new HashMap<String, String>();
+        hashMap.put(null, "a");
     }
 
 }
