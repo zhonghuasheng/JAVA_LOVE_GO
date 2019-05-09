@@ -56,6 +56,15 @@ public class main {
 
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put(null, "a");
+
+        // 避免使用基础数据类型数据转换为列表
+        int[] ints = {1, 2, 3, 4, 5};
+        List list = Arrays.asList(ints);
+        System.out.println("list size: " + list.size()); // list size: 1
+
+        Integer[] ints2 = {1, 2, 3, 4, 5};
+        List list2 = Arrays.asList(ints2);
+        System.out.println("list2 size: " +  list2.size());
     }
 
 }
