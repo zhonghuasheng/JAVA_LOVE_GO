@@ -1,10 +1,8 @@
 package com.zhonghuasheng.basic.collection.list.arraylist;
 
-import java.util.*;
-
 import com.zhonghuasheng.basic.collection.list.arraylist.model.People;
 
-import static com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver.iterator;
+import java.util.*;
 
 public class main {
 
