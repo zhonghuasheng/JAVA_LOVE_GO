@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.util;
+package com.zhonghuasheng.basic.java.util.map;
 
 import java.util.Collection;
 import java.util.HashMap;

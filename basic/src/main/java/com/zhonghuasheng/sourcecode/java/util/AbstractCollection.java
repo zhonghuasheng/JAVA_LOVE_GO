@@ -1,32 +1,6 @@
-/*
-### Summary
+/*package java.util;
 
-#### methods
-* protected AbstractCollection()
-* public abstract Iterator<E> iterator();
-* public abstract int size();
-* public boolean isEmpty()
-* public boolean contains(Object o) 值相等
-* public Object[] toArray()
-* public <T> T[] toArray(T[] a)
-* public boolean add(E e) 未实现 会抛出UnsupportedOperationException
-* public boolean remove(Object o)
-* public boolean containsAll(Collection<?> c)
-* public boolean addAll(Collection<? extends E> c)
-* public boolean removeAll(Collection<?> c)
-* public boolean retainAll(Collection<?> c) list中的element如果在c中有(值相等)就保留，否则remove()掉
-* public void clear() 清空
-* public String toString()
-* private static <T> T[] finishToArray(T[] r, Iterator<?> it)
-* private static int hugeCapacity(int minCapacity)
-
-#### variables
-* private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8; toArray时数组的最大长度，之所以减8是因为有些VM要保留header
-
-```java
-package java.util;
-
-/**
+*//**
  * This class provides a skeletal(骨架) implementation of the <tt>Collection</tt>
  * interface, to minimize the effort required to implement this interface. <p>
  * 实现此接口所需的工作量最小化
@@ -57,37 +31,37 @@ package java.util;
  * @author  Neal Gafter
  * @see Collection
  * @since 1.2
- */
+ *//*
 
 public abstract class AbstractCollection<E> implements Collection<E> {
-    /**
+    *//**
      * Sole constructor.  (For invocation by subclass constructors, typically
      * implicit.)
-     */
+     *//*
     protected AbstractCollection() {
     }
 
     // Query Operations
 
-    /**
+    *//**
      * Returns an iterator over the elements contained in this collection.
      *
      * @return an iterator over the elements contained in this collection
-     */
+     *//*
     public abstract Iterator<E> iterator();
 
     public abstract int size();
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation returns <tt>size() == 0</tt>.
-     */
+     *//*
     public boolean isEmpty() {
         return size() == 0;
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation iterates over the elements in the collection,
@@ -95,7 +69,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      *
      * @throws ClassCastException   {@inheritDoc}
      * @throws NullPointerException {@inheritDoc}
-     */
+     *//*
     public boolean contains(Object o) {
         Iterator<E> it = iterator();
         if (o==null) {
@@ -110,7 +84,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         return false;
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation returns an array containing all the elements
@@ -131,7 +105,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      *     list.add(e);
      * return list.toArray();
      * }</pre>
-     */
+     *//*
     public Object[] toArray() { //该方法会降低性能
         // Estimate size of array; be prepared to see more or fewer elements
         Object[] r = new Object[size()];
@@ -144,7 +118,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         return it.hasNext() ? finishToArray(r, it) : r;
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation returns an array containing all the elements
@@ -170,7 +144,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      *
      * @throws ArrayStoreException  {@inheritDoc}
      * @throws NullPointerException {@inheritDoc}
-     */
+     *//*
     public <T> T[] toArray(T[] a) {
         // Estimate size of array; be prepared to see more or fewer elements
         int size = size();
@@ -199,15 +173,15 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         return it.hasNext() ? finishToArray(r, it) : r;
     }
 
-    /**
+    *//**
      * The maximum size of array to allocate.
      * Some VMs reserve some header words in an array.
      * Attempts to allocate larger arrays may result in
      * OutOfMemoryError: Requested array size exceeds(超过) VM limit
-     */
+     *//*
     private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
 
-    /**
+    *//**
      * Reallocates the array being used within toArray when the iterator
      * returned more elements than expected, and finishes filling it from
      * the iterator.
@@ -216,7 +190,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      * @param it the in-progress iterator over this collection
      * @return array containing the elements in the given array, plus any
      *         further elements returned by the iterator, trimmed to size
-     */
+     *//*
     private static <T> T[] finishToArray(T[] r, Iterator<?> it) {
         int i = r.length;
         while (it.hasNext()) {
@@ -245,7 +219,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
 
     // Modification Operations
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation always throws an
@@ -256,12 +230,12 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      * @throws NullPointerException          {@inheritDoc}
      * @throws IllegalArgumentException      {@inheritDoc}
      * @throws IllegalStateException         {@inheritDoc}
-     */
+     *//*
     public boolean add(E e) {
         throw new UnsupportedOperationException();
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation iterates over the collection looking for the
@@ -276,7 +250,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      * @throws UnsupportedOperationException {@inheritDoc}
      * @throws ClassCastException            {@inheritDoc}
      * @throws NullPointerException          {@inheritDoc}
-     */
+     *//*
     public boolean remove(Object o) {
         Iterator<E> it = iterator();
         if (o==null) {
@@ -300,7 +274,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
 
     // Bulk Operations
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation iterates over the specified collection,
@@ -311,7 +285,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      * @throws ClassCastException            {@inheritDoc}
      * @throws NullPointerException          {@inheritDoc}
      * @see #contains(Object)
-     */
+     *//*
     public boolean containsAll(Collection<?> c) {
         for (Object e : c)
             if (!contains(e))
@@ -319,7 +293,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         return true;
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation iterates over the specified collection, and adds
@@ -336,7 +310,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      * @throws IllegalStateException         {@inheritDoc}
      *
      * @see #add(Object)
-     */
+     *//*
     public boolean addAll(Collection<? extends E> c) {
         boolean modified = false;
         for (E e : c)
@@ -345,7 +319,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         return modified;
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation iterates over this collection, checking each
@@ -365,7 +339,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      *
      * @see #remove(Object)
      * @see #contains(Object)
-     */
+     *//*
     public boolean removeAll(Collection<?> c) {
         boolean modified = false;
         Iterator<?> it = iterator();
@@ -378,7 +352,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         return modified;
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation iterates over this collection, checking each
@@ -398,7 +372,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      *
      * @see #remove(Object)
      * @see #contains(Object)
-     */
+     *//*
     public boolean retainAll(Collection<?> c) { //retain 保留
         boolean modified = false;
         Iterator<E> it = iterator();
@@ -411,7 +385,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         return modified;
     }
 
-    /**
+    *//**
      * {@inheritDoc}
      *
      * <p>This implementation iterates over this collection, removing each
@@ -425,7 +399,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      * <tt>remove</tt> method and this collection is non-empty.
      *
      * @throws UnsupportedOperationException {@inheritDoc}
-     */
+     *//*
     public void clear() {
         Iterator<E> it = iterator();
         while (it.hasNext()) {
@@ -437,7 +411,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
 
     //  String conversion
 
-    /**
+    *//**
      * Returns a string representation of this collection.  The string
      * representation consists of a list of the collection's elements in the
      * order they are returned by its iterator, enclosed in square brackets
@@ -446,7 +420,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
      * by {@link String#valueOf(Object)}.
      *
      * @return a string representation of this collection
-     */
+     *//*
     public String toString() {
         Iterator<E> it = iterator();
         if (! it.hasNext())
@@ -464,3 +438,4 @@ public abstract class AbstractCollection<E> implements Collection<E> {
     }
 
 }
+*/
