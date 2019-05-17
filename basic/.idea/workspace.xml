@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fc22562-642d-4e4a-b9ad-0b01509c3ab7" name="Default Changelist" comment="添加了Collections源码和示例">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/basic/java/util/collection/ArrayListExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/basic/java/util/map/MapTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/basic/java/util/map/MapTest01.java" afterDir="false" />
-    </list>
+    <list default="true" id="7fc22562-642d-4e4a-b9ad-0b01509c3ab7" name="Default Changelist" comment="添加了Collections源码和示例" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +17,7 @@
     <session id="2047241592">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.9" value="1" />
@@ -589,7 +585,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557912208221" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558055009971" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/software/btrace-bin-1.3.8.3/build/btrace-client.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -749,7 +745,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49757674" visible="true" weight="0.19213313" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49757674" visible="true" weight="0.16187595" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="DB Browser" order="3" />
@@ -780,7 +776,7 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" x="0" y="0" width="295" height="554" id="Documentation" order="8" side_tool="true" weight="0.32980332" />
-      <window_info active="true" anchor="right" id="Structure" order="9" sideWeight="0.5024233" side_tool="true" visible="true" weight="0.41149774" />
+      <window_info active="true" anchor="right" id="Structure" order="9" sideWeight="0.5024233" side_tool="true" visible="true" weight="0.22390318" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
