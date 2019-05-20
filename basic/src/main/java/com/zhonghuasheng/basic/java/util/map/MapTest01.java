@@ -37,6 +37,12 @@ public class MapTest01 {
         }
 
         hashMap.put(null, null);
+
+        System.out.println("check the return value of Map#put method");
+        HashMap<String, String> values2 = new HashMap<String, String>();
+        System.out.println(values2.put("a", "a1"));
+        System.out.println(values2.put("a", "a2"));
+        System.out.println(values2.put("a", "a3"));
     }
 
 }
