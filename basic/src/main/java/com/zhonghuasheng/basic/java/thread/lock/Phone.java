@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.lock;
+package com.zhonghuasheng.basic.java.thread.lock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

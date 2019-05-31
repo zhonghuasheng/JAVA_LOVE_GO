@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.demo1;
+package com.zhonghuasheng.basic.java.thread.demo1;
 
 public class MyThread extends Thread {
     private int ticket = 10;

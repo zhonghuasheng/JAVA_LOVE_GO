@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.demo7;
+package com.zhonghuasheng.basic.java.thread.demo7;
 
 public class MyThread extends Thread {
 

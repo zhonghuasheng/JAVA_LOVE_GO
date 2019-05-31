@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.demo6;
+package com.zhonghuasheng.basic.java.thread.demo6;
 
 public class WaitTimeOutTest {
 

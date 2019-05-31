@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.demo10;
+package com.zhonghuasheng.basic.java.thread.demo10;
 
 public class InterruptedTest1 {
 

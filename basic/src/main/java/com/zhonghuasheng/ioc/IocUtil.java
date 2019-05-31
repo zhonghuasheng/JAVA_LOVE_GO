@@ -9,6 +9,7 @@ import com.zhonghuasheng.ioc.annotation.MyInject;
 public class IocUtil {
 
     public static void inject() {
+        // 为被@Inject注解的变量注入value
         Map<Class<?>, Object> map = IocContext.APPLICATIONCONTEXT_MAP;
         for (Entry<Class<?>, Object> entry : map.entrySet()) {
             Class<?> clazz = entry.getKey();

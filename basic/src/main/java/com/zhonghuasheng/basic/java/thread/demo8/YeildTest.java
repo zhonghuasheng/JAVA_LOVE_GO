@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.demo8;
+package com.zhonghuasheng.basic.java.thread.demo8;
 
 public class YeildTest {
 

@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.demo4;
+package com.zhonghuasheng.basic.java.thread.demo4;
 
 public class SyncAndNoSyncMethodDemo {
 

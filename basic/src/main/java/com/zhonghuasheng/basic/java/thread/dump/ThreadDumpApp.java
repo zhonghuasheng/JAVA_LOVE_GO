@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.dump;
+package com.zhonghuasheng.basic.java.thread.dump;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;

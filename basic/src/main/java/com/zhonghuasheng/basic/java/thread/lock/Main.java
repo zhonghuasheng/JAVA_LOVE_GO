@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.lock;
+package com.zhonghuasheng.basic.java.thread.lock;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.products;
+package com.zhonghuasheng.basic.java.thread.products;
 
 public class Customer {
 

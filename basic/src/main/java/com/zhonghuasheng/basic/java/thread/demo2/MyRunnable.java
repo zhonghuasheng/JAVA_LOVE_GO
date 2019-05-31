@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.demo2;
+package com.zhonghuasheng.basic.java.thread.demo2;
 
 public class MyRunnable implements Runnable {
 

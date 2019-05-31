@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.reflect;
+package com.zhonghuasheng.basic.java.reflect;
 
 public class User {
 

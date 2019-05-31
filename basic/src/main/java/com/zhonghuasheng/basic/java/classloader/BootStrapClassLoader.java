@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.classloader;
+package com.zhonghuasheng.basic.java.classloader;
 
 import java.net.URL;
 

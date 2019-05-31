@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.thread.demo5;
+package com.zhonghuasheng.basic.java.thread.demo5;
 
 public class WaitTest {
 

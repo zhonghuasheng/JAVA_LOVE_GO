@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.lang.reflect;
+package com.zhonghuasheng.basic.java.reflect;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

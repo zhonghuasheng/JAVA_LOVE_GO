@@ -1,8 +1,8 @@
-package com.zhonghuasheng.basic.java.lang.classloader;
+package com.zhonghuasheng.basic.java.classloader;
 
 public class Test {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
 
         while (classLoader != null) {
@@ -12,6 +12,6 @@ public class Test {
 
         System.out.println(classLoader);// TODO Auto-generated method stub
 
-	}
+    }
 
 }

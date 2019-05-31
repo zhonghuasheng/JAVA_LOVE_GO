@@ -24,17 +24,16 @@ public class IocContext {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (IllegalAccessException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
 
     private static void initBean(String packagenameString) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-        Enumeration<URL> urls = this.getClass().getClassLoader().getResources(packagenameString.replace("\\.", "/"));
-                //Thread.currentThread().getContextClassLoader().getResources(packagenameString.replace("\\.", "/"));
+        // 获取路径
+        Enumeration<URL> urls = Thread.currentThread().getContextClassLoader().getResources(packagenameString.replace(".", "/"));
+
         while (urls.hasMoreElements()) {
             addClassByAnnotation(urls.nextElement().getPath(), packagenameString);
         }
@@ -43,6 +42,7 @@ public class IocContext {
     }
 
     private static void addClassByAnnotation(String filePath, String packagename) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+        // 获取文件和文件夹
         File[] files = getClassFile(filePath);
         if (files != null && files.length > 0) {
             for (File file : files) {
@@ -51,9 +51,9 @@ public class IocContext {
                     Class<?> clazz = Class.forName(packagename + "." + fileName.substring(0, fileName.lastIndexOf(".")));
                     if (clazz.isAnnotationPresent(MyComponent.class)) {
                         APPLICATIONCONTEXT_MAP.put(clazz, clazz.newInstance());
-                    } else {
-                        addClassByAnnotation(file.getPath(), packagename + "." + fileName);
                     }
+                } else {
+                    addClassByAnnotation(file.getPath(), packagename + "." + fileName);
                 }
             }
         }
