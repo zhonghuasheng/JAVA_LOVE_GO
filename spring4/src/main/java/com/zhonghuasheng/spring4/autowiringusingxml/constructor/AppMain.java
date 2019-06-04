@@ -10,5 +10,4 @@ public class AppMain {
         Performer performer = (Performer) context.getBean("performer");
         System.out.println(performer);
     }
-
 }
