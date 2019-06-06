@@ -3,7 +3,7 @@ package com.zhonghuasheng.spring4.annotationinjectexample.autowired;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component("driver")
+@Component
 public class Driver {
 
     @Autowired
