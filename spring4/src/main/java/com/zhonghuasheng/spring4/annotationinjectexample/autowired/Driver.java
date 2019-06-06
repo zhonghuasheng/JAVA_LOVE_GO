@@ -6,7 +6,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Driver {
 
-    @Autowired
+    // 如果没有License这个Bean被发现，也不会报错，license将会为null
+    @Autowired(required=false)
     private License license;
 
     @Override
