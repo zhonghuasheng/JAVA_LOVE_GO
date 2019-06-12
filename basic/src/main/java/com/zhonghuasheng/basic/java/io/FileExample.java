@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.FilenameFilter;
 import java.io.IOException;
 
 
@@ -37,6 +38,18 @@ public class FileExample {
             bw.close();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+
+        File file = new File("E:\\code\\JAVA\\basic\\src\\main\\java\\com\\zhonghuasheng\\basic\\java\\io\\");
+        File[] files = file.listFiles(new FilenameFilter() {
+            
+            public boolean accept(File dir, String name) {
+                return name.endsWith(".java");
+            }
+        });
+
+        for (File f : files) {
+            System.out.println(f.getName());
         }
     }
 }
