@@ -34,7 +34,7 @@ public class FileExample {
             bw.newLine();
             bw.write("world");
             bw.append("!!!");
-            bw.flush();
+            // bw.flush(); // close会自动flush
             bw.close();
         } catch (IOException e) {
             e.printStackTrace();
