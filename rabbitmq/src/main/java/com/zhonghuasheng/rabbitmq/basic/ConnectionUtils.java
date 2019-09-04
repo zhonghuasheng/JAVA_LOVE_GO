@@ -1,4 +1,4 @@
-package com.zhonghuasheng.rabbitmq;
+package com.zhonghuasheng.rabbitmq.basic;
 
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;

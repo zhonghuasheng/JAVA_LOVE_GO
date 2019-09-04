@@ -1,8 +1,5 @@
 package com.zhonghuasheng.rabbitmq.basic;
 
-import com.zhonghuasheng.rabbitmq.Consumer;
-import com.zhonghuasheng.rabbitmq.Producer;
-
 /**
  * Hello world!
  *
@@ -15,6 +12,6 @@ public class App
             System.out.println(i);
         }
         Thread.sleep(10000);
-        new Consumer().receiveMessage();
+        //new Consumer().receiveMessage();
     }
 }

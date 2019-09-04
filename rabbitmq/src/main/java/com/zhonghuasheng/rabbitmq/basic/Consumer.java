@@ -1,6 +1,7 @@
-package com.zhonghuasheng.rabbitmq;
+package com.zhonghuasheng.rabbitmq.basic;
 
 import com.rabbitmq.client.*;
+import com.zhonghuasheng.rabbitmq.basic.ConnectionUtils;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
