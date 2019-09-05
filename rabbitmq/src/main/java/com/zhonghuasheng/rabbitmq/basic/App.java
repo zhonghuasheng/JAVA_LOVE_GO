@@ -12,6 +12,6 @@ public class App
             System.out.println(i);
         }
         Thread.sleep(10000);
-        //new Consumer().receiveMessage();
+        new Consumer().receiveMessage();
     }
 }
