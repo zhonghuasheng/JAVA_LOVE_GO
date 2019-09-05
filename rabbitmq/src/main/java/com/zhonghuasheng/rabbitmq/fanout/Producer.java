@@ -18,7 +18,8 @@ public class Producer {
         Channel channel = connection.createChannel();
         channel.exchangeDeclare(Constants.EXCHANGE_NAME, Constants.EXCHANGE_TYPE_FANOUT);
         String msg = "Hello Fanout";
-        channel.basicPublish(Constants.EXCHANGE_NAME, "", null, msg.getBytes("UTF-8"));
+        // 这里即使加了routingKey，在fanout模式下也会被忽略
+        channel.basicPublish(Constants.EXCHANGE_NAME, "test", null, msg.getBytes("UTF-8"));
         System.out.println("Sent message: " + msg + " to exchange: " + channel.getChannelNumber());
     }
 }
