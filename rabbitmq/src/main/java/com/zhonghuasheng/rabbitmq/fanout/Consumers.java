@@ -3,10 +3,11 @@ package com.zhonghuasheng.rabbitmq.fanout;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
+import java.util.concurrent.TimeoutException;
 
 public class Consumers {
 
-    public void receiveMessage() throws IOException {
+    public void receiveMessage() throws IOException, TimeoutException {
         ConnectionFactory connectionFactory = new ConnectionFactory();
         connectionFactory.setHost("127.0.0.1");
         connectionFactory.setUsername("admin");
