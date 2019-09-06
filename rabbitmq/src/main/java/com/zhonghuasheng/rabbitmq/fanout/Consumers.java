@@ -14,7 +14,7 @@ public class Consumers {
         connectionFactory.setPassword("123456");
         Connection connection = connectionFactory.newConnection();
         Channel channel = connection.createChannel();
-        channel.exchangeDeclare(Constants.EXCHANGE_NAME, Constants.EXCHANGE_TYPE_FANOUT);
+        channel.exchangeDeclare(Constants.EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
         String queueName = channel.queueDeclare().getQueue();
         channel.queueBind(queueName, Constants.EXCHANGE_NAME, "");
         System.out.println("Queue: " + queueName + " waiting for message");

@@ -1,10 +1,7 @@
 package com.zhonghuasheng.rabbitmq.fanout;
 
 
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.ConfirmListener;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.*;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
@@ -19,7 +16,7 @@ public class Producer {
 
         Connection connection = connectionFactory.newConnection();
         Channel channel = connection.createChannel();
-        channel.exchangeDeclare(Constants.EXCHANGE_NAME, Constants.EXCHANGE_TYPE_FANOUT);
+        channel.exchangeDeclare(Constants.EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
         // 指定消息投递模式： 消息的确认模式
         channel.confirmSelect();
         channel.addConfirmListener(new ConfirmListener() {
