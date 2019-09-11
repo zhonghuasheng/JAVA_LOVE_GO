@@ -23,5 +23,7 @@ public class Producer {
         String routingKey = "info";
         String msg = "Hello Direct Info";
         channel.basicPublish(EXCHANGE_NAME, routingKey, null, msg.getBytes("UTF-8"));
+        channel.close();
+        connection.close();
     }
 }
