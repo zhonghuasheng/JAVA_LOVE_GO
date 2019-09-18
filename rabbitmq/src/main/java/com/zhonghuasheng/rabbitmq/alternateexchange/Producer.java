@@ -18,6 +18,11 @@ public class Producer {
         Connection connection = connectionFactory.newConnection();
         Channel channel = connection.createChannel();
 
+        /**
+         * 创建了两个exchange， exchange_alternate_exchange设置为direct模式，backup.exchange设置为fanout模式。
+         * 同时为exchange_alternate_exchange设置alternate-exchange的值为backup.exchange。测试时发送了一条消息到exchange_alternate_exchange，
+         * 但是routingKey没有匹配的queue，因此该消息不能被正常路由，这条消息会进入backup.exchange中
+         */
         channel.exchangeDeclare("backup.exchange", BuiltinExchangeType.FANOUT, true, false, null);
         // 声明一个正常的exchange和queue,并告诉exchange如果没有正确的路由则将消息放到backup-exchange中
         Map<String, Object> map = new HashMap<>();
