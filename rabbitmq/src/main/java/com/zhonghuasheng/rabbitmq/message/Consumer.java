@@ -38,5 +38,7 @@ public class Consumer {
             }
         };
         channel.basicConsume("test.message", true, consumer);
+        channel.close();
+        connection.close();
     }
 }

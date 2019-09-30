@@ -1,23 +1,32 @@
 package com.jsp.model;
 
-public class User {
+public class User extends BaseModel {
 
-    private String name;
-    private int age;
+    private String username;
+    private String email;
+    private String password;
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public int getAge() {
-        return age;
+    public String getEmail() {
+        return email;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
