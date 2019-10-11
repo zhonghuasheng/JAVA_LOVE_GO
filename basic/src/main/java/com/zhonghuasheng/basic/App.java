@@ -1,13 +1,18 @@
 package com.zhonghuasheng.basic;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Hello world!
  *
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws ParseException
     {
-        System.out.println( "Hello World!" );
+        Date date = new SimpleDateFormat("yyyy-MM-dd").parse("2017-09-02");
+        System.out.println(date);
     }
 }
