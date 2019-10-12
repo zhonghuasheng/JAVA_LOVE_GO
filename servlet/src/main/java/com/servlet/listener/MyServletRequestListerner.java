@@ -2,11 +2,13 @@ package com.servlet.listener;
 
 import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
+import javax.servlet.annotation.WebListener;
 
 /**
  * Application Lifecycle Listener implementation class MyServletRequestListerner
  *
  */
+@WebListener
 public class MyServletRequestListerner implements ServletRequestListener {
 
     /**

@@ -34,6 +34,9 @@
       <filter-name>EncryptionFilter</filter-name>
       <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <listener>
+  	<listener-class>com.servlet.listener.MyHttpSessionAttibuteListener</listener-class>
+  </listener>
   <servlet>
     <servlet-name>HelloServlet</servlet-name>
     <display-name>HelloServlet</display-name>
@@ -44,6 +47,12 @@
     <servlet-name>CustomDispatcherServlet</servlet-name>
     <display-name>Custom Dispatcher Servlet</display-name>
     <servlet-class>com.servlet.CustomDispatcherServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>HttpSessionAttributeServlet</servlet-name>
+  	<display-name>HttpSessionAttributeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.HttpSessionAttributeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
