@@ -1,5 +1,6 @@
 package com.servlet.listener;
 
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
@@ -7,6 +8,7 @@ import javax.servlet.http.HttpSessionListener;
  * Application Lifecycle Listener implementation class MyHttpSessionListener
  *
  */
+@WebListener
 public class MyHttpSessionListener implements HttpSessionListener {
 
     /**
