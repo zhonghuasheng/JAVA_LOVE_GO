@@ -1,4 +1,4 @@
-package com.zhonghuasheng.netty.client;
+package com.zhonghuasheng.netty.sample.client;
 
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
