@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad81d5ff-e656-41d0-837e-7bbe18ec3f64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/java8/stream/ListToMapLoadTestFor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/java8/stream/ListToMapLoadTestStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/java8/stream/ListToMapUseFor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/java8/stream/ListToMapUseStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/java8/stream/Price.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/java8/parallel/Parallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhonghuasheng/java8/parallel/Parallel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhonghuasheng/java8/AppTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ad81d5ff-e656-41d0-837e-7bbe18ec3f64" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

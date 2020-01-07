@@ -1,4 +1,4 @@
-package com.zhonghuasheng.netty.client;
+package com.zhonghuasheng.netty.sample.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
@@ -11,7 +11,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Client {
+public class ClientTwo {
 
     public static void main(String[] args) {
         EventLoopGroup group = new NioEventLoopGroup();
