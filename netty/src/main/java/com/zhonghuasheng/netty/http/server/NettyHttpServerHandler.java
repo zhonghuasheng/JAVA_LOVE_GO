@@ -13,10 +13,16 @@ public class NettyHttpServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        // FullHttpRequest包含头HttpRequest，中间可以是多个HttpContent，尾LastHttpContent
         if (msg instanceof HttpRequest) {
             HttpRequest request = (HttpRequest) msg;
             System.out.println("messageType: " + request.headers().get("messageType"));
             System.out.println("businessType: " + request.headers().get("businessType"));
+
+            // 可扩展：静态资源
+            if ("/favicon.ico".equals(request.uri())) {
+                return;
+            }
             HttpMethod httpMethod = request.method();
             // 判断HttpHeader中是否包含Content-Length
             if (HttpMethod.POST.equals(httpMethod)) {
