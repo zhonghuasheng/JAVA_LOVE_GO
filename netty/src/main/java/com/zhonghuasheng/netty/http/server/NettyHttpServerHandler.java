@@ -17,27 +17,44 @@ public class NettyHttpServerHandler extends ChannelInboundHandlerAdapter {
             HttpRequest request = (HttpRequest) msg;
             System.out.println("messageType: " + request.headers().get("messageType"));
             System.out.println("businessType: " + request.headers().get("businessType"));
-            if (HttpUtil.isContentLengthSet(request)) {
-                reader = new ByteBufToBytes((int) HttpUtil.getContentLength(request));
+            HttpMethod httpMethod = request.method();
+            // 判断HttpHeader中是否包含Content-Length
+            if (HttpMethod.POST.equals(httpMethod)) {
+                if (HttpUtil.isContentLengthSet(request)) {
+                    reader = new ByteBufToBytes((int) HttpUtil.getContentLength(request));
+                }
+            } else if (HttpMethod.GET.equals(httpMethod)) {
+                FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK,
+                        Unpooled.wrappedBuffer("Welcome!!!".getBytes()));
+                response.headers().set(HttpHeaderNames.CONTENT_TYPE, HttpHeaderValues.TEXT_PLAIN); // HttpHeaders这个类中有这些常量，不过已经被废弃了
+                response.headers().set(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes());
+                response.headers().set(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
+                ctx.write(response);
+                ctx.flush();
             }
         }
 
         if (msg instanceof HttpContent) {
             HttpContent httpContent = (HttpContent) msg;
             ByteBuf content = httpContent.content();
-            reader.reading(content);
-            content.release();
-            if (reader.isEnd()) {
-                String result = new String(reader.readFull());
-                System.out.println("Client said: " + result);
-                FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK,
-                        Unpooled.wrappedBuffer("I am OK".getBytes()));
-                response.headers().set(HttpHeaderNames.CONTENT_TYPE, HttpHeaderValues.TEXT_PLAIN);
-                response.headers().set(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes());
-                response.headers().set(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
-                ctx.write(response);
-                ctx.flush();
+            String result = "NA";
+
+            if (content.readableBytes() > 0) {
+                reader.reading(content);
+                content.release();
+                if (reader.isEnd()) {
+                    result = new String(reader.readFull());
+                    System.out.println("Client said: " + result);
+                }
             }
+
+            FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK,
+                    Unpooled.wrappedBuffer(result.getBytes()));
+            response.headers().set(HttpHeaderNames.CONTENT_TYPE, HttpHeaderValues.TEXT_PLAIN);
+            response.headers().set(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes());
+            response.headers().set(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
+            ctx.write(response);
+            ctx.flush();
         }
     }
 
