@@ -34,16 +34,16 @@ public class WebSocketServer {
                     @Override
                     protected void initChannel(SocketChannel socketChannel) throws Exception {
                         socketChannel.pipeline().addLast("logging", new LoggingHandler(LogLevel.DEBUG))
-                                .addLast("http-codec", new HttpServerCodec())
-                                .addLast("aggregator", new HttpObjectAggregator(65536))
-                                .addLast("http-chunked", new ChunkedWriteHandler())
+                                .addLast("http-codec", new HttpServerCodec()) // HttpRequestDecoder和HttpResponseEncoder的一个组合，针对http协议进行编解码
+                                .addLast("aggregator", new HttpObjectAggregator(65536)) // 需要放到HttpServerCodec这个处理器后面
+                                .addLast("http-chunked", new ChunkedWriteHandler()) // 分块向客户端写数据，防止发送大文件时导致内存溢出， channel.write(new ChunkedFile(new File("bigFile.mkv")))
                                 .addLast("handler", new WebSocketHandler());
                     }
                 });
         Channel channel = null;
         try {
             channel = serverBootstrap.bind(port).sync().channel();
-            logger.info("WebSocket服务器启动： " + channel.id().asLongText());
+            logger.info("WebSocket服务器启动： " + channel.id().asShortText());
             channel.closeFuture().sync();
         } catch (InterruptedException e) {
             logger.info("WebSocket服务异常");
