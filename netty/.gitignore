@@ -4,3 +4,4 @@ Servers/*
 .recommenders/*
 target/*
 .idea/*
+logs/*
