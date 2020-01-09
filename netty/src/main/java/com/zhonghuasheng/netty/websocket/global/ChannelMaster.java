@@ -6,22 +6,24 @@ import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.util.concurrent.GlobalEventExecutor;
+import org.apache.log4j.Logger;
 
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ChannelMaster {
 
+    private static final Logger logger = Logger.getLogger(ChannelMaster.class);
     private static ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     private static ConcurrentHashMap<String, ChannelId> channelMap = new ConcurrentHashMap<>();
 
     public static void addChannel(Channel channel) {
         channelGroup.add(channel);
-        channelMap.put(channel.id().asLongText(), channel.id());
+        channelMap.put(channel.id().asShortText(), channel.id());
     }
 
     public static void removeChannel(Channel channel) {
         channelGroup.remove(channel);
-        channelMap.remove(channel.id().asLongText());
+        channelMap.remove(channel.id().asShortText());
     }
 
     public static Channel findChannel(String channelId) {
@@ -30,5 +32,14 @@ public class ChannelMaster {
 
     public static void send2All(TextWebSocketFrame tws) {
         channelGroup.writeAndFlush(tws);
+    }
+
+    public static void send(String channelId, TextWebSocketFrame tws) {
+        Channel channel = findChannel(channelId);
+        if (channel != null) {
+            channel.writeAndFlush(tws);
+        } else {
+            logger.info(String.format("%s Channel不存在", channelId));
+        }
     }
 }

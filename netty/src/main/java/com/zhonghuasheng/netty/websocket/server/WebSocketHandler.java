@@ -1,6 +1,8 @@
 package com.zhonghuasheng.netty.websocket.server;
 
+import com.alibaba.fastjson.JSON;
 import com.zhonghuasheng.netty.websocket.global.ChannelMaster;
+import com.zhonghuasheng.netty.websocket.global.MessagePacket;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.FullHttpRequest;
@@ -22,10 +24,19 @@ public class WebSocketHandler extends SimpleChannelInboundHandler<Object> {
     }
 
     private void handleWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
+        // 关闭连接
+        if (frame instanceof CloseWebSocketFrame) {
+            webSocketServerHandshaker.close(ctx.channel(), ((CloseWebSocketFrame) frame).retain());
+            logger.info(String.format("%s与WebSocketServer连接关闭", ctx.channel().id().asShortText()));
+        }
+
         String msg = ((TextWebSocketFrame) frame).text();
-        logger.info(String.format("服务端收到：{}， 消息来自{}", msg, ctx.channel().id().asShortText()));
-        TextWebSocketFrame tws = new TextWebSocketFrame("群发消息");
-        ChannelMaster.send2All(tws);
+        MessagePacket messagePacket = JSON.parseObject(msg, MessagePacket.class);
+        logger.info(String.format("服务端收到：消息来自%s，要发送到%s", messagePacket.getFromChannelId(), messagePacket.getToChannelId()));
+        TextWebSocketFrame tws = new TextWebSocketFrame(messagePacket.getMessage());
+        ChannelMaster.send(messagePacket.getToChannelId(), tws);
+        // 群发
+        // ChannelMaster.send2All(tws);
     }
 
     // WebScoket的首次请求为Http请求，用于达成握手成功
@@ -57,7 +68,7 @@ public class WebSocketHandler extends SimpleChannelInboundHandler<Object> {
     }
 
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        logger.info("Active");
+        logger.info(String.format("Active: %s", ctx.channel().id().asShortText()));
         ChannelMaster.addChannel(ctx.channel());
     }
 
