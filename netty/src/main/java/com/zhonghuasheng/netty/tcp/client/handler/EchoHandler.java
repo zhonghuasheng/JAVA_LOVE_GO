@@ -44,6 +44,7 @@ public class EchoHandler extends ChannelInboundHandlerAdapter {
         byteBuf.writeInt(data2.length);
         byteBuf.writeBytes(Arrays.copyOfRange(data2, 0, data2.length / 2));
         ctx.writeAndFlush(byteBuf);
+        // writeAndFlush之后要获取buffer，否则会报io.netty.util.IllegalReferenceCountException: refCnt: 0错误，后续分析源码时注意分析这个点
         byteBuf = ctx.alloc().buffer();
         byteBuf.writeBytes(Arrays.copyOfRange(data, data2.length / 2, data2.length));
         byteBuf.writeByte(tcpProtocol.getEnd());

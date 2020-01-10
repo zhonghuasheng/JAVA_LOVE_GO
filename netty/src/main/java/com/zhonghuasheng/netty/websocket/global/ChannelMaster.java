@@ -14,7 +14,7 @@ public class ChannelMaster {
 
     private static final Logger logger = Logger.getLogger(ChannelMaster.class);
     private static ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
-    private static ConcurrentHashMap<String, ChannelId> channelMap = new ConcurrentHashMap<>();
+    private static ConcurrentHashMap<String, ChannelId> channelMap = new ConcurrentHashMap<String, ChannelId>();
 
     public static void addChannel(Channel channel) {
         channelGroup.add(channel);
