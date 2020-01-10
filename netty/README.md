@@ -13,7 +13,7 @@
         {"from": "2105d55c", "to":"2c67e59d","msg":"your message"}
         ```
         * 可扩展点：界面化/空闲监测/心跳监测
-* `tcp` 基于Netty实现自定义TCP数据格式的数据发送。参考文章[netty_TCP](https://github.com/Siwash/netty_TCP)
+* `tcp` 基于Netty实现自定义TCP数据格式的数据接收发送。参考文章[netty_TCP](https://github.com/Siwash/netty_TCP)
     * 说明
         * 数据格式是自定义的
         * 这个例子可以帮助学习理解TCP/UDP/Socket的工作原理
