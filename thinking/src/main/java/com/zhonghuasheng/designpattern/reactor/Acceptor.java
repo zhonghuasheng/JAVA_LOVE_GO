@@ -44,7 +44,7 @@ public class Acceptor implements Runnable {
                 Event acceptEvent = new Event();
                 acceptEvent.setSource(source);
                 acceptEvent.setType(EventType.ACCEPT);
-                selector.addEvent(acceptEvent);
+                selector.addNewEvent(acceptEvent);
             }
         }
     }

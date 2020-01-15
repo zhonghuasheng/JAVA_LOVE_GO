@@ -12,6 +12,7 @@ public class Selector {
 
     // 用于实现缓冲队列，保证线程安全
     private static BlockingQueue<Event> eventQueue = new LinkedBlockingQueue<Event>();
+    private static BlockingQueue<Event> finishedEventQueue = new LinkedBlockingQueue<Event>();
     private static Selector selector = new Selector();
     private Selector() {}
 
@@ -20,16 +21,30 @@ public class Selector {
         return selector;
     }
 
-    public void addEvent(Event event) {
+    public void addNewEvent(Event event) {
         boolean success = eventQueue.offer(event);
         System.out.println("Selector成功添加event " + event.getSource().toString());
         System.out.println("Selector类中当前eventQueue大小是： " + eventQueue.size());
     }
 
+    public void addFinishedEvent(Event event) {
+        finishedEventQueue.offer(event);
+    }
+
     // TODO 简单模拟将所有event全部返回，可增加业务逻辑将符合条件的event进行返回
-    public static List<Event> select() throws InterruptedException {
+    public static List<Event> selectNewEvent() {
         List<Event> events = new ArrayList<Event>();
         Event event = eventQueue.poll();
+        if(event != null) {
+            events.add(event);
+        }
+
+        return events;
+    }
+
+    public static List<Event> selectFinishedEvent() {
+        List<Event> events = new ArrayList<Event>();
+        Event event = finishedEventQueue.poll();
         if(event != null) {
             events.add(event);
         }

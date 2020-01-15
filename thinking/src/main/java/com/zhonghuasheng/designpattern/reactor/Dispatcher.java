@@ -32,7 +32,7 @@ public class Dispatcher implements Runnable {
         while(true) {
             try {
                 Thread.sleep(1000);
-                List<Event> events = selector.select();
+                List<Event> events = selector.selectNewEvent();
                 if (events.size() > 0) {
                     for (Event event : events) {
                         if (event == null) {
@@ -41,6 +41,7 @@ public class Dispatcher implements Runnable {
                         EventHandler eventHandler = eventHandlerMap.get(event.getType());
 
                         if (EventType.DONE == event.getType()) {
+                            selector.addFinishedEvent(event);
                             continue;
                         }
 
