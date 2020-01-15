@@ -6,15 +6,11 @@ package com.zhonghuasheng.designpattern.reactor;
 public class Server {
 
     public static void main(String[] args) throws InterruptedException {
+        Selector selector = Selector.getInstance();
+        Runnable dispatcher = new Dispatcher(selector);
+        Runnable acceptor = new Acceptor(selector);
+        new Thread(dispatcher).start();
+        new Thread(acceptor).start();
         System.out.println("Started...");
-        Selector selector = new Selector();
-        Acceptor acceptor = new Acceptor(1234, selector);
-        Dispatcher dispatcher = new Dispatcher(selector);
-        Thread thread = new Thread(acceptor);
-        thread.start();
-        dispatcher.handleEvents();
-        Thread.sleep(2000);
-        dispatcher.registerEventHandler(EventType.ACCEPT, new AcceptEventHandler(selector));
-        dispatcher.registerEventHandler(EventType.ACCEPT, new AcceptEventHandler(selector));
     }
 }

@@ -6,5 +6,6 @@ package com.zhonghuasheng.designpattern.reactor;
 public enum EventType {
     ACCEPT,
     READ,
-    WRITE;
+    WRITE,
+    DONE;
 }

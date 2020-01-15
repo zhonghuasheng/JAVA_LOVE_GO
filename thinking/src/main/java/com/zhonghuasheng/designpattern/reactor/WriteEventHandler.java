@@ -3,25 +3,25 @@ package com.zhonghuasheng.designpattern.reactor;
 /**
  * Accept事件处理器实现类。
  */
-public class AcceptEventHandler extends EventHandler {
+public class WriteEventHandler extends EventHandler {
 
     private Selector selector;
 
-    public AcceptEventHandler() {
+    public WriteEventHandler() {
     }
 
-    public AcceptEventHandler(Selector selector) {
+    public WriteEventHandler(Selector selector) {
         this.selector = selector;
     }
 
     @Override
     public void handle(Event event) {
-        if (EventType.ACCEPT == event.getType()) {
+        if (EventType.WRITE == event.getType()) {
             Event readEvent = new Event();
             readEvent.setSource(event.getSource());
-            readEvent.setType(EventType.READ);
+            readEvent.setType(EventType.DONE);
             selector.addEvent(readEvent);
-            System.out.println("AcceptEventHandler处理完毕，进入下一阶段 -》 READ");
+            System.out.println("WriteEventHandler处理完毕，结束");
         }
     }
 }

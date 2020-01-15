@@ -11,40 +11,28 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class Selector {
 
     // 用于实现缓冲队列，保证线程安全
-    private BlockingQueue<Event> eventQueue = new LinkedBlockingQueue<Event>();
-    // 定义一个object用于synchronize方法块上锁
-    private Object lock = new Object();
+    private static BlockingQueue<Event> eventQueue = new LinkedBlockingQueue<Event>();
+    private static Selector selector = new Selector();
+    private Selector() {}
+
+    public static Selector getInstance() {
+        System.out.println("eventQueue: " + eventQueue.toString());
+        return selector;
+    }
 
     public void addEvent(Event event) {
         boolean success = eventQueue.offer(event);
-        if (success) {
-            synchronized (lock) {
-                lock.notify();
-            }
-        }
-    }
-
-    public List<Event> select() {
-        return select(0);
+        System.out.println("Selector成功添加event " + event.getSource().toString());
+        System.out.println("Selector类中当前eventQueue大小是： " + eventQueue.size());
     }
 
     // TODO 简单模拟将所有event全部返回，可增加业务逻辑将符合条件的event进行返回
-    private List<Event> select(long timeout) {
-        if (timeout > 0) {
-            if (eventQueue.isEmpty()) {
-                synchronized (lock) {
-                    if (eventQueue.isEmpty()) {
-                        try {
-                            lock.wait();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            }
-        }
+    public static List<Event> select() throws InterruptedException {
         List<Event> events = new ArrayList<Event>();
-        eventQueue.drainTo(events);
+        Event event = eventQueue.poll();
+        if(event != null) {
+            events.add(event);
+        }
 
         return events;
     }
