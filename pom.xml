@@ -20,5 +20,6 @@
         <module>spring4</module>
         <module>ssm</module>
         <module>test</module>
+        <module>thinking</module>
     </modules>
 </project>

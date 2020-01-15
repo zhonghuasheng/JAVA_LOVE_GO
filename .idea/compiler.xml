@@ -13,6 +13,7 @@
         <module name="iterations" />
         <module name="rabbitmq" />
         <module name="servlet" />
+        <module name="thinking" />
         <module name="jsp" />
         <module name="jdbc" />
         <module name="basic" />
@@ -32,6 +33,7 @@
       <module name="spring4" target="1.7" />
       <module name="ssm" target="1.5" />
       <module name="test" target="1.5" />
+      <module name="thinking" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
