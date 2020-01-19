@@ -21,5 +21,6 @@
         <module>ssm</module>
         <module>test</module>
         <module>thinking</module>
+        <module>spark</module>
     </modules>
 </project>
