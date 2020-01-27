@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/iterations_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/iterations_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jsp_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jsp_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlet_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlet_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ssm_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ssm_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/ArrayDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty/netty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty/netty.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servlet/servlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/servlet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/spark.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssm/ssm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ssm/ssm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/AcceptEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/AcceptEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/ReadEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/ReadEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/WriteEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/WriteEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinking/thinking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/thinking/thinking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java" beforeDir="false" afterPath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,12 +43,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1193" />
+          <entry key="java" value="1702" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1193" />
+          <entry key="JAVA" value="1702" />
         </counts>
       </usages-collector>
     </session>
@@ -151,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+            <state relative-caret-position="292">
+              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -267,8 +247,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="263" />
-    <option name="y" value="125" />
+    <option name="x" value="341" />
+    <option name="y" value="7" />
     <option name="width" value="1382" />
     <option name="height" value="788" />
   </component>
@@ -378,9 +358,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580114044885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580116949114" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/spark" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -509,10 +490,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5273000" />
+    <option name="totallyTimeSpent" value="8319000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="263" y="125" width="1382" height="788" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27458397" />
@@ -530,14 +511,14 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29886913" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43559098" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6203554" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5444265" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.31341302" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.31340873" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Console" order="11" />
       <window_info anchor="bottom" id="DB Execution Console" order="12" />
@@ -546,7 +527,7 @@
       <window_info anchor="bottom" id="Messages" order="15" weight="0.3263328" />
       <window_info anchor="right" id="JSF" />
       <window_info anchor="right" id="CDI" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" auto_hide="true" id="Bean Validation" type="SLIDING" weight="0.32980332" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -594,6 +575,12 @@
           <line>209</line>
           <properties />
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -881,8 +868,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+        <state relative-caret-position="292">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
         </state>
       </provider>
     </entry>
