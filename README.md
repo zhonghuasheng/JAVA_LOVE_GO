@@ -1,17 +1,4 @@
 # Learning in JAVA
 
-### JAVA Basic
-
-### JDBC
-
-### MyBatis
-
-### Hibernate
-
-### Servlet
-
-### JSP
-
-### Spring
-
-### SpringMVC
+### `thinking`
+* [数组 八种常见的排序算法](thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java)
