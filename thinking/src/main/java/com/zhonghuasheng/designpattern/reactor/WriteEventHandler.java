@@ -20,7 +20,7 @@ public class WriteEventHandler extends EventHandler {
             Event readEvent = new Event();
             readEvent.setSource(event.getSource());
             readEvent.setType(EventType.DONE);
-            selector.addEvent(readEvent);
+            selector.addFinishedEvent(readEvent);
             System.out.println("WriteEventHandler处理完毕，结束");
         }
     }
