@@ -1,18 +1,24 @@
 package com.zhonghuasheng.datastructure.java.array;
 
+import java.util.Arrays;
+
 /**
  * 常见的八种排序算法
  */
 public class Sort8 {
 
-    public static int[] array = new int[] {3, 5, 1, 4, 9, 0, 2, 6, 8, 7};
+    public static int[] basicArray = new int[] {3, 5, 1, 4, 9, 0, 2, 6, 8, 7};
 
     public static void main(String[] args) {
         bubbleSort(); // 交换排序：冒泡排序
+        System.out.println("交换排序：快速排序");
+        int[] array = Arrays.copyOf(basicArray, basicArray.length);
+        quickSort(array, 0, array.length - 1); // 交换排序： 快速排序
+        printArray(array);
         selectSort();
     }
 
-    public static void printArray() {
+    public static void printArray(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             System.out.print(array[i] + ",");
         }
@@ -20,7 +26,7 @@ public class Sort8 {
     }
 
     /**
-     * 交换排序： 冒泡排序 快速排序
+     * 交换排序： 冒泡排序
      * 冒泡排序算法思想：相邻的两个数字进行比较，值大的往下沉。两层循环，第一层控制比较的次数，第二层控制排序。
      *     * 优化措施：
      *         * 第一层：如果在本次循环过程中没有发生数据交换，说明都排好了。
@@ -28,6 +34,7 @@ public class Sort8 {
      */
     public static void bubbleSort() {
         System.out.println("交换排序：冒泡排序");
+        int[] array = Arrays.copyOf(basicArray, basicArray.length);
         // flag：在一次循环中是否发生了数据交换。true表示发生了。优化外层循环，减少循环次数。
         boolean flag = true;
         for (int i = 0; i < array.length - 1; i++) {
@@ -49,16 +56,67 @@ public class Sort8 {
                     flag = true;
                 }
             }
-            printArray();
+            printArray(array);
             System.out.println("lastSwitchPlace: " + lastSwitchPlace);
             k = lastSwitchPlace;
         }
 
-        printArray();
+        printArray(array);
+    }
+
+    /**
+     * 交换排序： 快速排序
+     *     * 快速排序算法思想：快速排序之所有列入交换排序，是因为在排序的过程中它也涉及了调换数字顺序，不同于冒泡排序的只能和相邻的数字交换顺序，快速排序可以
+     *     跳动着交换数字。快速排序是冒泡排序的演进版，最坏的可能是每次调换都是挨着的调换。其思想是选取一个基准值（一般选择第一个数字），然后定义一个左边的初始位置
+     *     low，和右边的初始位置high，左边i向右逐次增加，直到找到第一个大于基准数的值（这个值是需要放到右边），右边j向左逐次减小，直到找到第一个小于基准数的值
+     *     （这个值是需要放到左边），找到后，调换顺序，然后i,j继续推进，直到i和j相遇或者不能满足j<j的条件。这时候j右侧的值都是大于基准值的，j左侧的值（第一个基准值
+     *     除外）都是小于基准值的，数组被划分为2，这就是分而治之。然后分别对左边和右边进行相同的操作，也就是递归调用。
+     * @param array
+     * @param low 最小位置索引
+     * @param high 最大位置索引
+     */
+    public static void quickSort(int[] array, int low, int high) {
+        // 这个判断很重要，如果不在这里加这个判断，那么需要在递归调用处判断传入的low和high的值
+        if (low > high) {
+            return;
+        }
+        int i = low; // 最左边的位置
+        int j = high; // 最右边的位置
+        int temp = array[low];
+
+        while (i < j) {
+            // 先从右边找到比基准值temp小的数
+            while (temp <= array[j] && i < j) {
+                j--;
+            }
+
+            // 再从左边找到比基准值temp大的数
+            while (temp >= array[i] && i < j) {
+                i++;
+            }
+
+            // 左右跳跃调整
+            int t;
+            if (i < j) {
+                t = array[i];
+                array[i] = array[j];
+                array[j] = t;
+            }
+        }
+
+        // 最后的地方是i和j重合的地方，或者挨着的地方（i=j-1），此时将最开始的基准值调到i的位置
+        array[low] = array[i];
+        array[i] = temp;
+
+        // 递归调用调整左半个数组。递归调用时需要
+        quickSort(array, low, j - 1); // 也就是i的位置
+        // 递归调用调整右半个数组
+        quickSort(array, j + 1, high);
     }
 
     public static void selectSort() {
         System.out.println("选择排序");
+        int[] array = Arrays.copyOf(basicArray, basicArray.length);
         int temp = 0;
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = i + 1; j < array.length; j++) {
@@ -70,7 +128,7 @@ public class Sort8 {
             }
         }
 
-        printArray();
+        printArray(array);
     }
 
 
