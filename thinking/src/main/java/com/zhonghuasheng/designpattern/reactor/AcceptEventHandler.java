@@ -20,7 +20,7 @@ public class AcceptEventHandler extends EventHandler {
             Event readEvent = new Event();
             readEvent.setSource(event.getSource());
             readEvent.setType(EventType.READ);
-            selector.addEvent(readEvent);
+            selector.addNewEvent(readEvent);
             System.out.println("AcceptEventHandler处理完毕，进入下一阶段 -》 READ");
         }
     }

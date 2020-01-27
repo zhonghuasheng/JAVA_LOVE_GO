@@ -6,36 +6,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="test" />
-        <module name="netty" />
-        <module name="java8" />
-        <module name="spark" />
-        <module name="servlet" />
-        <module name="jsp" />
-        <module name="rabbitmq" />
-        <module name="jdbc" />
-        <module name="thinking" />
-        <module name="iterations" />
-        <module name="spring4" />
         <module name="basic" />
+        <module name="iterations" />
+        <module name="java8" />
+        <module name="jdbc" />
+        <module name="jsp" />
+        <module name="netty" />
+        <module name="rabbitmq" />
+        <module name="servlet" />
+        <module name="spark" />
+        <module name="spring4" />
         <module name="ssm" />
+        <module name="test" />
+        <module name="thinking" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="basic" target="1.5" />
-      <module name="iterations" target="1.5" />
-      <module name="JAVA" target="1.5" />
-      <module name="java8" target="1.5" />
-      <module name="jdbc" target="1.5" />
-      <module name="jsp" target="1.5" />
-      <module name="netty" target="1.5" />
-      <module name="rabbitmq" target="1.7" />
-      <module name="servlet" target="1.5" />
-      <module name="spark" target="1.5" />
+      <module name="basic" target="8" />
+      <module name="iterations" target="8" />
+      <module name="JAVA" target="8" />
+      <module name="java8" target="8" />
+      <module name="jdbc" target="7" />
+      <module name="jsp" target="7" />
+      <module name="netty" target="8" />
+      <module name="rabbitmq" target="8" />
+      <module name="servlet" target="8" />
+      <module name="spark" target="8" />
       <module name="spring4" target="1.7" />
-      <module name="ssm" target="1.5" />
-      <module name="test" target="1.5" />
-      <module name="thinking" target="1.5" />
+      <module name="ssm" target="8" />
+      <module name="test" target="8" />
+      <module name="thinking" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
