@@ -17,6 +17,7 @@ public class Sort8 {
         printArray(array);
         insertSort();
         selectSort();
+        shellSort();
     }
 
     public static void printArray(int[] array) {
@@ -137,6 +138,33 @@ public class Sort8 {
                         break;
                     }
                 }
+            }
+        }
+        printArray(array);
+    }
+
+    /**
+     *
+     */
+    public static void shellSort() {
+        System.out.println("希尔排序：");
+        int[] array = Arrays.copyOf(basicArray, basicArray.length);
+        // 外层控制分组的步长，需要考虑数组的长度是基数还是偶数
+        for (int gap = array.length / 2; gap > 0; gap -= 2) {
+            // 里层是直接插入排序的算法
+            for (int i = 0; i < gap; i++) {
+                for (int j = i + gap; j < array.length; j+= gap) {
+                    if (array[j - gap] > array[j]) {
+                        int temp = array[j];
+                        int k = j - gap;
+                        while (k >= 0 && array[k] > temp) {
+                            array[k + gap] = array[k];
+                            k -= gap;
+                        }
+                        array[k + gap] = temp;
+                    }
+                }
+
             }
         }
         printArray(array);
