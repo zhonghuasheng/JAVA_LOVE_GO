@@ -15,7 +15,9 @@ public class Sort8 {
         int[] array = Arrays.copyOf(basicArray, basicArray.length);
         quickSort(array, 0, array.length - 1); // 交换排序： 快速排序
         printArray(array);
+        insertSort();
         selectSort();
+        shellSort();
     }
 
     public static void printArray(int[] array) {
@@ -114,8 +116,62 @@ public class Sort8 {
         quickSort(array, j + 1, high);
     }
 
+    /**
+     * 直接插入排序：将一个记录插入到已经排好序的序列中，从而得到一个新的有序序列。将序列的第一个数据看成是一个有序的子序列，然后从第二个记录逐个向该有序的
+     * 子序列进行有序的插入，直至真个序列有序。
+     */
+    public static void insertSort() {
+        System.out.println("直接插入排序：");
+        int[] array = Arrays.copyOf(basicArray, basicArray.length);
+        for (int i = 1; i < array.length; i++) {
+            int temp;
+            // 后面的数比前面的小，需要向前插入
+            if (array[i - 1] > array[i]) {
+                temp = array[i];
+                // 从后向前遍历已经排好的序列，将temp插入到合适的位置，需要移动的元素是在temp和i之间的元素
+                for (int j = i; j >= 0; j--) {
+                    if (j > 0 && array[j - 1] > temp ) {
+                        array[j] = array[j - 1];
+                    } else {
+                        // 第一次出现array[j - 1] <= temp时，插入替换，然后跳出里层循环
+                        array[j] = temp;
+                        break;
+                    }
+                }
+            }
+        }
+        printArray(array);
+    }
+
+    /**
+     *
+     */
+    public static void shellSort() {
+        System.out.println("希尔排序：");
+        int[] array = Arrays.copyOf(basicArray, basicArray.length);
+        // 外层控制分组的步长，需要考虑数组的长度是基数还是偶数
+        for (int gap = array.length / 2; gap > 0; gap -= 2) {
+            // 里层是直接插入排序的算法
+            for (int i = 0; i < gap; i++) {
+                for (int j = i + gap; j < array.length; j+= gap) {
+                    if (array[j - gap] > array[j]) {
+                        int temp = array[j];
+                        int k = j - gap;
+                        while (k >= 0 && array[k] > temp) {
+                            array[k + gap] = array[k];
+                            k -= gap;
+                        }
+                        array[k + gap] = temp;
+                    }
+                }
+
+            }
+        }
+        printArray(array);
+    }
+
     public static void selectSort() {
-        System.out.println("选择排序");
+        System.out.println("选择排序：");
         int[] array = Arrays.copyOf(basicArray, basicArray.length);
         int temp = 0;
         for (int i = 0; i < array.length - 1; i++) {
