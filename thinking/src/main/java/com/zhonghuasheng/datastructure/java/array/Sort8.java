@@ -166,7 +166,6 @@ public class Sort8 {
                         array[k + gap] = temp;
                     }
                 }
-
             }
         }
         printArray(array);

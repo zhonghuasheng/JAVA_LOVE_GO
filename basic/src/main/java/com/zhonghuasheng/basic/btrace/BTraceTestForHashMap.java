@@ -1,3 +1,4 @@
+/*
 package com.zhonghuasheng.basic.btrace;
 
 import com.sun.btrace.BTraceUtils;
@@ -21,3 +22,4 @@ public class BTraceTestForHashMap {
         BTraceUtils.println(" ::bucketIndex:: " + bucketIndex);
     }
 }
+*/

@@ -11,6 +11,13 @@ public class StackTest {
         values.add("3");
         values.add("4");
         values.add("5");
+        values.add("1");
+        values.add("2");
+        values.add("3");
+        values.add("4");
+        values.add("5");
+        // 扩容
+        values.add("1");
         System.out.println(values.peek());
         System.out.println(values.pop());
         System.out.println(values.push("a"));
