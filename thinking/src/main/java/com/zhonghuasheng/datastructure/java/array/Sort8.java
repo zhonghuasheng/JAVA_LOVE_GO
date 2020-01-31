@@ -21,10 +21,11 @@ public class Sort8 {
     }
 
     public static void printArray(int[] array) {
-        for (int i = 0; i < array.length - 1; i++) {
+        /*for (int i = 0; i < array.length - 1; i++) {
             System.out.print(array[i] + ",");
         }
-        System.out.println(array[array.length - 1]);
+        System.out.println(array[array.length - 1]);*/
+        System.out.println(Arrays.toString(array));
     }
 
     /**
@@ -118,7 +119,7 @@ public class Sort8 {
 
     /**
      * 直接插入排序：将一个记录插入到已经排好序的序列中，从而得到一个新的有序序列。将序列的第一个数据看成是一个有序的子序列，然后从第二个记录逐个向该有序的
-     * 子序列进行有序的插入，直至真个序列有序。
+     * 子序列进行有序的插入，直至真个序列有序。适合基本有序并且数据量小的排序。
      */
     public static void insertSort() {
         System.out.println("直接插入排序：");
@@ -144,7 +145,9 @@ public class Sort8 {
     }
 
     /**
-     *
+     * 希尔排序是对直接插入排序的一种改进，实际上是分组插入排序，适合数据量较大的排序。算法的基本思想是对于n个待排序的数列，取一个小于n的整数gap作为
+     * 步长，将待排序的元素分成若干个子序列，所有距离为gap的倍数的记录放到同一个组中。然后对各组内的元素进行直接插入排序。然后减少gap的值，并重复执行
+     * 上述的分组和排序，重复这样的操作，当gap=1时，整个数列就是有序的。
      */
     public static void shellSort() {
         System.out.println("希尔排序：");
@@ -164,23 +167,32 @@ public class Sort8 {
                         array[k + gap] = temp;
                     }
                 }
-
             }
         }
         printArray(array);
     }
 
+    /**
+     * 选择排序算法思想：选择排序法是在要排序的一组数中,选出最小(或最大)的一个数与第一个位置的数交换;
+     * 在剩下的数当中找最小的与第二个位置的数交换,即顺序放在已排好序的数列的最后,如此循环,直到全部数据元素排完为止。
+     */
     public static void selectSort() {
         System.out.println("选择排序：");
         int[] array = Arrays.copyOf(basicArray, basicArray.length);
-        int temp = 0;
+        int temp;
         for (int i = 0; i < array.length - 1; i++) {
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[i] > array[j]) {
-                    temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
+            int minIndex = i;
+            for (int j = i; j < array.length; j++) {
+                if (array[j] < array[minIndex]) {
+                    minIndex = j;
                 }
+            }
+
+            // 通过移动指针，确定最小的元素之后再调整顺序
+            if (i != minIndex) {
+                temp = array[i];
+                array[i] = array[minIndex];
+                array[minIndex] = temp;
             }
         }
 

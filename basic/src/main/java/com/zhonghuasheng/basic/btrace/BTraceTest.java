@@ -1,3 +1,4 @@
+/*
 package com.zhonghuasheng.basic.btrace;
 
 import com.sun.btrace.BTraceUtils;
@@ -16,3 +17,4 @@ public class BTraceTest {
         BTraceUtils.println("sum: " + (x + y));
     }
 }
+*/
