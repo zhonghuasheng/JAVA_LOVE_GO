@@ -1,4 +1,4 @@
-package com.zhonghuasheng.algorithm.lru;
+package com.zhonghuasheng.algorithm;
 
 public class Fabnaci {
 
