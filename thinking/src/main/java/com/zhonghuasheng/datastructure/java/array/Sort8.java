@@ -21,10 +21,11 @@ public class Sort8 {
     }
 
     public static void printArray(int[] array) {
-        for (int i = 0; i < array.length - 1; i++) {
+        /*for (int i = 0; i < array.length - 1; i++) {
             System.out.print(array[i] + ",");
         }
-        System.out.println(array[array.length - 1]);
+        System.out.println(array[array.length - 1]);*/
+        System.out.println(Arrays.toString(array));
     }
 
     /**
@@ -171,17 +172,27 @@ public class Sort8 {
         printArray(array);
     }
 
+    /**
+     * 选择排序算法思想：选择排序法是在要排序的一组数中,选出最小(或最大)的一个数与第一个位置的数交换;
+     * 在剩下的数当中找最小的与第二个位置的数交换,即顺序放在已排好序的数列的最后,如此循环,直到全部数据元素排完为止。
+     */
     public static void selectSort() {
         System.out.println("选择排序：");
         int[] array = Arrays.copyOf(basicArray, basicArray.length);
-        int temp = 0;
+        int temp;
         for (int i = 0; i < array.length - 1; i++) {
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[i] > array[j]) {
-                    temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
+            int minIndex = i;
+            for (int j = i; j < array.length; j++) {
+                if (array[j] < array[minIndex]) {
+                    minIndex = j;
                 }
+            }
+
+            // 通过移动指针，确定最小的元素之后再调整顺序
+            if (i != minIndex) {
+                temp = array[i];
+                array[i] = array[minIndex];
+                array[minIndex] = temp;
             }
         }
 
