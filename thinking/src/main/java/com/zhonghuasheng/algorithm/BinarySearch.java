@@ -86,11 +86,7 @@ public class BinarySearch {
         while (low <= high) {
             int mid = (low + high) / 2;
             if (array[mid] == target) {
-                if (mid == (high - 1) || mid == 0) {
-                    return mid;
-                }
-
-                if (mid < high && array[mid + 1] != target) {
+                if (mid == (high - 1) || array[mid + 1] != target) {
                     return mid;
                 } else {
                     low = mid;
