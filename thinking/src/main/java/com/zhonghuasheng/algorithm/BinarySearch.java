@@ -11,10 +11,22 @@ public class BinarySearch {
         System.out.println(binarySearch(array, 0, 0, array.length));
         System.out.println("迭代实现二分查找重复的有序数组中的第一个目标元素下标");
         int[] array2 = {0, 1, 2, 2, 3, 4, 5, 5, 6, 6, 7, 7, 8, 9, 10, 20};
+        System.out.println(binarySearch2(array2, 0, 0, array2.length)); // 0
         System.out.println(binarySearch2(array2, 2, 0, array2.length)); // 2
         System.out.println(binarySearch2(array2, 3, 0, array2.length)); // 4
         System.out.println(binarySearch2(array2, 5, 0, array2.length)); // 6
         System.out.println(binarySearch2(array2, 7, 0, array2.length)); // 10
+        System.out.println(binarySearch2(array2, 10, 0, array2.length)); // 14
+        System.out.println(binarySearch2(array2, 20, 0, array2.length)); // 15
+        System.out.println("迭代实现二分查找重复的有序数组中的最后一个目标元素下标");
+        int[] array3 = {0, 1, 2, 2, 3, 4, 5, 5, 6, 6, 7, 7, 8, 9, 10, 20};
+        System.out.println(binarySearch3(array2, 0, 0, array2.length)); // 0
+        System.out.println(binarySearch3(array2, 2, 0, array2.length)); // 3
+        System.out.println(binarySearch3(array2, 3, 0, array2.length)); // 4
+        System.out.println(binarySearch3(array2, 5, 0, array2.length)); // 7
+        System.out.println(binarySearch3(array2, 7, 0, array2.length)); // 11
+        System.out.println(binarySearch3(array2, 10, 0, array2.length)); // 14
+        System.out.println(binarySearch3(array2, 20, 0, array2.length)); // 15
     }
 
     /**
@@ -52,6 +64,9 @@ public class BinarySearch {
         while (low < high) {
             int mid = (low + high) / 2;
             if (array[mid] == target) {
+                if (mid == 0) {
+                    return mid;
+                }
                 if (mid != 0 && array[mid - 1] != target) {
                     return mid;
                 }
@@ -60,6 +75,31 @@ public class BinarySearch {
                     low = mid;
                 } else {
                     high = mid;
+                }
+            }
+        }
+
+        return -1;
+    }
+
+    public static int binarySearch3(int[] array, int target, int low, int high) {
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (array[mid] == target) {
+                if (mid == (high - 1) || mid == 0) {
+                    return mid;
+                }
+
+                if (mid < high && array[mid + 1] != target) {
+                    return mid;
+                } else {
+                    low = mid;
+                }
+            } else {
+                if (array[mid] > target) {
+                    high = mid;
+                } else {
+                    low = mid;
                 }
             }
         }
