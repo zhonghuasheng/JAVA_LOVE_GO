@@ -1,5 +1,11 @@
 package com.zhonghuasheng.algorithm;
 
+/**
+ * 二分查找的使用条件和场景：
+ *   1. 待查找的数据序列必须有序
+ *   2. 待查找的数据序列需要使用数组进行存储
+ *   3. 数据量太大或者太小都不适合使用二分查找
+ */
 public class BinarySearch {
 
     public static void main(String[] args) {
