@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,27 +35,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="java" value="32" />
+          <entry key="java" value="33" />
           <entry key="md" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="32" />
+          <entry key="JAVA" value="33" />
           <entry key="Markdown" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9548" />
+          <entry key="dummy" value="7" />
+          <entry key="java" value="9944" />
           <entry key="md" value="384" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9548" />
+          <entry key="JAVA" value="9944" />
           <entry key="Markdown" value="384" />
+          <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -69,15 +72,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L01Sum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L02AddTwoNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibility.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="63">
               <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
               <folding>
                 <element signature="e#196#341#0" expanded="true" />
@@ -112,6 +106,23 @@
                 <element signature="e#895#896#0" expanded="true" />
                 <element signature="e#1093#1196#0" expanded="true" />
                 <element signature="e#1195#1196#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <folding>
+                <element signature="e#393#629#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#895#896#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -246,6 +257,8 @@
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L01Sum.java" />
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L02AddTwoNumbers.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibility.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java" />
       </list>
     </option>
   </component>
@@ -375,6 +388,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhonghuasheng" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -387,7 +413,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580623256563" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580632343212" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicstore-jsp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -415,7 +441,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.VolatileVisibility">
+  <component name="RunManager" selected="Application.VolatileAtomicExample">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.algorithm.BinarySearch" />
       <module name="thinking" />
@@ -455,14 +481,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sort8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.datastructure.java.array.Sort8" />
-      <module name="thinking" />
+    <configuration name="VolatileAtomicExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.util.concurrent.VolatileAtomicExample" />
+      <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.datastructure.java.array.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.util.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -470,8 +494,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolatileVisibility" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.util.concurrent.VolatileVisibility" />
+    <configuration name="VolatileVisibilityExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.util.concurrent.VolatileVisibilityExample" />
       <module name="basic" />
       <extension name="coverage">
         <pattern>
@@ -484,19 +508,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Sort8" />
       <item itemvalue="Application.BinarySearch" />
       <item itemvalue="Application.L01Sum" />
       <item itemvalue="Application.L02AddTwoNumbers" />
-      <item itemvalue="Application.VolatileVisibility" />
+      <item itemvalue="Application.VolatileVisibilityExample" />
+      <item itemvalue="Application.VolatileAtomicExample" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.VolatileVisibility" />
+        <item itemvalue="Application.VolatileAtomicExample" />
+        <item itemvalue="Application.VolatileVisibilityExample" />
         <item itemvalue="Application.L02AddTwoNumbers" />
         <item itemvalue="Application.L01Sum" />
         <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.Sort8" />
       </list>
     </recent_temporary>
   </component>
@@ -512,12 +536,12 @@
       <updated>1557105575717</updated>
       <workItem from="1578576277347" duration="158000" />
       <workItem from="1580215279857" duration="5315000" />
-      <workItem from="1580618424387" duration="1388000" />
+      <workItem from="1580618424387" duration="4063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52927000" />
+    <option name="totallyTimeSpent" value="55602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -536,7 +560,7 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.14701131" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33764136" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5121163" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -635,7 +659,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/SparkTestService.java" />
     <entry file="file://$PROJECT_DIR$/spark/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -963,9 +986,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibility.java">
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="63">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding>
             <element signature="e#196#341#0" expanded="true" />
@@ -976,6 +999,21 @@
             <element signature="e#895#896#0" expanded="true" />
             <element signature="e#1093#1196#0" expanded="true" />
             <element signature="e#1195#1196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="e#393#629#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,6 @@
 package com.zhonghuasheng.basic.java.util.concurrent;
 
-public class VolatileVisibility {
+public class VolatileVisibilityExample {
 
     // 共享变量flag，每个线程会各自拷贝一份到自己的工作内存中
     private static boolean flag = false;
