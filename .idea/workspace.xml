@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileOrderlinessExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibility.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/basic.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,29 +35,31 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="java" value="33" />
+          <entry key="java" value="35" />
           <entry key="md" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="33" />
+          <entry key="JAVA" value="35" />
           <entry key="Markdown" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="java" value="9944" />
+          <entry key="ft" value="60" />
+          <entry key="java" value="10981" />
           <entry key="md" value="384" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9944" />
+          <entry key="JAVA" value="10981" />
           <entry key="Markdown" value="384" />
           <entry key="PLAIN_TEXT" value="7" />
+          <entry key="VTL" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -76,26 +78,20 @@
         <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L02AddTwoNumbers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/util/concurrent/ConcurrentHashMap.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#225066#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
+            <state relative-caret-position="126">
               <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
               <folding>
                 <element signature="e#196#341#0" expanded="true" />
@@ -111,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+            <state relative-caret-position="42">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
                 <element signature="e#393#629#0" expanded="true" />
                 <element signature="e#628#629#0" expanded="true" />
@@ -128,33 +124,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Thread.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileOrderlinessExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="695" column="29" selection-start-line="695" selection-start-column="29" selection-end-line="695" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Vector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4767">
-              <caret line="258" selection-start-line="258" selection-end-line="258" />
+            <state relative-caret-position="473">
+              <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
               <folding>
-                <element signature="e#5447#5448#0" expanded="true" />
-                <element signature="e#5487#5488#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#414#431#0" expanded="true" />
+                <element signature="e#517#534#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Arrays.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+            <state relative-caret-position="-55">
+              <caret line="695" column="29" selection-start-line="695" selection-start-column="29" selection-end-line="695" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -202,6 +190,8 @@
     <findStrings>
       <find>HADOOP_HOME_DIR</find>
       <find>capacityIncrement</find>
+      <find>[a= 1, b= 1]</find>
+      <find>a= 1, b= 1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -259,6 +249,7 @@
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibility.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileOrderlinessExample.java" />
       </list>
     </option>
   </component>
@@ -297,8 +288,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+    <option name="x" value="393" />
+    <option name="width" value="978" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectId" id="1QMKO2jD0hFn5rsBCn9QYsFURE1" />
@@ -413,7 +404,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580632343212" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580640660093" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicstore-jsp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -441,20 +432,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.VolatileAtomicExample">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.algorithm.BinarySearch" />
-      <module name="thinking" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.VolatileOrderlinessExample">
     <configuration name="L01Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.leetcode.L01Sum" />
       <module name="thinking" />
@@ -494,6 +472,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VolatileOrderlinessExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.util.concurrent.VolatileOrderlinessExample" />
+      <module name="basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.util.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VolatileVisibilityExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.util.concurrent.VolatileVisibilityExample" />
       <module name="basic" />
@@ -508,19 +499,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BinarySearch" />
       <item itemvalue="Application.L01Sum" />
       <item itemvalue="Application.L02AddTwoNumbers" />
       <item itemvalue="Application.VolatileVisibilityExample" />
       <item itemvalue="Application.VolatileAtomicExample" />
+      <item itemvalue="Application.VolatileOrderlinessExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VolatileOrderlinessExample" />
         <item itemvalue="Application.VolatileAtomicExample" />
         <item itemvalue="Application.VolatileVisibilityExample" />
         <item itemvalue="Application.L02AddTwoNumbers" />
         <item itemvalue="Application.L01Sum" />
-        <item itemvalue="Application.BinarySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -536,18 +527,18 @@
       <updated>1557105575717</updated>
       <workItem from="1578576277347" duration="158000" />
       <workItem from="1580215279857" duration="5315000" />
-      <workItem from="1580618424387" duration="4063000" />
+      <workItem from="1580618424387" duration="9660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55602000" />
+    <option name="totallyTimeSpent" value="61199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31543118" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.30141288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -560,7 +551,7 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33764136" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.51857835" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5121163" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -573,7 +564,7 @@
       <window_info anchor="bottom" id="DB Execution Console" order="12" />
       <window_info anchor="bottom" id="REST Client" order="13" />
       <window_info anchor="bottom" id="RESTMan" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32471728" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.66397417" />
       <window_info anchor="bottom" id="Spring" order="16" />
       <window_info anchor="bottom" id="Java Enterprise" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -659,20 +650,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spark/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spark/src/test/java/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -717,6 +694,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -790,7 +777,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/btrace/BTraceTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/btrace/BTraceTestForHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -966,7 +959,7 @@
     <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L02AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -988,7 +981,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
+        <state relative-caret-position="126">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding>
             <element signature="e#196#341#0" expanded="true" />
@@ -1005,8 +998,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#393#629#0" expanded="true" />
             <element signature="e#628#629#0" expanded="true" />
@@ -1014,6 +1007,21 @@
             <element signature="e#503#504#0" expanded="true" />
             <element signature="e#895#896#0" expanded="true" />
             <element signature="e#916#917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileOrderlinessExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#414#431#0" expanded="true" />
+            <element signature="e#517#534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1072,7 +1080,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>thinking</last-edited>
+          <last-edited>basic</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
