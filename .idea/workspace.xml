@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/ReferenceCountingGC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/FinalizeEscapeGC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc/target/" />
@@ -34,14 +34,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="java" value="36" />
+          <entry key="java" value="37" />
           <entry key="md" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="36" />
+          <entry key="JAVA" value="37" />
           <entry key="Markdown" value="4" />
         </counts>
       </usages-collector>
@@ -49,13 +49,13 @@
         <counts>
           <entry key="dummy" value="7" />
           <entry key="ft" value="60" />
-          <entry key="java" value="11240" />
+          <entry key="java" value="11655" />
           <entry key="md" value="384" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11240" />
+          <entry key="JAVA" value="11655" />
           <entry key="Markdown" value="384" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="VTL" value="60" />
@@ -82,11 +82,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/ReferenceCountingGC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/FinalizeEscapeGC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+              <folding>
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java8/java8/.gitignore" />
         <option value="$PROJECT_DIR$/basic/README.md" />
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/InputSource.java" />
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/Event.java" />
@@ -166,6 +178,7 @@
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileOrderlinessExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/ReferenceCountingGC.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/FinalizeEscapeGC.java" />
       </list>
     </option>
   </component>
@@ -283,6 +296,18 @@
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhonghuasheng" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gc" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -295,7 +320,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580881235729" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580885646146" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicstore-jsp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -323,13 +348,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReferenceCountingGC">
-    <configuration name="L02AddTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.leetcode.L02AddTwoNumbers" />
-      <module name="thinking" />
+  <component name="RunManager" selected="Application.FinalizeEscapeGC">
+    <configuration name="FinalizeEscapeGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.gc.FinalizeEscapeGC" />
+      <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.leetcode.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.gc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -390,19 +415,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.L02AddTwoNumbers" />
       <item itemvalue="Application.VolatileVisibilityExample" />
       <item itemvalue="Application.VolatileAtomicExample" />
       <item itemvalue="Application.VolatileOrderlinessExample" />
       <item itemvalue="Application.ReferenceCountingGC" />
+      <item itemvalue="Application.FinalizeEscapeGC" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FinalizeEscapeGC" />
         <item itemvalue="Application.ReferenceCountingGC" />
         <item itemvalue="Application.VolatileOrderlinessExample" />
         <item itemvalue="Application.VolatileAtomicExample" />
         <item itemvalue="Application.VolatileVisibilityExample" />
-        <item itemvalue="Application.L02AddTwoNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -423,13 +448,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62277000" />
+    <option name="totallyTimeSpent" value="64705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.301059" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22390318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -442,7 +467,7 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3279483" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23424879" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5121163" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -541,7 +566,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.jar!/org/apache/spark/api/java/JavaSparkContext.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.jar!/org/apache/spark/SparkConf.class" />
     <entry file="file://$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/Student.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -888,6 +912,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/FinalizeEscapeGC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
