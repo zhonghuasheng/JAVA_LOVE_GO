@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L01Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L02AddTwoNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/FinalizeEscapeGC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/BinarySearch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,34 +33,40 @@
     <session id="1123625036">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
-          <entry key="java" value="30" />
+          <entry key="class" value="4" />
+          <entry key="java" value="37" />
           <entry key="md" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="30" />
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="37" />
           <entry key="Markdown" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8651" />
+          <entry key="dummy" value="7" />
+          <entry key="ft" value="60" />
+          <entry key="java" value="11655" />
           <entry key="md" value="384" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8651" />
+          <entry key="JAVA" value="11655" />
           <entry key="Markdown" value="384" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="VTL" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -70,104 +74,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="180" column="25" selection-start-line="180" selection-start-column="25" selection-end-line="180" selection-end-column="25" />
+            <state relative-caret-position="84">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/BinarySearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-              <folding>
-                <element signature="method#binarySearch#0;class#BinarySearch#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/util/Hashtable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="159" column="49" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#31955#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L01Sum.java">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/ReferenceCountingGC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L02AddTwoNumbers.java">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/FinalizeEscapeGC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Vector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="258" selection-start-line="258" selection-end-line="258" />
+              <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
               <folding>
-                <element signature="e#5447#5448#0" expanded="true" />
-                <element signature="e#5487#5488#0" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Arrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/AbstractCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="462" column="31" lean-forward="true" selection-start-line="462" selection-start-column="31" selection-end-line="462" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/Fabnaci.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="221">
-                <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -178,6 +110,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Class Main" />
       </list>
     </option>
   </component>
@@ -185,6 +118,8 @@
     <findStrings>
       <find>HADOOP_HOME_DIR</find>
       <find>capacityIncrement</find>
+      <find>[a= 1, b= 1]</find>
+      <find>a= 1, b= 1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java8/java8/.gitignore" />
         <option value="$PROJECT_DIR$/basic/README.md" />
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/InputSource.java" />
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/Event.java" />
@@ -239,6 +173,12 @@
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/letcode/L01Sum.java" />
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L01Sum.java" />
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L02AddTwoNumbers.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibility.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileOrderlinessExample.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/ReferenceCountingGC.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/FinalizeEscapeGC.java" />
       </list>
     </option>
   </component>
@@ -277,8 +217,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+    <option name="x" value="393" />
+    <option name="width" value="978" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectId" id="1QMKO2jD0hFn5rsBCn9QYsFURE1" />
@@ -291,9 +231,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,52 +243,76 @@
             <path>
               <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
               <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="thinking" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
               <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="thinking" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
               <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="thinking" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="thinking" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
               <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="thinking" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zhonghuasheng" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
               <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="thinking" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zhonghuasheng" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhonghuasheng" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhonghuasheng" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhonghuasheng" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,7 +320,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580557517478" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580885646146" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicstore-jsp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -385,13 +348,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L02AddTwoNumbers">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.algorithm.BinarySearch" />
-      <module name="thinking" />
+  <component name="RunManager" selected="Application.FinalizeEscapeGC">
+    <configuration name="FinalizeEscapeGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.gc.FinalizeEscapeGC" />
+      <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.algorithm.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.gc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -399,12 +362,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fabnaci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.algorithm.lru.Fabnaci" />
-      <module name="thinking" />
+    <configuration name="ReferenceCountingGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.gc.ReferenceCountingGC" />
+      <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.algorithm.lru.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.gc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -412,12 +375,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L01Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.leetcode.L01Sum" />
-      <module name="thinking" />
+    <configuration name="VolatileAtomicExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.util.concurrent.VolatileAtomicExample" />
+      <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.leetcode.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.util.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -425,12 +388,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L02AddTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.leetcode.L02AddTwoNumbers" />
-      <module name="thinking" />
+    <configuration name="VolatileOrderlinessExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.util.concurrent.VolatileOrderlinessExample" />
+      <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.leetcode.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.util.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -438,14 +401,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sort8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.datastructure.java.array.Sort8" />
-      <module name="thinking" />
+    <configuration name="VolatileVisibilityExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.util.concurrent.VolatileVisibilityExample" />
+      <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.datastructure.java.array.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.util.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -454,19 +415,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Sort8" />
-      <item itemvalue="Application.Fabnaci" />
-      <item itemvalue="Application.BinarySearch" />
-      <item itemvalue="Application.L01Sum" />
-      <item itemvalue="Application.L02AddTwoNumbers" />
+      <item itemvalue="Application.VolatileVisibilityExample" />
+      <item itemvalue="Application.VolatileAtomicExample" />
+      <item itemvalue="Application.VolatileOrderlinessExample" />
+      <item itemvalue="Application.ReferenceCountingGC" />
+      <item itemvalue="Application.FinalizeEscapeGC" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.L02AddTwoNumbers" />
-        <item itemvalue="Application.L01Sum" />
-        <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.Sort8" />
-        <item itemvalue="Application.Fabnaci" />
+        <item itemvalue="Application.FinalizeEscapeGC" />
+        <item itemvalue="Application.ReferenceCountingGC" />
+        <item itemvalue="Application.VolatileOrderlinessExample" />
+        <item itemvalue="Application.VolatileAtomicExample" />
+        <item itemvalue="Application.VolatileVisibilityExample" />
       </list>
     </recent_temporary>
   </component>
@@ -482,17 +443,18 @@
       <updated>1557105575717</updated>
       <workItem from="1578576277347" duration="158000" />
       <workItem from="1580215279857" duration="5315000" />
+      <workItem from="1580618424387" duration="9660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50540000" />
+    <option name="totallyTimeSpent" value="64705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.31543118" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22390318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -505,20 +467,20 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36672053" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23424879" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5121163" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4927302" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.36995155" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Console" order="11" />
       <window_info anchor="bottom" id="DB Execution Console" order="12" />
       <window_info anchor="bottom" id="REST Client" order="13" />
       <window_info anchor="bottom" id="RESTMan" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32471728" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.66397417" />
       <window_info anchor="bottom" id="Spring" order="16" />
       <window_info anchor="bottom" id="Java Enterprise" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -604,32 +566,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/DemoController.java" />
-    <entry file="file://$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/CustomReceiver.java" />
-    <entry file="file://$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/Application.java" />
-    <entry file="file://$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/SparkTestService.java" />
-    <entry file="file://$PROJECT_DIR$/spark/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark/src/test/java/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.jar!/org/apache/spark/api/java/JavaSparkContext.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.jar!/org/apache/spark/SparkConf.class" />
     <entry file="file://$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/Student.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -666,16 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,21 +671,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
-          <folding>
-            <element signature="e#4990#4991#0" expanded="true" />
-            <element signature="e#5047#5048#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/btrace/BTraceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/btrace/BTraceTestForHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -835,9 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#296#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,31 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/Fabnaci.java">
+    <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="258" selection-start-line="258" selection-end-line="258" />
-          <folding>
-            <element signature="e#5447#5448#0" expanded="true" />
-            <element signature="e#5487#5488#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="221">
-            <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="3780">
+          <caret line="180" column="25" selection-start-line="180" selection-start-column="25" selection-end-line="180" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -902,46 +794,135 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/util/Hashtable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="2835">
           <caret line="159" column="49" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#31955#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L01Sum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/datastructure/java/array/Sort8.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="180" column="25" selection-start-line="180" selection-start-column="25" selection-end-line="180" selection-end-column="25" />
+        <state relative-caret-position="4767">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+          <folding>
+            <element signature="e#5447#5448#0" expanded="true" />
+            <element signature="e#5487#5488#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="651">
           <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/AbstractCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="462" column="31" lean-forward="true" selection-start-line="462" selection-start-column="31" selection-end-line="462" selection-end-column="31" />
+        <state relative-caret-position="9135">
+          <caret line="462" column="31" selection-start-line="462" selection-start-column="31" selection-end-line="462" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/Fabnaci.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/leetcode/L02AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/util/concurrent/ConcurrentHashMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#225066#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="695" column="29" selection-start-line="695" selection-start-column="29" selection-end-line="695" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileVisibilityExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileAtomicExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#393#629#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/VolatileOrderlinessExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#414#431#0" expanded="true" />
+            <element signature="e#517#534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/ReferenceCountingGC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/gc/FinalizeEscapeGC.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -999,7 +980,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>thinking</last-edited>
+          <last-edited>basic</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
