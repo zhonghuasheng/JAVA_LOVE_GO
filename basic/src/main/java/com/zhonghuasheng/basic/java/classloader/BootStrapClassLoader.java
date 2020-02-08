@@ -2,6 +2,9 @@ package com.zhonghuasheng.basic.java.classloader;
 
 import java.net.URL;
 
+/**
+ * 找出加载的JDK包
+ */
 public class BootStrapClassLoader {
 
     public static void main(String[] args) {
