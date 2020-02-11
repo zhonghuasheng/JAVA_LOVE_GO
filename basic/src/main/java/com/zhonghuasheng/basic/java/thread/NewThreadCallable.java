@@ -21,7 +21,7 @@ public class NewThreadCallable {
         System.out.println(i);
     }
 }
-
+// 实现Callable接口
 class NewCallable implements Callable {
 
     @Override

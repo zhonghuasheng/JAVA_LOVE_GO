@@ -10,13 +10,19 @@ public class NewThreadRunnable {
         NewRunnable newRunnable = new NewRunnable();
         Thread thread = new Thread(newRunnable);
         thread.start();
+        // 输出
+        /**
+         * main running
+         * Thread-0 running
+         */
     }
 }
 
+// 实现runnable接口
 class NewRunnable implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Thread running");
+        System.out.println(Thread.currentThread().getName() + " running");
     }
 }
