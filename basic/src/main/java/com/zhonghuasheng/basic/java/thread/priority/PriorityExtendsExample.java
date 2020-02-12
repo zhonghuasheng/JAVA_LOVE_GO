@@ -1,6 +1,6 @@
 package com.zhonghuasheng.basic.java.thread.priority;
 
-public class PriorityExtendsTest {
+public class PriorityExtendsExample {
 
     public static void main(String[] args) {
         ClassA classA = new ClassA();
