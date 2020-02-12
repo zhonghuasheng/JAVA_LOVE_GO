@@ -21,6 +21,24 @@ public class NoSynchronizedMethodExample {
          * synchronizedMethod 1
          * synchronizedMethod 2
          */
+        NoSynchronizedMethod noSynchronizedMethod2 = new NoSynchronizedMethod();
+        new Thread(()-> {
+            noSynchronizedMethod2.synchronizedMethod();
+        }, "synchronizedMethod").start();
+        new Thread(()-> {
+            noSynchronizedMethod2.synchronizedMethod2();
+        }, "synchronizedMethod2").start();
+        /**
+         * synchronized关键字第三条：
+         * 当一个线程访问一个对象的synchronized方法或者synchronized代码块时，其他线程对该对象的其他synchronized方法或代码块
+         * 的访问将会被阻塞。
+         * synchronizedMethod0
+         * synchronizedMethod1
+         * synchronizedMethod2
+         * synchronizedMethod20
+         * synchronizedMethod21
+         * synchronizedMethod22
+         */
     }
 }
 
@@ -33,6 +51,14 @@ class NoSynchronizedMethod {
     }
 
     public void synchronizedMethod() {
+        synchronized (this) {
+            for (int i = 0; i < 3; i++) {
+                System.out.println(Thread.currentThread().getName() + i);
+            }
+        }
+    }
+
+    public void synchronizedMethod2() {
         synchronized (this) {
             for (int i = 0; i < 3; i++) {
                 System.out.println(Thread.currentThread().getName() + i);
