@@ -58,7 +58,7 @@ class SynchronizedObject implements Runnable {
 class SynchronizedObject2 implements Runnable {
     @Override
     public void run() {
-        // 锁的是这个类
+        // 锁的是这个类，而不是对象
         synchronized (SynchronizedObject2.class) {
             for (int i = 0; i < 5; i++) {
                 System.out.println(Thread.currentThread().getName() + i);

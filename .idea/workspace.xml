@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/DaemonThreadExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,14 +35,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="6" />
-          <entry key="java" value="59" />
+          <entry key="java" value="60" />
           <entry key="md" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="59" />
+          <entry key="JAVA" value="60" />
           <entry key="Markdown" value="4" />
         </counts>
       </usages-collector>
@@ -50,13 +50,13 @@
         <counts>
           <entry key="dummy" value="7" />
           <entry key="ft" value="60" />
-          <entry key="java" value="15828" />
+          <entry key="java" value="16170" />
           <entry key="md" value="384" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15828" />
+          <entry key="JAVA" value="16170" />
           <entry key="Markdown" value="384" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="VTL" value="60" />
@@ -115,20 +115,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="48" column="95" selection-start-line="48" selection-start-column="95" selection-end-line="48" selection-end-column="95" />
+            <state relative-caret-position="210">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="12" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/misc/VM.class">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3507">
-              <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+            <state relative-caret-position="185">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -200,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/SparkTestService.java" />
         <option value="$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/DemoController.java" />
         <option value="$PROJECT_DIR$/spark/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spark/src/test/java/test.txt" />
@@ -251,6 +250,7 @@
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/priority/PriorityRandomRunExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/DaemonThreadExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java" />
       </list>
     </option>
   </component>
@@ -392,6 +392,19 @@
               <item name="basic" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="thread" type="462c0819:PsiDirectoryNode" />
+              <item name="synchronize" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhonghuasheng" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
               <item name="NewThreadThread.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
@@ -494,7 +507,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581494490645" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581495491347" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicstore-jsp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -522,7 +535,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SynchronizedObjectExample">
+  <component name="RunManager" selected="Application.NoSynchronizedMethodExample">
     <configuration name="DaemonThreadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.DaemonThreadExample" />
       <module name="basic" />
@@ -536,12 +549,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewThreadThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.NewThreadThread" />
+    <configuration name="NoSynchronizedMethodExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.synchronize.NoSynchronizedMethodExample" />
       <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.basic.java.thread.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.thread.synchronize.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -589,19 +602,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NewThreadThread" />
       <item itemvalue="Application.PriorityExtendsTest" />
       <item itemvalue="Application.PriorityRandomRunExample" />
       <item itemvalue="Application.DaemonThreadExample" />
       <item itemvalue="Application.SynchronizedObjectExample" />
+      <item itemvalue="Application.NoSynchronizedMethodExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NoSynchronizedMethodExample" />
         <item itemvalue="Application.SynchronizedObjectExample" />
         <item itemvalue="Application.DaemonThreadExample" />
         <item itemvalue="Application.PriorityRandomRunExample" />
         <item itemvalue="Application.PriorityExtendsTest" />
-        <item itemvalue="Application.NewThreadThread" />
       </list>
     </recent_temporary>
   </component>
@@ -622,12 +635,12 @@
       <workItem from="1581150524539" duration="5329000" />
       <workItem from="1581258245278" duration="910000" />
       <workItem from="1581405629484" duration="9384000" />
-      <workItem from="1581478751594" duration="5512000" />
+      <workItem from="1581478751594" duration="6548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88259000" />
+    <option name="totallyTimeSpent" value="89295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -646,7 +659,7 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33764136" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4765751" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35541195" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -745,13 +758,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/LRUMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1093,8 +1099,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="48" column="95" selection-start-line="48" selection-start-column="95" selection-end-line="48" selection-end-column="95" />
+        <state relative-caret-position="210">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>
