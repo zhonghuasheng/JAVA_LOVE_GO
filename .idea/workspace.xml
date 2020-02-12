@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedLockExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,14 +35,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="6" />
-          <entry key="java" value="60" />
+          <entry key="java" value="61" />
           <entry key="md" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="60" />
+          <entry key="JAVA" value="61" />
           <entry key="Markdown" value="4" />
         </counts>
       </usages-collector>
@@ -48,13 +50,13 @@
         <counts>
           <entry key="dummy" value="7" />
           <entry key="ft" value="60" />
-          <entry key="java" value="16394" />
+          <entry key="java" value="17493" />
           <entry key="md" value="384" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16394" />
+          <entry key="JAVA" value="17493" />
           <entry key="Markdown" value="384" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="VTL" value="60" />
@@ -116,26 +118,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="12" selection-end-column="51" />
+            <state relative-caret-position="264">
+              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedLockExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="527">
+              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/NewThreadRunnable.java">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="27" column="1" selection-start-line="2" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="222">
+              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -198,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/DemoController.java" />
         <option value="$PROJECT_DIR$/spark/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spark/src/test/java/test.txt" />
         <option value="$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/Application.java" />
@@ -247,8 +248,9 @@
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/priority/PriorityExtendsExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/priority/PriorityRandomRunExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/DaemonThreadExample.java" />
-        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedLockExample.java" />
       </list>
     </option>
   </component>
@@ -505,7 +507,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581495977230" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581502076693" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicstore-jsp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -533,7 +535,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NoSynchronizedMethodExample">
+  <component name="RunManager" selected="Application.SynchronizedLockExample">
     <configuration name="DaemonThreadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.DaemonThreadExample" />
       <module name="basic" />
@@ -560,8 +562,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriorityExtendsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.priority.PriorityExtendsTest" />
+    <configuration name="PriorityRandomRunExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.priority.PriorityRandomRunExample" />
       <module name="basic" />
       <extension name="coverage">
         <pattern>
@@ -573,12 +575,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriorityRandomRunExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.priority.PriorityRandomRunExample" />
+    <configuration name="SynchronizedLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.synchronize.SynchronizedLockExample" />
       <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.basic.java.thread.priority.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.thread.synchronize.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -600,19 +602,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PriorityExtendsTest" />
       <item itemvalue="Application.PriorityRandomRunExample" />
       <item itemvalue="Application.DaemonThreadExample" />
       <item itemvalue="Application.SynchronizedObjectExample" />
       <item itemvalue="Application.NoSynchronizedMethodExample" />
+      <item itemvalue="Application.SynchronizedLockExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SynchronizedLockExample" />
         <item itemvalue="Application.NoSynchronizedMethodExample" />
         <item itemvalue="Application.SynchronizedObjectExample" />
         <item itemvalue="Application.DaemonThreadExample" />
         <item itemvalue="Application.PriorityRandomRunExample" />
-        <item itemvalue="Application.PriorityExtendsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -633,18 +635,18 @@
       <workItem from="1581150524539" duration="5329000" />
       <workItem from="1581258245278" duration="910000" />
       <workItem from="1581405629484" duration="9384000" />
-      <workItem from="1581478751594" duration="7142000" />
+      <workItem from="1581478751594" duration="11008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89889000" />
+    <option name="totallyTimeSpent" value="93755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.34341908" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34341908" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -657,7 +659,7 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4765751" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46203554" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35541195" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -756,16 +758,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="method#binarySearch#0;class#BinarySearch#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/util/Hashtable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2835">
@@ -1095,17 +1087,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java">
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="222">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/NoSynchronizedMethodExample.java">
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedObjectExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state relative-caret-position="264">
+          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/synchronize/SynchronizedLockExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
         </state>
       </provider>
     </entry>
