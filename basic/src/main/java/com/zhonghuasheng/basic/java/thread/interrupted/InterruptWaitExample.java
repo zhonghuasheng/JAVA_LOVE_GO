@@ -18,6 +18,12 @@ public class InterruptWaitExample {
             System.out.println("Exception2 WaitThread state " + thread.getState());
         }
         System.out.println("End interrupted waitThread state " + thread.getState());
+        /** 注意异常中try的范围，另外wait的调用需要先锁定对象，否则会报异常
+         * WaitThread RUNNABLE1
+         * WaitThread RUNNABLE2
+         * Begin to interrupt waitThread state TIMED_WAITING
+         * InterruptedException: WaitThread RUNNABLE
+         */
     }
 }
 
