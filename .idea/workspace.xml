@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/interrupted/InterruptWaitExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/interrupted/InterruptWaitExample.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc/target/" />
@@ -48,13 +49,13 @@
         <counts>
           <entry key="dummy" value="7" />
           <entry key="ft" value="60" />
-          <entry key="java" value="20973" />
+          <entry key="java" value="21057" />
           <entry key="md" value="423" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="20973" />
+          <entry key="JAVA" value="21057" />
           <entry key="Markdown" value="423" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="VTL" value="60" />
@@ -94,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/interrupted/InterruptWaitExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state relative-caret-position="525">
+              <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding>
                 <element signature="e#928#929#0" expanded="true" />
                 <element signature="e#955#956#0" expanded="true" />
@@ -513,7 +514,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581589052540" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581596161320" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicstore-jsp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -643,18 +644,18 @@
       <workItem from="1581405629484" duration="9384000" />
       <workItem from="1581478751594" duration="15975000" />
       <workItem from="1581563917974" duration="7820000" />
-      <workItem from="1581584510295" duration="4590000" />
+      <workItem from="1581584510295" duration="5687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111132000" />
+    <option name="totallyTimeSpent" value="112229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24054463" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24054463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -667,7 +668,7 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934928" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3602585" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3602585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35541195" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1113,8 +1114,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/interrupted/InterruptWaitExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        <state relative-caret-position="525">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
           <folding>
             <element signature="e#928#929#0" expanded="true" />
             <element signature="e#955#956#0" expanded="true" />
