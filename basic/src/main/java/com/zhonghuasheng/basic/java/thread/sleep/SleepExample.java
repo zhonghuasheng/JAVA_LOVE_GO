@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.thread;
+package com.zhonghuasheng.basic.java.thread.sleep;
 
 public class SleepExample {
     public static void main(String[] args) {
