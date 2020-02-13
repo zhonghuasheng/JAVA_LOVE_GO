@@ -14,6 +14,9 @@ public class YieldExample {
         new Thread(yeild::call, "yeild8 ").start();
         new Thread(yeild::call, "yeild9 ").start();
         new Thread(yeild::call, "yeild0 ").start();
+        /**
+         * yeild会让出当前线程的执行权，但是不会释放锁
+         */
     }
 }
 

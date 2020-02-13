@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/yield/YieldExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/SleepExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/basic/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/yield/YieldExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/yield/YieldExample.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jdbc/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,14 +35,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="6" />
-          <entry key="java" value="66" />
+          <entry key="java" value="67" />
           <entry key="md" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="66" />
+          <entry key="JAVA" value="67" />
           <entry key="Markdown" value="5" />
         </counts>
       </usages-collector>
@@ -50,13 +50,13 @@
         <counts>
           <entry key="dummy" value="7" />
           <entry key="ft" value="60" />
-          <entry key="java" value="18431" />
+          <entry key="java" value="18839" />
           <entry key="md" value="423" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18431" />
+          <entry key="JAVA" value="18839" />
           <entry key="Markdown" value="423" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="VTL" value="60" />
@@ -81,15 +81,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/priority/PriorityExtendsExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/waitnotify/NotifyExample.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="903">
@@ -113,8 +104,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/yield/YieldExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="357">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/SleepExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -178,8 +178,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Class Main" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -198,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spark/src/main/java/com/zhonghuasheng/spark/demo/SparkDemo.java" />
         <option value="$PROJECT_DIR$/spark/.gitignore" />
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/ReadEventHandler.java" />
         <option value="$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/designpattern/reactor/AcceptEventHandler.java" />
@@ -248,6 +247,7 @@
         <option value="$PROJECT_DIR$/basic/README.md" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/yeild/YeildExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/yield/YeildExample.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/SleepExample.java" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/yield/YieldExample.java" />
       </list>
     </option>
@@ -492,7 +492,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581564609225" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581568274958" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicstore-jsp" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -520,7 +520,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.YieldExample">
+  <component name="RunManager" selected="Application.SleepExample">
     <configuration name="NoSynchronizedMethodExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.synchronize.NoSynchronizedMethodExample" />
       <module name="basic" />
@@ -547,12 +547,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronizedLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.synchronize.SynchronizedLockExample" />
+    <configuration name="SleepExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.SleepExample" />
       <module name="basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.basic.java.thread.synchronize.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.basic.java.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -560,8 +560,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronizedObjectExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.synchronize.SynchronizedObjectExample" />
+    <configuration name="SynchronizedLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.synchronize.SynchronizedLockExample" />
       <module name="basic" />
       <extension name="coverage">
         <pattern>
@@ -587,19 +587,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SynchronizedObjectExample" />
       <item itemvalue="Application.NoSynchronizedMethodExample" />
       <item itemvalue="Application.SynchronizedLockExample" />
       <item itemvalue="Application.NotifyExample" />
       <item itemvalue="Application.YieldExample" />
+      <item itemvalue="Application.SleepExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SleepExample" />
         <item itemvalue="Application.YieldExample" />
         <item itemvalue="Application.NotifyExample" />
         <item itemvalue="Application.SynchronizedLockExample" />
         <item itemvalue="Application.NoSynchronizedMethodExample" />
-        <item itemvalue="Application.SynchronizedObjectExample" />
       </list>
     </recent_temporary>
   </component>
@@ -621,18 +621,18 @@
       <workItem from="1581258245278" duration="910000" />
       <workItem from="1581405629484" duration="9384000" />
       <workItem from="1581478751594" duration="15975000" />
-      <workItem from="1581563917974" duration="677000" />
+      <workItem from="1581563917974" duration="2523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99399000" />
+    <option name="totallyTimeSpent" value="101245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23676248" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23676248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -744,13 +744,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/AbstractCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9135">
-          <caret line="462" column="31" selection-start-line="462" selection-start-column="31" selection-end-line="462" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thinking/src/main/java/com/zhonghuasheng/algorithm/Fabnaci.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1090,10 +1083,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/SleepExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/thread/yield/YieldExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        <state relative-caret-position="357">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
