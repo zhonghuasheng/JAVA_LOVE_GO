@@ -27,6 +27,33 @@ public class SynchronizedLockExample {
          * Thready 1
          * Thready 2
          */
+
+        // z1.syncA与z2.syncB
+        SynchronizedLock z1 = new SynchronizedLock();
+        SynchronizedLock z2 = new SynchronizedLock();
+        new Thread(() -> {
+            try {
+                z1.syncA();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }, "Threadz1").start();
+        new Thread(() -> {
+            try {
+                z2.syncB();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }, "Threadz2").start();
+        /**可以同时访问。实例锁
+         * Threadz10
+         * Threadz20
+         * Threadz11
+         * Threadz21
+         * Threadz12
+         * Threadz22
+         */
+
         // x.syncA()与y.syncA()
         SynchronizedLock y = new SynchronizedLock();
         SynchronizedLock y2 = new SynchronizedLock();
@@ -52,6 +79,7 @@ public class SynchronizedLockExample {
          * Thready22
          * Thready12
          */
+
         // x.syncC()与y.syncD()
         SynchronizedLock x1 = new SynchronizedLock();
         SynchronizedLock y3 = new SynchronizedLock();
@@ -69,6 +97,7 @@ public class SynchronizedLockExample {
                 e.printStackTrace();
             }
         }, "Thready3 ").start();
+
         /** 全局锁。不能同时访问，static synchronized修饰的方法是全局静态的，与实例无关
          * Threadx1 0
          * Threadx1 1
@@ -77,6 +106,7 @@ public class SynchronizedLockExample {
          * Thready3 1
          * Thready3 2
          */
+
         // x.syncA与SynchronizedLock.syncD
         SynchronizedLock x3 = new SynchronizedLock();
         new Thread(()-> {
@@ -93,6 +123,7 @@ public class SynchronizedLockExample {
                 e.printStackTrace();
             }
         }, "Threadstatic ").start();
+
         /** 可以同时访问。x.syncA是实例锁，SynchronizedLock.syncD是全局锁
          * Theradx30
          * Threadstatic 0

@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.thread;
+package com.zhonghuasheng.basic.java.thread.thread;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
