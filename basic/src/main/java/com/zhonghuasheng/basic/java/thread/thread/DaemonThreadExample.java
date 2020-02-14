@@ -1,4 +1,4 @@
-package com.zhonghuasheng.basic.java.thread;
+package com.zhonghuasheng.basic.java.thread.thread;
 
 public class DaemonThreadExample {
 
