@@ -29,6 +29,7 @@ public class HookThreadExample {
          * 	at java.util.Scanner.next(Scanner.java:1371)
          * 	at com.zhonghuasheng.basic.java.thread.hook.HookThreadExample.main(HookThreadExample.java:16)
          * ^D
+         * 常用的实例有.lock文件的删除应用
          */
     }
 }
