@@ -9,7 +9,7 @@ public class NotifyExample {
                 while (notify.flag) {
                     System.out.println("User A");
                     try {
-                        notify.wait();
+                        notify.wait(10000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -26,7 +26,7 @@ public class NotifyExample {
                 while (notify.flag) {
                     System.out.println("User B");
                     try {
-                        notify.wait();
+                        notify.wait(10000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -57,16 +57,16 @@ class Notify {
     public boolean flag = false;
     public void call() {
         flag = true;
-        System.out.println("Begin to call");
+        System.out.println(Thread.currentThread().getName() + " Begin to call");
         for (int i = 0; i < 101; i+=50) {
             System.out.println(Thread.currentThread().getName() + " calling " + i + "%");
             try {
-                Thread.sleep(100);
+                Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println("End to call");
+        System.out.println(Thread.currentThread().getName() + " End to call");
         flag = false;
     }
 }

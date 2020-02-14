@@ -1,5 +1,7 @@
 package com.zhonghuasheng.basic.java.thread.yield;
 
+import java.util.concurrent.locks.LockSupport;
+
 public class YieldExample {
 
     public static void main(String[] args) {

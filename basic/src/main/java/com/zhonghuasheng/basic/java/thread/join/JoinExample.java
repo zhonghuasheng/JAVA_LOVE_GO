@@ -6,7 +6,7 @@ public class JoinExample {
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < 30; i++) {
                     System.out.println(i);
                 }
             }
@@ -14,7 +14,7 @@ public class JoinExample {
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < 30; i++) {
                     System.out.println(i);
                 }
             }
@@ -22,7 +22,7 @@ public class JoinExample {
         Thread thread3 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < 30; i++) {
                     System.out.println(i);
                 }
             }
@@ -30,9 +30,9 @@ public class JoinExample {
         thread1.start();
         thread2.start();
         thread3.start();
-        thread1.join();
-        thread2.join();
-        thread3.join();
+        thread1.join(1);
+        thread2.join(1);
+        thread3.join(1);
         System.out.println("Finished");
         /**
          * When we call this method using a thread object, it suspends the execution of the calling thread until
