@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="testeasycode.dao.TestEasyCodeDao">
+
+    <resultMap type="testeasycode.entity.TestEasyCode" id="TestEasyCodeMap">
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="age" column="age" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="TestEasyCodeMap">
+        select
+          name, age
+        from musicstore-jsp.test_easy_code
+        where  = #{}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="TestEasyCodeMap">
+        select
+          name, age
+        from musicstore-jsp.test_easy_code
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TestEasyCodeMap">
+        select
+          name, age
+        from musicstore-jsp.test_easy_code
+        <where>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="age != null">
+                and age = #{age}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="" useGeneratedKeys="true">
+        insert into musicstore-jsp.test_easy_code(name, age)
+        values (#{name}, #{age})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update musicstore-jsp.test_easy_code
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="age != null">
+                age = #{age},
+            </if>
+        </set>
+        where  = #{}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from musicstore-jsp.test_easy_code where  = #{}
+    </delete>
+
+</mapper>

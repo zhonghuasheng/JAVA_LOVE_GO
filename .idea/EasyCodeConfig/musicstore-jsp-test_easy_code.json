@@ -1,0 +1,24 @@
+{
+  "name" : "TestEasyCode",
+  "comment" : null,
+  "fullColumn" : [ {
+    "name" : "name",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "age",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  } ],
+  "pkColumn" : null,
+  "otherColumn" : null,
+  "savePackageName" : "testeasycode",
+  "savePath" : "./test/src/main/java",
+  "saveModelName" : "test"
+}
