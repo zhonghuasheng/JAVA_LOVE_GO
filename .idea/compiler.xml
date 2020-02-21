@@ -22,20 +22,20 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="basic" target="8" />
-      <module name="iterations" target="8" />
-      <module name="JAVA" target="8" />
-      <module name="java8" target="8" />
-      <module name="jdbc" target="7" />
-      <module name="jsp" target="7" />
-      <module name="netty" target="8" />
-      <module name="rabbitmq" target="8" />
-      <module name="servlet" target="8" />
-      <module name="spark" target="8" />
+      <module name="basic" target="1.5" />
+      <module name="iterations" target="1.5" />
+      <module name="JAVA" target="1.5" />
+      <module name="java8" target="1.5" />
+      <module name="jdbc" target="1.5" />
+      <module name="jsp" target="1.5" />
+      <module name="netty" target="1.5" />
+      <module name="rabbitmq" target="1.7" />
+      <module name="servlet" target="1.5" />
+      <module name="spark" target="1.5" />
       <module name="spring4" target="1.7" />
-      <module name="ssm" target="8" />
-      <module name="test" target="8" />
-      <module name="thinking" target="8" />
+      <module name="ssm" target="1.5" />
+      <module name="test" target="1.5" />
+      <module name="thinking" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

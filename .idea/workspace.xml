@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/atomic/AtomicLongArrayExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjtools_1_8_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/AopConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/NoAnnotationUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/basic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iterations/iterations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iterations/iterations.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsp/jsp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jsp/jsp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty/netty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty/netty.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet/servlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/servlet/servlet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/spark.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring4/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4/spring4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring4/spring4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssm/ssm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ssm/ssm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinking/thinking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/thinking/thinking.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/iterations/target/" />
@@ -70,41 +92,167 @@
     <session id="1123625036">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cart" value="1" />
-          <entry key="class" value="1" />
+          <entry key="class" value="2" />
+          <entry key="java" value="28" />
           <entry key="sql" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="2" />
           <entry key="Database Element" value="1" />
+          <entry key="JAVA" value="28" />
           <entry key="Scratch" value="1" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2247" />
+          <entry key="xml" value="81" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2247" />
+          <entry key="XML" value="81" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/98c35017-0b2f-43a8-b648-13e75868bb9e/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/JavaConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#119#120#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/Action.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+              <folding>
+                <element signature="e#161#162#0" expanded="true" />
+                <element signature="e#197#198#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/NoAnnotationUserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding>
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/LogAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://98c35017-0b2f-43a8-b648-13e75868bb9e/schema/musicstore-jsp/table/cart">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/AopConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#142#143#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,8 +262,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="AnnotationType" />
         <option value="Class Main" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -131,6 +280,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/di/FunctionService.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/di/UserFunctionService.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/di/Application.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/di/DIConfig.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/FunctionService.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/UserFunctionService.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/JavaConfig.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/Application.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/Action.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/UserService.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/NoAnnotationUserService.java" />
+        <option value="$PROJECT_DIR$/spring4/pom.xml" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/AopConfig.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/User.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/LogAspect.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/Application.java" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -144,10 +315,15 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="273" />
-    <option name="y" value="195" />
-    <option name="width" value="978" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectId" id="1QMKO2jD0hFn5rsBCn9QYsFURE1" />
@@ -159,6 +335,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,13 +343,57 @@
               <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
               <item name="JAVA" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="spring4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="spring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="spring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="spring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="spring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="spring4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring4" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -186,9 +407,9 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581862235771" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582281117585" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicstore-jsp" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SpringiA4_SourceCode" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -215,7 +436,46 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AtomicLongArrayExample">
+  <component name="RunManager" selected="Application.Application (2)">
+    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.spring4.javaconfig.Application" />
+      <module name="spring4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhonghuasheng.spring4.javaconfig.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.spring4.aop.Application" />
+      <module name="spring4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhonghuasheng.spring4.aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.spring4.di.Application" />
+      <module name="spring4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhonghuasheng.spring4.di.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AtomicIntegerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.util.concurrent.atomic.AtomicIntegerExample" />
       <module name="basic" />
@@ -242,59 +502,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HookThreadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.hook.HookThreadExample" />
-      <module name="basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.basic.java.thread.hook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NotifyExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.waitnotify.NotifyExample" />
-      <module name="basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.basic.java.thread.waitnotify.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UncaughtExceptionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.basic.java.thread.exception.UncaughtExceptionExample" />
-      <module name="basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.basic.java.thread.exception.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.NotifyExample" />
-      <item itemvalue="Application.HookThreadExample" />
-      <item itemvalue="Application.UncaughtExceptionExample" />
       <item itemvalue="Application.AtomicIntegerExample" />
       <item itemvalue="Application.AtomicLongArrayExample" />
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.Application (1)" />
+      <item itemvalue="Application.Application (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application (2)" />
+        <item itemvalue="Application.Application (1)" />
+        <item itemvalue="Application.Application" />
         <item itemvalue="Application.AtomicLongArrayExample" />
         <item itemvalue="Application.AtomicIntegerExample" />
-        <item itemvalue="Application.UncaughtExceptionExample" />
-        <item itemvalue="Application.HookThreadExample" />
-        <item itemvalue="Application.NotifyExample" />
       </list>
     </recent_temporary>
   </component>
@@ -325,16 +546,22 @@
       <workItem from="1581865558572" duration="157000" />
       <workItem from="1581907349876" duration="606000" />
       <workItem from="1581908044889" duration="783000" />
+      <workItem from="1581995279062" duration="732000" />
+      <workItem from="1582108623005" duration="471000" />
+      <workItem from="1582165311130" duration="1014000" />
+      <workItem from="1582255238233" duration="10873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1546000" />
+    <option name="totallyTimeSpent" value="16443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30257186" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -342,20 +569,21 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Learn" order="7" />
-      <window_info active="true" anchor="bottom" id="Database Console" visible="true" weight="0.32956383" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921507" visible="true" weight="0.32471728" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33934426" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50078493" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -363,8 +591,8 @@
       <window_info anchor="right" id="JSF" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="CDI" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.32980332" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.47494555" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32980332" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.32980332" />
@@ -453,6 +681,305 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/controller/TestEasyCodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/dao/TestEasyCodeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/entity/TestEasyCode.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/service/impl/TestEasyCodeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/service/TestEasyCodeService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/TestEasyCodeDefault.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/resources/mapper/TestEasyCodeDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/atomic/AtomicIntegerExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1911">
+          <caret line="136" column="7" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/atomic/AtomicBoolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="100" column="30" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="305" column="94" selection-start-line="305" selection-start-column="32" selection-end-line="305" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/propertyvalueannotation/AppMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/propertyvalueannotation/configuration/JDBCConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/propertyvalueannotation/configuration/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.6.RELEASE/spring-context-4.0.6.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/di/UserFunctionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/di/FunctionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/di/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/di/DIConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/annotationinjectexample/qualifier/Mustang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/annotationinjectexample/qualifier/Ferari.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/annotationinjectexample/qualifier/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/annotationinjectexample/qualifier/Bond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/annotationinjectexample/qualifier/AppMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/annotationinjectexample/qualifier/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/FunctionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#101#102#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/UserFunctionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/JavaConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/javaconfig/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/NoAnnotationUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/AopConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/LogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aop/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
