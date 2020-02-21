@@ -1,11 +1,7 @@
 package com.zhonghuasheng.spring4.di;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@ComponentScan("com.zhonghuasheng.spring4.di")
 public class Application {
 
     public static void main(String[] args) {
@@ -19,5 +15,6 @@ public class Application {
         // 通过IOC容器来获取自己想要的bean
         UserFunctionService userFunctionService = appContext.getBean(UserFunctionService.class);
         userFunctionService.say("DI");
+        appContext.close();
     }
 }
