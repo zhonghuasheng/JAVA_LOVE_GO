@@ -65,6 +65,12 @@
       <artifactId>aspectjtools</artifactId>
       <version>1.8.9</version>
     </dependency>
+    <!--EL中用于IO输出-->
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.5</version>
+    </dependency>
   </dependencies>
 
   <build>
