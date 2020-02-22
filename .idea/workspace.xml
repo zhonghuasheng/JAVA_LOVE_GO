@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/UseResourceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/resources/el-test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/resources/el-test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/BeanWayUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring4/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring4/spring4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring4/spring4.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/iterations/target/" />
@@ -93,7 +88,7 @@
         <counts>
           <entry key="cart" value="1" />
           <entry key="class" value="4" />
-          <entry key="java" value="42" />
+          <entry key="java" value="46" />
           <entry key="properties" value="2" />
           <entry key="sql" value="1" />
           <entry key="txt" value="1" />
@@ -104,7 +99,7 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="Database Element" value="1" />
-          <entry key="JAVA" value="42" />
+          <entry key="JAVA" value="46" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
           <entry key="Scratch" value="1" />
@@ -113,7 +108,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4068" />
+          <entry key="java" value="4742" />
           <entry key="properties" value="77" />
           <entry key="txt" value="6" />
           <entry key="xml" value="135" />
@@ -121,7 +116,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4068" />
+          <entry key="JAVA" value="4742" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Properties" value="77" />
           <entry key="XML" value="135" />
@@ -132,20 +127,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/UseResourceService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -181,10 +162,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/AppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="108">
+              <caret line="14" selection-start-line="14" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#101#102#0" expanded="true" />
+                <element signature="e#137#138#0" expanded="true" />
+                <element signature="e#190#191#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/BeanWayUserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+              <folding>
+                <element signature="e#108#109#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,8 +253,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Class Main" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -260,6 +299,10 @@
         <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/AppConfig.java" />
         <option value="$PROJECT_DIR$/spring4/src/main/resources/el-test.properties" />
         <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/UseResourceService.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/UserService.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/BeanWayUserService.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/AppConfig.java" />
+        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/Application.java" />
       </list>
     </option>
   </component>
@@ -350,7 +393,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring4" type="462c0819:PsiDirectoryNode" />
-              <item name="el" type="462c0819:PsiDirectoryNode" />
+              <item name="beanlifecycle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
@@ -377,7 +420,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582351797284" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582374880076" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SpringiA4_SourceCode" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -406,7 +449,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application (4)">
+  <component name="RunManager" selected="Application.Application (5)">
     <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.spring4.javaconfig.Application" />
       <module name="spring4" />
@@ -459,12 +502,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.spring4.di.Application" />
+    <configuration name="Application (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhonghuasheng.spring4.beanlifecycle.Application" />
       <module name="spring4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhonghuasheng.spring4.di.*" />
+          <option name="PATTERN" value="com.zhonghuasheng.spring4.beanlifecycle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -473,19 +516,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Application" />
       <item itemvalue="Application.Application (1)" />
       <item itemvalue="Application.Application (2)" />
       <item itemvalue="Application.Application (3)" />
       <item itemvalue="Application.Application (4)" />
+      <item itemvalue="Application.Application (5)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application (5)" />
         <item itemvalue="Application.Application (4)" />
         <item itemvalue="Application.Application (3)" />
         <item itemvalue="Application.Application (2)" />
         <item itemvalue="Application.Application (1)" />
-        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -520,18 +563,18 @@
       <workItem from="1582108623005" duration="471000" />
       <workItem from="1582165311130" duration="1014000" />
       <workItem from="1582255238233" duration="11662000" />
-      <workItem from="1582336603129" duration="8031000" />
+      <workItem from="1582336603129" duration="10010000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25263000" />
+    <option name="totallyTimeSpent" value="27242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.30635402" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30635402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -542,7 +585,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921507" visible="true" weight="0.5444265" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921507" visible="true" weight="0.42810985" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990307" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -638,26 +681,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/src/main/java/service/impl/TestEasyCodeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/main/java/service/TestEasyCodeService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/main/java/TestEasyCodeDefault.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="64" column="6" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/main/resources/mapper/TestEasyCodeDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/zhonghuasheng/basic/java/util/concurrent/atomic/AtomicIntegerExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1004,16 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring4/src/main/resources/el-test.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1035,6 +1048,66 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/el/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" selection-start-line="14" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#101#102#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/BeanWayUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding>
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/beanlifecycle/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
