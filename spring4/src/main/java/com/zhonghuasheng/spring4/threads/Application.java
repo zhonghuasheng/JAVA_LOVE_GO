@@ -1,6 +1,7 @@
 package com.zhonghuasheng.spring4.threads;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 public class Application {
 
@@ -11,9 +12,20 @@ public class Application {
             asyncTaskService.executeAsyncTask(i);
             asyncTaskService.executeAsyncAddTask(i);
         }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // 如下代码并不能中断程序的运行
+        /*AppConfig appConfig = appContext.getBean(AppConfig.class);
+        ThreadPoolTaskExecutor threadPool = (ThreadPoolTaskExecutor) appConfig.getAsyncExecutor();
+        threadPool.shutdown();*/
+        appContext.close();
         /**执行的结果并不是同步执行，而是异步执行
          * Execute async task: 0
-         * 0
+         * 4
          * Execute async task: 3
          * 6
          * Execute async task: 4
@@ -28,10 +40,6 @@ public class Application {
          * 16
          * Execute async task: 9
          * 18
-         * Execute async task: 2
-         * 4
-         * 2
-         * Execute async task: 1
          */
     }
 }
