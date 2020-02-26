@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/light4j/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/light4j/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/light4j/Light4jConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/light4j/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,7 +68,7 @@
     <session id="1123625036">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.25" value="1" />
@@ -173,11 +169,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/light4j/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.6.RELEASE/spring-context-4.0.6.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="866" column="12" selection-start-line="866" selection-start-column="12" selection-end-line="866" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -339,16 +344,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring4" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="spring4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring4" type="462c0819:PsiDirectoryNode" />
-              <item name="light4j" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -369,7 +364,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582598490683" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582625833532" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SpringiA4_SourceCode" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -520,7 +515,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52757000" />
+    <option name="totallyTimeSpent" value="54036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -543,7 +538,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.26451612" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15967742" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50078493" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -1004,7 +999,7 @@
     <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/light4j/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
