@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="nowebxml:war">
+    <output-path>$PROJECT_DIR$/springmvc/nowebxml/target</output-path>
+    <root id="archive" name="nowebxml-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="nowebxml:war exploded" />
+    </root>
+  </artifact>
+</component>

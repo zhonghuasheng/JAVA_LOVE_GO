@@ -23,5 +23,7 @@
         <module>thinking</module>
         <module>spark</module>
         <module>springmvc</module>
+        <module>springmvc</module>
+        <module>springmvc</module>
     </modules>
 </project>
