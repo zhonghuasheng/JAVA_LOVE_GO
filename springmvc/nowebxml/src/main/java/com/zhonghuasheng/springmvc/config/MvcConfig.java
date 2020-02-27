@@ -1,4 +1,4 @@
-package com.zhonghuasheng.springmvc;
+package com.zhonghuasheng.springmvc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
