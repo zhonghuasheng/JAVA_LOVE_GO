@@ -16,6 +16,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.12.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.12.RELEASE" />
           <element id="library" level="project" name="Maven: javax:javaee-web-api:7.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

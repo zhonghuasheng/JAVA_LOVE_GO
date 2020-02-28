@@ -5,6 +5,10 @@ public class User {
     private String name;
     private int age;
 
+    public User() {
+        super();
+    }
+
     public String getName() {
         return name;
     }
