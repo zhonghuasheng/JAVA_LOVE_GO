@@ -46,4 +46,10 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("index");
     }
+
+    @Override
+    public void configurePathMatch(PathMatchConfigurer configurer) {
+        // 不使用后缀匹配，可以访问类似xxx.do这样的url
+        configurer.setUseSuffixPatternMatch(false);
+    }
 }
