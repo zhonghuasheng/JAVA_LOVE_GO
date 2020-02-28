@@ -1,4 +1,4 @@
-package com.zhonghuasheng.springmvc;
+package com.zhonghuasheng.springmvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

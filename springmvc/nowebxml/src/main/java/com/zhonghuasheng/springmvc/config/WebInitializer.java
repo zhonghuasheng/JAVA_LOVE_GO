@@ -1,5 +1,6 @@
-package com.zhonghuasheng.springmvc;
+package com.zhonghuasheng.springmvc.config;
 
+import com.zhonghuasheng.springmvc.config.MvcConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
