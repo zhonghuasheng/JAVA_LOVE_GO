@@ -1,9 +1,11 @@
 package com.zhonghuasheng.springmvc.config;
 
+import com.zhonghuasheng.springmvc.interceptor.TimeCostInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
@@ -29,5 +31,17 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/assets/");
+    }
+
+    // 注册拦截器
+
+    @Bean
+    public TimeCostInterceptor timeCostInterceptor() {
+        return new TimeCostInterceptor();
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(timeCostInterceptor());
     }
 }
