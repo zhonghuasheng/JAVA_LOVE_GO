@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86a0e583-cb3d-4f11-baba-eec46dc31fd0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/model/User1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/advice/ExceptionHandlerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/advice/ExceptionHandlerAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/AdviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/AdviceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/model/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/iterations/target/" />
@@ -101,7 +103,7 @@
           <entry key="class" value="7" />
           <entry key="gitignore" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="127" />
+          <entry key="java" value="130" />
           <entry key="jsp" value="7" />
           <entry key="pom" value="2" />
           <entry key="properties" value="2" />
@@ -115,7 +117,7 @@
           <entry key="CLASS" value="7" />
           <entry key="Database Element" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="127" />
+          <entry key="JAVA" value="130" />
           <entry key="JSP" value="7" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="2" />
@@ -129,7 +131,7 @@
           <entry key="ft" value="6" />
           <entry key="gitignore" value="17" />
           <entry key="iml" value="2" />
-          <entry key="java" value="13328" />
+          <entry key="java" value="13642" />
           <entry key="jsp" value="81" />
           <entry key="properties" value="77" />
           <entry key="txt" value="13" />
@@ -139,7 +141,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="13328" />
+          <entry key="JAVA" value="13642" />
           <entry key="JSP" value="81" />
           <entry key="PLAIN_TEXT" value="41" />
           <entry key="Properties" value="77" />
@@ -182,8 +184,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/advice/ExceptionHandlerAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+            <state relative-caret-position="359">
+              <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1063#1079#0" expanded="true" />
@@ -198,14 +200,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/AdviceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+            <state relative-caret-position="181">
+              <caret line="43" column="121" selection-start-line="43" selection-start-column="121" selection-end-line="43" selection-end-column="121" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#190#191#0" expanded="true" />
                 <element signature="e#226#227#0" expanded="true" />
                 <element signature="e#1056#1057#0" expanded="true" />
                 <element signature="e#1094#1095#0" expanded="true" />
+                <element signature="e#1236#1237#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -241,7 +245,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/event/LogEventPublisher.java" />
         <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/profile/AppConfig.java" />
         <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aware/AwareService.java" />
         <option value="$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/aware/AppConfig.java" />
@@ -285,12 +288,13 @@
         <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/UserController.java" />
         <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/RestController.java" />
         <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/RestExampleController.java" />
-        <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/model/User.java" />
         <option value="$PROJECT_DIR$/springmvc/nowebxml/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/interceptor/TimeCostInterceptor.java" />
         <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/config/MvcConfig.java" />
         <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/resources/views/error.jsp" />
+        <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/model/User.java" />
         <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/advice/ExceptionHandlerAdvice.java" />
+        <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/model/User1.java" />
         <option value="$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/AdviceController.java" />
       </list>
     </option>
@@ -430,6 +434,17 @@
               <item name="nowebxml" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="nowebxml" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -459,7 +474,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582882064146" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582884370639" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SpringiA4_SourceCode" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -682,13 +697,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96558000" />
+    <option name="totallyTimeSpent" value="98895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.4084507" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4077156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -796,20 +811,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/annotation/Retention.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring4/src/main/java/com/zhonghuasheng/spring4/light4j/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.6.RELEASE/spring-context-4.0.6.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -935,17 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -1067,10 +1057,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE-sources.jar!/org/springframework/validation/DataBinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="455" column="16" lean-forward="true" selection-start-line="455" selection-start-column="16" selection-end-line="455" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/model/User1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/advice/ExceptionHandlerAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        <state relative-caret-position="359">
+          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1063#1079#0" expanded="true" />
@@ -1083,14 +1109,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/AdviceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        <state relative-caret-position="181">
+          <caret line="43" column="121" selection-start-line="43" selection-start-column="121" selection-end-line="43" selection-end-column="121" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#190#191#0" expanded="true" />
             <element signature="e#226#227#0" expanded="true" />
             <element signature="e#1056#1057#0" expanded="true" />
             <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
           </folding>
         </state>
       </provider>

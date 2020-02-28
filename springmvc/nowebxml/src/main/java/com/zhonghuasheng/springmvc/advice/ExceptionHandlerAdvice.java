@@ -1,8 +1,10 @@
 package com.zhonghuasheng.springmvc.advice;
 
 import org.springframework.ui.Model;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.ModelAndView;
@@ -52,5 +54,17 @@ public class ExceptionHandlerAdvice {
     @ModelAttribute
     public void addModelAttribute(Model model) {
         model.addAttribute("msg", "Msg from ModelAttribute");
+    }
+
+    @InitBinder("user")
+    public void intiBind(WebDataBinder webDataBinder) {
+        webDataBinder.setDisallowedFields("id"); // 不允许绑定的字段
+        webDataBinder.setFieldDefaultPrefix("user.");
+    }
+
+    @InitBinder("user2")
+    public void intiBind2(WebDataBinder webDataBinder) {
+        webDataBinder.setDisallowedFields("id"); // 不允许绑定的字段
+        webDataBinder.setFieldDefaultPrefix("user2."); // 数据前缀
     }
 }

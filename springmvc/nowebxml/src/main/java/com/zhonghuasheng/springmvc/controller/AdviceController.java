@@ -1,11 +1,9 @@
 package com.zhonghuasheng.springmvc.controller;
 
+import com.zhonghuasheng.springmvc.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -34,5 +32,22 @@ public class AdviceController {
     @ResponseBody
     public String data2(@ModelAttribute("msg") String msg) {
         return "Global data 2: " + msg;
+    }
+
+    // http://localhost:8080/advice/bind?id=1&name=abc&age=12
+    @PostMapping("/bind")
+    @ResponseBody
+    public User bind(User user) {
+        return user;
+    }
+
+    // http://localhost:8080/advice/bind2?user.id=101&user.name=abc&user.age=12&user2.id=123&user2.name=qwe&user2.age=123
+    @PostMapping("/bind2")
+    @ResponseBody
+    public User bind2(@ModelAttribute("user") User user, @ModelAttribute("user2") User user1) {
+        System.out.println(user);
+        System.out.println(user1);
+
+        return user;
     }
 }
