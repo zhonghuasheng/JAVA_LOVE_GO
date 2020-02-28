@@ -1,12 +1,12 @@
 package com.zhonghuasheng.springmvc.model;
 
-public class User {
+public class User1 {
 
     private int id;
     private String name;
     private int age;
 
-    public User() {
+    public User1() {
         super();
     }
 
