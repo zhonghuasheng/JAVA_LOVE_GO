@@ -4,10 +4,7 @@ import com.zhonghuasheng.springmvc.interceptor.TimeCostInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
@@ -34,7 +31,6 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     }
 
     // 注册拦截器
-
     @Bean
     public TimeCostInterceptor timeCostInterceptor() {
         return new TimeCostInterceptor();
@@ -43,5 +39,11 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(timeCostInterceptor());
+    }
+
+    // 对于只是简单页面跳转不涉及业务的Controller，可以通过ViewController来配置
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/").setViewName("index");
     }
 }
