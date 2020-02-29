@@ -4,6 +4,8 @@ import com.zhonghuasheng.springmvc.interceptor.TimeCostInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
@@ -51,5 +53,15 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     public void configurePathMatch(PathMatchConfigurer configurer) {
         // 不使用后缀匹配，可以访问类似xxx.do这样的url
         configurer.setUseSuffixPatternMatch(false);
+        // configurer.setPathMatcher(PathMatcher) 自定义URL匹配
+    }
+
+    // 文件上传
+    @Bean
+    public MultipartResolver multipartResolver() {
+        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
+        multipartResolver.setMaxUploadSizePerFile(1024 * 1024); // 单个文件大小1M
+
+        return multipartResolver;
     }
 }
