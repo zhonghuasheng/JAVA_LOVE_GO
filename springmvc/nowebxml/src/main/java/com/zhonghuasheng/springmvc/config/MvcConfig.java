@@ -4,10 +4,9 @@ import com.zhonghuasheng.springmvc.interceptor.TimeCostInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
@@ -34,7 +33,6 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     }
 
     // 注册拦截器
-
     @Bean
     public TimeCostInterceptor timeCostInterceptor() {
         return new TimeCostInterceptor();
@@ -43,5 +41,27 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(timeCostInterceptor());
+    }
+
+    // 对于只是简单页面跳转不涉及业务的Controller，可以通过ViewController来配置
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/").setViewName("index");
+    }
+
+    @Override
+    public void configurePathMatch(PathMatchConfigurer configurer) {
+        // 不使用后缀匹配，可以访问类似xxx.do这样的url
+        configurer.setUseSuffixPatternMatch(false);
+        // configurer.setPathMatcher(PathMatcher) 自定义URL匹配
+    }
+
+    // 文件上传
+    @Bean
+    public MultipartResolver multipartResolver() {
+        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
+        multipartResolver.setMaxUploadSizePerFile(1024 * 1024); // 单个文件大小1M
+
+        return multipartResolver;
     }
 }
