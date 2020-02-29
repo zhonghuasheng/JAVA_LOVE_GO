@@ -2,10 +2,7 @@ package com.zhonghuasheng.springmvc.controller;
 
 import com.zhonghuasheng.springmvc.model.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -47,5 +44,13 @@ public class UserController {
     @ResponseBody
     public String multiplePath(HttpServletRequest request) {
         return "url: " + request.getRequestURL();
+    }
+
+    // @RequestBody注解用于读取http请求的内容(字符串)，通过springmvc提供的HttpMessageConverter接口将读到的内容（json数据）
+    // 转换为java对象并绑定到Controller方法的参数上。
+    @PostMapping("/add")
+    @ResponseBody
+    public User add(@RequestBody User user) {
+        return user;
     }
 }
