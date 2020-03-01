@@ -208,7 +208,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
+            <state relative-caret-position="48">
               <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -361,7 +361,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="648" />
     <option name="y" value="61" />
     <option name="width" value="699" />
@@ -494,7 +494,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582966589054" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582973125399" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SpringiA4_SourceCode" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -713,16 +713,15 @@
       <workItem from="1582717879813" duration="8517000" />
       <workItem from="1582767900489" duration="12395000" />
       <workItem from="1582855124971" duration="2021000" />
-      <workItem from="1582958960050" duration="5982000" />
+      <workItem from="1582958960050" duration="6795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108445000" />
+    <option name="totallyTimeSpent" value="109258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.30711043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -741,13 +740,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.68659127" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.68659127" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info active="true" anchor="bottom" id="Database Console" order="13" visible="true" weight="0.32956383" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" visible="true" weight="0.32956383" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32956383" />
       <window_info anchor="bottom" id="Application Servers" order="15" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1190,7 +1189,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springmvc/nowebxml/src/main/java/com/zhonghuasheng/springmvc/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
+        <state relative-caret-position="48">
           <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
