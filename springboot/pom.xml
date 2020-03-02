@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>springboot-helloworld</module>
+        <module>springboot</module>
     </modules>
 
 
