@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-@Order(1)
+@Order(1) // Order能指定切面执行的顺序，值越小越先执行
 public class UserAccessAspect {
 
     @Pointcut(value = "@annotation(com.zhonghuasheng.springboot.aspect.annotation.UserAccess)")
