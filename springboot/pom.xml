@@ -15,6 +15,8 @@
         <module>springboot-helloworld</module>
         <module>springboot-thymeleaf</module>
         <module>springboot-log4j2</module>
+        <module>springboot-mybatis</module>
+        <module>springboot-aop</module>
     </modules>
 
 
