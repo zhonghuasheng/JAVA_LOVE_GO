@@ -18,6 +18,7 @@
         <module>springboot-mybatis</module>
         <module>springboot-aop</module>
         <module>springboot-security</module>
+        <module>springboot-log</module>
     </modules>
 
 
