@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /log
+  tomcat:
+    max-threads: 1000
+    min-spare-threads: 10
+logging:
+  file:
+    name: baselog.log
+    path: /var/log/
