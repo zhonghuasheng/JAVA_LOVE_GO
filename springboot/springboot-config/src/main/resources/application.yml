@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /config
+
+user:
+  name: Tom
+  age: 18
+  address: Wu Han
+  desc: ${user.name} is ${user.age}
+  uuid: ${random.uuid}
+  date: 2020/03/01
+  hobbys: tennis,coding
+  maps: "{key1: 'value1', key2: 'value2'}"

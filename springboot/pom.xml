@@ -19,7 +19,7 @@
         <module>springboot-aop</module>
         <module>springboot-security</module>
         <module>springboot-log</module>
+        <module>springboot-config</module>
     </modules>
-
 
 </project>
