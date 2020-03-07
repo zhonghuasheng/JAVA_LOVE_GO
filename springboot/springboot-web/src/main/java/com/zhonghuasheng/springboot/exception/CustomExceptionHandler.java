@@ -24,7 +24,7 @@ public class CustomExceptionHandler implements HandlerExceptionResolver {
         log.error("错误信息：" + ex);
 
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("500");
+        modelAndView.setViewName("error/500");
 
         return modelAndView;
     }

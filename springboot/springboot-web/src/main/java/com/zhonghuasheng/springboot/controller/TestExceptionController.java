@@ -1,5 +1,6 @@
 package com.zhonghuasheng.springboot.controller;
 
+import com.zhonghuasheng.springboot.exception.MyException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,5 +13,10 @@ public class TestExceptionController {
         int i = 1 / 0;
 
         return "failed";
+    }
+
+    @GetMapping("/myException")
+    public String myException() {
+        throw new MyException("My Exception");
     }
 }
