@@ -19,7 +19,7 @@ public class UserService {
     @Transactional
     public boolean tx() {
         Student user1 = new Student();
-        user1.setId(10003);
+        user1.setId(10002);
         user1.setName("TestUser2");
         user1.setAge(18);
         userDao.insert(user1);
