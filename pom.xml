@@ -22,9 +22,9 @@
         <module>test</module>
         <module>thinking</module>
         <module>spark</module>
-        <module>springmvc</module>
-        <module>springmvc</module>
+        <module>spring4</module>
         <module>springmvc</module>
         <module>springboot</module>
+        <module>seckill</module>
     </modules>
 </project>
