@@ -45,6 +45,7 @@ public class DemoController {
     }
 
     @GetMapping("/db/tx")
+    @ResponseBody
     public Result<Boolean> dbTx() {
         userService.tx();
         return Result.success(true);
