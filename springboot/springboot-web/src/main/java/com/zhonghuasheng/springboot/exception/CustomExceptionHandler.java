@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServletResponse;
  * 个异常处理器去执行。  springboot中可以通过以下方式去注册进容器。
  */
 @Slf4j
-//@Component
-public class CustomException implements HandlerExceptionResolver {
+@Component
+public class CustomExceptionHandler implements HandlerExceptionResolver {
 
 
     @Override
@@ -24,7 +24,7 @@ public class CustomException implements HandlerExceptionResolver {
         log.error("错误信息：" + ex);
 
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("error/error");
+        modelAndView.setViewName("500");
 
         return modelAndView;
     }
