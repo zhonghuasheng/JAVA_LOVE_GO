@@ -13,7 +13,8 @@ public class MD5Util {
     private static final String salt = "Abcde12345_";
 
     public static String inputPass2FormPass(String str) {
-        String mixStr = salt.charAt(0) + salt.charAt(2) + str + salt.charAt(1) + salt.charAt(3);
+        String mixStr = String.valueOf(salt.charAt(0)) + String.valueOf(salt.charAt(2))
+                + str + String.valueOf(salt.charAt(1)) + String.valueOf(salt.charAt(3));
         return md5(mixStr);
     }
 

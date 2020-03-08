@@ -29,7 +29,8 @@ public class SecKillAppTest {
 
     @Test
     public void testMD5() {
-        String pass = MD5Util.inputPass2DBPass("123456", "Abcd1234_");
+        System.out.println(MD5Util.inputPass2FormPass("123456"));//cf4e3dc14922120e4f714a37576f17fb
+        String pass = MD5Util.inputPass2DBPass("123456", "Abcde12345_");
         System.out.println(pass); // 1e5b9e011dfde95eb0a12c7dd3e40645
         assertTrue(true);
     }
