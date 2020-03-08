@@ -65,7 +65,7 @@ public class DemoController {
     @GetMapping("/redis/set")
     @ResponseBody
     public Result<Boolean> redisSet() {
-        Student student = new Student(10000, "Luke", 18);
+        Student student = new Student(10000, "Luke", 18); // UserKey:id10000
         boolean result = redisService.set(UserKey.getById, String.valueOf(student.getId()), student);
 
         return Result.success(result);
