@@ -1,18 +1,29 @@
 package com.zhonghuasheng.seckill.util;
 
 
+import org.springframework.util.DigestUtils;
+
 public class MD5Util {
 
     public static String md5(String str) {
-        System.out.println("org.apache.commons.codec.digest.DigestUtils: " + org.apache.commons.codec.digest.DigestUtils.md5(str));
-        System.out.println("org.springframework.util.DigestUtils:" + org.springframework.util.DigestUtils.md5DigestAsHex(str.getBytes()));
-        return org.springframework.util.DigestUtils.md5DigestAsHex(str.getBytes());
+        // 使用spring框架的DigestUtils，减少pom中的依赖
+        return DigestUtils.md5DigestAsHex(str.getBytes());
     }
 
     private static final String salt = "Abcde12345_";
 
-    public static String mixPassword(String str) {
+    public static String inputPass2FormPass(String str) {
         String mixStr = salt.charAt(0) + salt.charAt(2) + str + salt.charAt(1) + salt.charAt(3);
         return md5(mixStr);
+    }
+
+    public static String formPass2DbPass(String str, String salt) {
+        String mixStr = salt.charAt(0) + salt.charAt(2) + str + salt.charAt(1) + salt.charAt(3);
+        return md5(mixStr);
+    }
+
+    public static String inputPass2DBPass(String str, String saltDb) {
+        String formPass = inputPass2FormPass(str);
+        return formPass2DbPass(formPass, saltDb);
     }
 }
