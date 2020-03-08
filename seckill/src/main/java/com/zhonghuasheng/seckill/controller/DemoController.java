@@ -3,6 +3,7 @@ package com.zhonghuasheng.seckill.controller;
 import com.zhonghuasheng.seckill.common.CodeMsg;
 import com.zhonghuasheng.seckill.common.Result;
 import com.zhonghuasheng.seckill.domain.Student;
+import com.zhonghuasheng.seckill.redis.RedisService;
 import com.zhonghuasheng.seckill.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,6 +18,8 @@ public class DemoController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private RedisService redisService;
 
     @GetMapping("/hello")
     @ResponseBody
@@ -49,5 +52,14 @@ public class DemoController {
     public Result<Boolean> dbTx() {
         userService.tx();
         return Result.success(true);
+    }
+
+
+    @GetMapping("/redis/get")
+    @ResponseBody
+    public Result<Long> redisGet() {
+        Long value = redisService.get("key1", Long.class);
+
+        return Result.success(value);
     }
 }
