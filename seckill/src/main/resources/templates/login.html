@@ -77,7 +77,8 @@
                     layer.msg(data.msg)
                 }
             },
-            error: function () {
+            error: function(data) {
+                console.log(data);
                 layer.closeAll();
             }
         });

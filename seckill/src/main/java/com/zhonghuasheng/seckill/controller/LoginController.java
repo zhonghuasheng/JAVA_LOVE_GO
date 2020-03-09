@@ -13,6 +13,8 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.validation.Valid;
+
 @Controller
 public class LoginController {
 
@@ -22,10 +24,11 @@ public class LoginController {
     private Logger log = LoggerFactory.getLogger(LoginController.class);
     @RequestMapping("/login")
     @ResponseBody
-    public Result<Boolean> login(LoginVo loginVo) {
+    public Result<Boolean> login(@Valid LoginVo loginVo) {
         log.info(loginVo.toString());
         String password = loginVo.getPassword();
         String mobile = loginVo.getMobile();
+        /*// 参数校验
         if (StringUtils.isEmpty(password)) {
             return Result.error(CodeMsg.PASSWORD_EMPTY);
         }
@@ -34,7 +37,7 @@ public class LoginController {
         }
         if (!ValidatorUtil.isMobile(mobile)) {
             return Result.error(CodeMsg.MOBILE_FORMAT_ERROR);
-        }
+        }*/
 
         // 登陆
         CodeMsg cm = seckillUserService.login(loginVo);
