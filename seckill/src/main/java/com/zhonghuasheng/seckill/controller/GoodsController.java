@@ -20,17 +20,15 @@ public class GoodsController {
     @Autowired
     SeckillUserService userService;
 
+    // 商品列表
     @RequestMapping("/")
-    public String list(Model model, HttpServletResponse response,
-                       @CookieValue(value = SeckillUserService.COOKIE_NAME_TOKEN, required = false) String coolieToken,
-                       @RequestParam(value = SeckillUserService.COOKIE_NAME_TOKEN, required = false) String paramToken) {
-        if (StringUtils.isEmpty(coolieToken) && StringUtils.isEmpty(paramToken)) {
-            return "login";
-        }
-        String token = StringUtils.isEmpty(paramToken) ? coolieToken : paramToken;
-        SecKillUser user = userService.getByToken(response, token);
+    public String list(Model model, SecKillUser user) {
         model.addAttribute("user", user);
-
         return "goods_list";
+    }
+
+    // 商品详情
+    public String detail() {
+        return null;
     }
 }
