@@ -11,4 +11,7 @@ public interface GoodsDao {
 
     @Select("SELECT g.*, s.seckill_price, s.stock_count, s.start_date, s.end_date FROM goods AS g LEFT JOIN seckill_goods AS s ON g.id = s.id")
     List<GoodsVo> listGoodsVo();
+
+    @Select("SELECT g.*, s.seckill_price, s.stock_count, s.start_date, s.end_date FROM goods AS g LEFT JOIN seckill_goods AS s ON g.id = s.id WHERE g.id = #{id}")
+    GoodsVo getById(long id);
 }
