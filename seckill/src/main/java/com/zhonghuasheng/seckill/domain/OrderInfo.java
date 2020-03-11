@@ -11,6 +11,7 @@ public class OrderInfo {
     private String goodsName;
     private int goodsCount;
     private double goodsPrice;
+    private int orderChannel;
     private int status;
     private Date createDate;
     private Date payDate;
@@ -71,6 +72,14 @@ public class OrderInfo {
         this.goodsPrice = goodsPrice;
     }
 
+    public int getOrderChannel() {
+        return orderChannel;
+    }
+
+    public void setOrderChannel(int orderChannel) {
+        this.orderChannel = orderChannel;
+    }
+
     public int getStatus() {
         return status;
     }
@@ -93,5 +102,22 @@ public class OrderInfo {
 
     public void setPayDate(Date payDate) {
         this.payDate = payDate;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderInfo{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", goodsId=" + goodsId +
+                ", deliveryAddrId=" + deliveryAddrId +
+                ", goodsName='" + goodsName + '\'' +
+                ", goodsCount=" + goodsCount +
+                ", goodsPrice=" + goodsPrice +
+                ", orderChannel=" + orderChannel +
+                ", status=" + status +
+                ", createDate=" + createDate +
+                ", payDate=" + payDate +
+                '}';
     }
 }
