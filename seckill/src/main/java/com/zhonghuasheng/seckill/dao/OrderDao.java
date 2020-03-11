@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.SelectKey;
 public interface OrderDao {
 
     @Select("SELECT * FROM seckill_order WHERE user_id = #{userId} AND goods_id = #{goodsId}")
-    SeckillOrder getSeckillOrderByUserIdAndGoodsId(Long userId, long goodsId);
+    SeckillOrder getSeckillOrderByUserIdAndGoodsId(long userId, long goodsId);
 
     @Insert("INSERT INTO order_info(user_id, goods_id, delivery_addr_id, goods_name, goods_count," +
             " goods_price, order_channel, status, create_date, pay_date) VALUES(#{userId}, #{goodsId}," +
@@ -20,6 +20,6 @@ public interface OrderDao {
     @SelectKey(keyColumn = "id", keyProperty = "id", resultType = Long.class, before = false, statement = "SELECT last_insert_id()")
     long insert(OrderInfo orderInfo);
 
-    @Insert("INSERT INTO seckill_order(user_id, order_id, goods_id) VALUES (#{userId}, #{goodsId}, #{orderId})")
+    @Insert("INSERT INTO seckill_order(user_id, order_id, goods_id) VALUES (#{userId}, #{orderId}, #{goodsId})")
     int insertSeckillOrder(SeckillOrder seckillOrder);
 }
