@@ -49,7 +49,7 @@
                 </td>
                 <td>
                     <form id="seckillForm" method="post" action="/seckill">
-                        <button class="btn btn-primary btn-block" type="submit">立即秒杀</button>
+                        <button id="buyButton" class="btn btn-primary btn-block" type="submit">立即秒杀</button>
                         <input type="hidden" name="goodsId" th:value="${goods.id}">
                     </form>
                 </td>
@@ -69,4 +69,32 @@
         </table>
     </div>
 </body>
+<script>
+    var remainSeconds = $('#remainSeconds').val();
+    var timeout;
+    $(function() {
+        countDown();
+    });
+
+    function countDown() {
+        if(remainSeconds > 0) { //倒计时
+            $('#buyButton').attr('disabled', true);
+            timeout = setTimeout(function() {
+                --remainSeconds;
+                $('#countDown').text(remainSeconds);
+                $('#remainSeconds').val(remainSeconds);
+                countDown();
+            }, 1000);
+        } else if(remainSeconds == 0) { //进行中
+            $('#buyButton').attr('disabled', false);
+            if(timeout) {
+                clearTimeout(timeout);
+            }
+            $('#seckillTip').html("秒杀进行中");
+        } else { //已结束
+            $('#buyButton').attr('disabled', true);
+            $('#seckillTip').html("秒杀已结束");
+        }
+    }
+</script>
 </html>
