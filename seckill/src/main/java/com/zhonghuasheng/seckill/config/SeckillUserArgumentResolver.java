@@ -44,6 +44,9 @@ public class SeckillUserArgumentResolver implements HandlerMethodArgumentResolve
 
     private String getCookieValue(HttpServletRequest request, String cookieNameToken) {
         Cookie[] cookies = request.getCookies();
+        if (cookies == null || cookies.length <= 0) {
+            return null;
+        }
         for (int i = 0; i < cookies.length; i++) {
             if (cookies[i].getName().equals(cookieNameToken)) {
                 return cookies[i].getValue();

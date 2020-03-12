@@ -12,12 +12,15 @@
     <artifactId>seckill</artifactId>
 
     <name>seckill</name>
-    <url>http://www.example.com</url>
+    <url>seckill.anythy.cn</url>
+    <packaging>jar</packaging>
+    <version>1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
     </properties>
 
     <dependencies>
@@ -76,16 +79,31 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+        <!--打war包-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope> <!--只在编译时起作用-->
+        </dependency>
     </dependencies>
 
     <build>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
+                <!--命令行支持-->
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                 </plugin>
+                <!--打war包-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.2.3</version>
+                </plugin>
             </plugins>
         </pluginManagement>
+        <!--生成build number-->
+        <finalName>${project.artifactId}-${project.version}-${maven.build.timestamp}</finalName>
     </build>
 </project>
