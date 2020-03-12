@@ -3,13 +3,11 @@ package com.zhonghuasheng.seckill.controller;
 import com.zhonghuasheng.seckill.common.CodeMsg;
 import com.zhonghuasheng.seckill.common.Result;
 import com.zhonghuasheng.seckill.service.SeckillUserService;
-import com.zhonghuasheng.seckill.util.ValidatorUtil;
 import com.zhonghuasheng.seckill.vo.LoginVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
