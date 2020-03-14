@@ -1,6 +1,7 @@
 package com.zhonghuasheng.seckill.controller;
 
 import com.zhonghuasheng.seckill.common.CodeMsg;
+import com.zhonghuasheng.seckill.common.Result;
 import com.zhonghuasheng.seckill.domain.OrderInfo;
 import com.zhonghuasheng.seckill.domain.SecKillUser;
 import com.zhonghuasheng.seckill.domain.SeckillOrder;
@@ -12,7 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.websocket.server.PathParam;
 
@@ -51,5 +54,27 @@ public class SeckillController {
         model.addAttribute("goods", goods);
         System.out.println(orderInfo.toString());
         return "order_detail";
+    }
+
+    @RequestMapping(value = "/do", method = RequestMethod.POST)
+    @ResponseBody
+    public Result<OrderInfo> doSeckill(SecKillUser user, @RequestParam("goodsId") long goodsId) {
+        if (user == null) {
+            return Result.error(CodeMsg.SESSION_ERROR);
+        }
+        // 判断库存
+        GoodsVo goods = goodsService.getById(goodsId);
+        if (goods.getStockCount() <= 0) {
+            return Result.error(CodeMsg.SECKILL_OVER);
+        }
+        // 判断是否已经秒杀到了
+        SeckillOrder order = orderService.getSeckillOrderByUserIdAndGoodsId(user.getId(), goodsId);
+        if (order != null) {
+            return Result.error(CodeMsg.REPEATE_SECKILL);
+        }
+        // 减库存 下订单 写入秒杀订单
+        OrderInfo orderInfo = seckillService.seckill(user, goods);
+
+        return Result.success(orderInfo);
     }
 }
