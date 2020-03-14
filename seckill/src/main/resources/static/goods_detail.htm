@@ -48,7 +48,7 @@
                         <input type="hidden" name="goodsId" value="${goods.id}">
                     </form>-->
                     <button id="buyButton" class="btn btn-primary btn-block" type="button" onclick="seckill()">立即秒杀</button>
-                    <input type="hidden" name="goodsId">
+                    <input type="hidden" id="goodsId" name="goodsId">
                 </td>
             </tr>
             <tr>
@@ -72,7 +72,8 @@
     });
 
     function getDetail() {
-        var goodsId = 1;
+        var goodsId = g_getQueryString("goodsId");
+
         $.ajax({
             url: "/goods/details/" + goodsId,
             type: "GET",
@@ -132,6 +133,28 @@
             $('#buyButton').attr('disabled', true);
             $('#seckillTip').html("秒杀已结束");
         }
+    }
+
+    function seckill() {
+        var goodsId = $("#goodsId").val();
+
+        $.ajax({
+            url: "/seckill/do",
+            type: "POST",
+            data: {
+                goodsId: goodsId
+            },
+            success: function(data) {
+                if (data.code == 0) {
+                    window.location.href = "/order_detail.htm?orderId=" + data.data.id;
+                } else {
+                    layer.msg("服务端异常");
+                }
+            },
+            error: function() {
+                layer.msg("服务端异常");
+            }
+        });
     }
 </script>
 </html>

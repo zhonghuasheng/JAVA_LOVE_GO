@@ -18,6 +18,7 @@ public class CodeMsg {
     public static final CodeMsg PASSWORD_ERROR = new CodeMsg(500214, "密码错误");
     //商品模块5003XX
     //订单模块5004XX
+    public static final CodeMsg ORDER_NOT_EXIST = new CodeMsg(500400, "订单不存在");
     //秒杀模块5005XX
     public static final CodeMsg SECKILL_OVER = new CodeMsg(500500, "商品已经秒杀完毕");
     public static final CodeMsg REPEATE_SECKILL = new CodeMsg(500501, "不能重复秒杀");
