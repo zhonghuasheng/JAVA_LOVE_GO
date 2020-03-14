@@ -90,7 +90,7 @@
         $("#goodsName").text(goods.goodsName);
         $("#goodsImg").attr("src", goods.goodsImg);
         $("#orderPrice").text(order.goodsPrice);
-        $("#createTime").text("");
+        $("#createTime").text(new Date(order.createTime).format("yyyy-MM-dd HH:mm:ss"));
         var status = "";
         if (order.status == 0) {
             status = "未支付";
