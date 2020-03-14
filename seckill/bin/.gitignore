@@ -3,4 +3,3 @@ RemoteSystemsTempFiles/*
 Servers/*
 .recommenders/*
 /target/*
-*.class
