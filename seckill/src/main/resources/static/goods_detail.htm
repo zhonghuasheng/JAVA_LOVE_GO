@@ -104,7 +104,7 @@
         $("#goodsImg").attr("src", goods.goodsImg);
         $("#goodsPrice").text(goods.goodsPrice);
         $("#goodsId").val(goods.id);
-        $("#startTime").text();
+        $("#startTime").text(new Date(goods.startDate).format("yyyy-MM-dd hh:mm:ss"));
         $("#remainSeconds").val(remainSeconds);
         $("#seckillPrice").text(goods.seckillPrice);
         $("#stockCount").text(goods.stockCount);
