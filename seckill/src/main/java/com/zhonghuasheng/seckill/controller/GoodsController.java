@@ -1,9 +1,11 @@
 package com.zhonghuasheng.seckill.controller;
 
+import com.zhonghuasheng.seckill.common.Result;
 import com.zhonghuasheng.seckill.domain.SecKillUser;
 import com.zhonghuasheng.seckill.redis.GoodsKey;
 import com.zhonghuasheng.seckill.redis.RedisService;
 import com.zhonghuasheng.seckill.service.GoodsService;
+import com.zhonghuasheng.seckill.vo.GoodsDetailVo;
 import com.zhonghuasheng.seckill.vo.GoodsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -53,7 +55,7 @@ public class GoodsController {
         return html;
     }
 
-    // 商品详情
+    // 商品详情: 页面缓存到redis
     @RequestMapping(value = "/detail/{id}", produces = "text/html")
     public String detail(HttpServletRequest request, HttpServletResponse response, Model model, SecKillUser user, @PathVariable("id") long id) {
         model.addAttribute("user", user);
@@ -93,5 +95,38 @@ public class GoodsController {
         }
 
         return html;
+    }
+
+    // 商品详情: 页面静态化
+    @RequestMapping(value = "/details/{id}")
+    @ResponseBody
+    public Result<GoodsDetailVo> details(Model model, SecKillUser user, @PathVariable("id") long id) {
+        model.addAttribute("user", user);
+        GoodsVo goods = goodsService.getById(id);
+        long startTime = goods.getStartDate().getTime();
+        long endTime = goods.getEndDate().getTime();
+        long now = System.currentTimeMillis();
+
+        int seckillStatus = 0;
+        int remainSeconds = 0;
+
+        if ( now < startTime ) {
+            seckillStatus = 0;
+            remainSeconds = (int) ((startTime - now) / 1000);
+        } else if (now > endTime) {
+            seckillStatus = 2;
+            remainSeconds = -1;
+        } else {
+            seckillStatus = 1;
+            remainSeconds = 0;
+        }
+
+        GoodsDetailVo vo = new GoodsDetailVo();
+        vo.setSeckillStatus(seckillStatus);
+        vo.setRemainSeconds(remainSeconds);
+        vo.setUser(user);
+        vo.setGoods(goods);
+
+        return Result.success(vo);
     }
 }
