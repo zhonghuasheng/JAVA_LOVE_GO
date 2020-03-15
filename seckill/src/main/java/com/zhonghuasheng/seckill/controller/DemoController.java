@@ -3,6 +3,7 @@ package com.zhonghuasheng.seckill.controller;
 import com.zhonghuasheng.seckill.common.CodeMsg;
 import com.zhonghuasheng.seckill.common.Result;
 import com.zhonghuasheng.seckill.domain.Student;
+import com.zhonghuasheng.seckill.rabbitmq.MQSender;
 import com.zhonghuasheng.seckill.redis.RedisService;
 import com.zhonghuasheng.seckill.redis.UserKey;
 import com.zhonghuasheng.seckill.service.UserService;
@@ -21,6 +22,8 @@ public class DemoController {
     private UserService userService;
     @Autowired
     private RedisService redisService;
+    @Autowired
+    private MQSender mqSender;
 
     @GetMapping("/hello")
     @ResponseBody
@@ -69,5 +72,12 @@ public class DemoController {
         boolean result = redisService.set(UserKey.getById, String.valueOf(student.getId()), student);
 
         return Result.success(result);
+    }
+
+    @RequestMapping("/mq")
+    @ResponseBody
+    public Result<String> mq() {
+        mqSender.send("Hello, RabbitMQ!!!");
+        return Result.success("SUCCESS");
     }
 }

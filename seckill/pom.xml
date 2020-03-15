@@ -85,6 +85,10 @@
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope> <!--只在编译时起作用-->
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
