@@ -34,7 +34,7 @@ public class OrderService {
         orderInfo.setStatus(0);
         orderInfo.setUserId(user.getId());
         orderInfo.setOrderChannel(1);
-        orderDao.insert(orderInfo);
+        orderDao.insert(orderInfo); // 插入数据库后回填orderInfo的id值，@SelectKey
 
         SeckillOrder seckillOrder = new SeckillOrder();
         seckillOrder.setGoodsId(goods.getId());

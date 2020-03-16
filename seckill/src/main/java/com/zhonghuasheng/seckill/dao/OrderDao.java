@@ -18,7 +18,7 @@ public interface OrderDao {
             " #{deliveryAddrId}, #{goodsName}, #{goodsCount}, #{goodsPrice}, #{orderChannel}, #{status}," +
             " #{createDate}, #{payDate})")
     @SelectKey(keyColumn = "id", keyProperty = "id", resultType = Long.class, before = false, statement = "SELECT last_insert_id()")
-    long insert(OrderInfo orderInfo);
+    long insert(OrderInfo orderInfo); // selectKey是主键回填
 
     @Insert("INSERT INTO seckill_order(user_id, order_id, goods_id) VALUES (#{userId}, #{orderId}, #{goodsId})")
     int insertSeckillOrder(SeckillOrder seckillOrder);
