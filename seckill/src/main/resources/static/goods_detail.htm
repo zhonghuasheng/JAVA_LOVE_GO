@@ -47,7 +47,7 @@
                         <button id="buyButton" class="btn btn-primary btn-block" type="submit">立即秒杀</button>
                         <input type="hidden" name="goodsId" value="${goods.id}">
                     </form>-->
-                    <button id="buyButton" class="btn btn-primary btn-block" type="button" onclick="seckill()">立即秒杀</button>
+                    <button id="buyButton" class="btn btn-primary btn-block" type="button" onclick="getSeckillPath()">立即秒杀</button>
                     <input type="hidden" id="goodsId" name="goodsId">
                 </td>
             </tr>
@@ -135,11 +135,32 @@
         }
     }
 
-    function seckill() {
+    function getSeckillPath() {
+        var goodsId = $("#goodsId").val();
+        g_showLoading();
+        $.ajax({
+            url: "/seckill/path",
+            type: "GET",
+            data: {
+                goodsId: goodsId
+            },
+            success: function(data) {
+                if (data.code == 0) {
+                    var path = data.data;
+                    seckill(path);
+                }
+            },
+            error: function() {
+                layer.msg("客户端请求异常");
+            }
+        });
+    }
+
+    function seckill(path) {
         var goodsId = $("#goodsId").val();
 
         $.ajax({
-            url: "/seckill/better",
+            url: "/seckill/" + path + "/better",
             type: "POST",
             data: {
                 goodsId: goodsId
@@ -174,7 +195,7 @@
                     } else if (result == 0) {
                         setTimeout(function() {
                         getSeckillResult(goodsId);
-                        }, 50);
+                        }, 200);
                     } else {
                         layer.confirm("秒杀成功，查看订单",
                             function() {
