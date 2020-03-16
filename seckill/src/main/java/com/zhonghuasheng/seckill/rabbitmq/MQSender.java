@@ -8,16 +8,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class MQSender {
 
-    public static final String QUEUE_NAME = "queue";
-
     @Autowired
     AmqpTemplate amqpTemplate;
     @Autowired
     RedisService redisService;
 
-    public void send(Object message) {
+    public void send(SeckillMessage message) {
         String msg = redisService.beanToString(message);
-        System.out.println("sendmsg:" + msg);
-        amqpTemplate.convertAndSend(QUEUE_NAME, msg);
+        System.out.println("send msg:" + msg);
+        amqpTemplate.convertAndSend(MQConfig.SECKILL_QUEUE_NAME, msg);
     }
 }

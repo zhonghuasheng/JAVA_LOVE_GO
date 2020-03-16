@@ -57,7 +57,7 @@ public class RedisService {
     /*
      * 判断key是否存在
      */
-    public <T> boolean exists(KeyPrefix prefix, String key, T value) {
+    public <T> boolean exists(KeyPrefix prefix, String key) {
         Jedis jedis = null;
         try {
             jedis = jedisPool.getResource();

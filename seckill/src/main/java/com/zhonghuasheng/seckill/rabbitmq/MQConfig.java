@@ -7,8 +7,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MQConfig {
 
+    public static final String SECKILL_QUEUE_NAME = "seckill.queue";
+
     @Bean
     public Queue queue() {
-        return new Queue(MQSender.QUEUE_NAME, true); // queueName, durable是持久化
+        return new Queue(SECKILL_QUEUE_NAME, true); // queueName, durable是持久化
     }
 }
