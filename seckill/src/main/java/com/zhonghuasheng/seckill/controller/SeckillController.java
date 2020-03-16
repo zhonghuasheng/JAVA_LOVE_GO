@@ -17,10 +17,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -107,11 +104,18 @@ public class SeckillController implements InitializingBean {
         }
     }
 
-    @RequestMapping(value = "/better", method = RequestMethod.POST)
+    @RequestMapping(value = "/{path}/better", method = RequestMethod.POST)
     @ResponseBody
-    public Result<Integer> betterSeckill(Model model, SecKillUser user, @RequestParam("goodsId") long goodsId) {
+    public Result<Integer> betterSeckill(Model model, SecKillUser user,
+                                         @RequestParam("goodsId") long goodsId,
+                                         @PathVariable("path") String path) {
         if (user == null) {
             return Result.error(CodeMsg.SESSION_ERROR);
+        }
+        // 验证path
+        boolean isChecked = seckillService.checkPath(user, goodsId, path);
+        if (!isChecked) {
+            return Result.error(CodeMsg.REQUEST_ILLEGAL);
         }
         // 内存标记，减少redis访问
         Boolean over = localOverMap.get(goodsId);
@@ -148,5 +152,12 @@ public class SeckillController implements InitializingBean {
         long result = seckillService.getSeckillResult(user.getId(), goodsId);
 
         return Result.success(result);
+    }
+
+    @RequestMapping(value = "/path", method = RequestMethod.GET)
+    @ResponseBody
+    public Result<String> getSeckillPath(SecKillUser user, @RequestParam("goodsId") long goodsId) {
+        String path = seckillService.createSeckillPath(user, goodsId);
+        return Result.success(path);
     }
 }
