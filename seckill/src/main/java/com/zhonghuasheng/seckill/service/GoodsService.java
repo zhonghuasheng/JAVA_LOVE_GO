@@ -22,7 +22,7 @@ public class GoodsService {
         return goodsDao.getById(id);
     }
 
-    public void reduceStock(long goodsId) {
-        goodsDao.reduceStock(goodsId);
+    public boolean reduceStock(long goodsId) {
+        return goodsDao.reduceStock(goodsId) > 0;
     }
 }

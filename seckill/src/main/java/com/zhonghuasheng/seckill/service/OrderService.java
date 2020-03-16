@@ -34,11 +34,11 @@ public class OrderService {
         orderInfo.setStatus(0);
         orderInfo.setUserId(user.getId());
         orderInfo.setOrderChannel(1);
-        long orderId = orderDao.insert(orderInfo);
+        orderDao.insert(orderInfo);
 
         SeckillOrder seckillOrder = new SeckillOrder();
         seckillOrder.setGoodsId(goods.getId());
-        seckillOrder.setOrderId(orderId);
+        seckillOrder.setOrderId(orderInfo.getId());
         seckillOrder.setUserId(user.getId());
         orderDao.insertSeckillOrder(seckillOrder);
 
