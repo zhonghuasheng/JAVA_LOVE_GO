@@ -1,5 +1,6 @@
 package com.zhonghuasheng.seckill.config;
 
+import com.zhonghuasheng.seckill.access.UserContext;
 import com.zhonghuasheng.seckill.domain.SecKillUser;
 import com.zhonghuasheng.seckill.service.SeckillUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,17 +31,9 @@ public class SeckillUserArgumentResolver implements HandlerMethodArgumentResolve
 
     @Override
     public Object resolveArgument(MethodParameter parameter, ModelAndViewContainer mavContainer, NativeWebRequest webRequest, WebDataBinderFactory binderFactory) throws Exception {
-        HttpServletRequest request = webRequest.getNativeRequest(HttpServletRequest.class);
-        HttpServletResponse response = webRequest.getNativeResponse(HttpServletResponse.class);
-        String paramToken = request.getParameter(SeckillUserService.COOKIE_NAME_TOKEN);
-        String cookieToken = getCookieValue(request, SeckillUserService.COOKIE_NAME_TOKEN);
-        if (StringUtils.isEmpty(cookieToken) && StringUtils.isEmpty(paramToken)) {
-            return "login";
-        }
-        String token = StringUtils.isEmpty(paramToken) ? cookieToken : paramToken;
-
-        return userService.getByToken(response, token);
+        return UserContext.getUser();
     }
+/*
 
     private String getCookieValue(HttpServletRequest request, String cookieNameToken) {
         Cookie[] cookies = request.getCookies();
@@ -55,4 +48,5 @@ public class SeckillUserArgumentResolver implements HandlerMethodArgumentResolve
 
         return null;
     }
+*/
 }

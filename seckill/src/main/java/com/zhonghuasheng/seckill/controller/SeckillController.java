@@ -1,5 +1,6 @@
 package com.zhonghuasheng.seckill.controller;
 
+import com.zhonghuasheng.seckill.access.AccessLimit;
 import com.zhonghuasheng.seckill.common.CodeMsg;
 import com.zhonghuasheng.seckill.common.Result;
 import com.zhonghuasheng.seckill.domain.OrderInfo;
@@ -161,6 +162,7 @@ public class SeckillController implements InitializingBean {
         return Result.success(result);
     }
 
+    @AccessLimit(seconds = 5, maxCount = 5, needLogin = true)
     @RequestMapping(value = "/path", method = RequestMethod.GET)
     @ResponseBody
     public Result<String> getSeckillPath(SecKillUser user, @RequestParam("goodsId") long goodsId) {
