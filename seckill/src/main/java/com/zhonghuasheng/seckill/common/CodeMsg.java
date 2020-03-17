@@ -11,6 +11,7 @@ public class CodeMsg {
     public static final CodeMsg BIND_ERROR = new CodeMsg(500101, "参数校验异常: %s");
     public static final CodeMsg REQUEST_ILLEGAL = new CodeMsg(500102, "请求非法");
     public static final CodeMsg VERIFY_FAILED = new CodeMsg(500103, "验证失败");
+    public static final CodeMsg ACCESS_LIMIT_REACHED = new CodeMsg(500104, "访问太频繁");
     // 登陆模块5002XX
     public static final CodeMsg SESSION_ERROR = new CodeMsg(500210, "Session不存在或者已经失效");
     public static final CodeMsg PASSWORD_EMPTY = new CodeMsg(500211, "登陆密码不能为空");
