@@ -47,6 +47,10 @@
                         <button id="buyButton" class="btn btn-primary btn-block" type="submit">立即秒杀</button>
                         <input type="hidden" name="goodsId" value="${goods.id}">
                     </form>-->
+                    <div>
+                        <img alt="验证码" src="/kaptcha/" onclick="this.src='/kaptcha?d=' + new Date().getMilliseconds()">
+                        <input id="inputCode" type="text" />
+                    </div>
                     <button id="buyButton" class="btn btn-primary btn-block" type="button" onclick="getSeckillPath()">立即秒杀</button>
                     <input type="hidden" id="goodsId" name="goodsId">
                 </td>
@@ -136,13 +140,13 @@
     }
 
     function getSeckillPath() {
-        var goodsId = $("#goodsId").val();
         g_showLoading();
+
         $.ajax({
             url: "/seckill/path",
             type: "GET",
             data: {
-                goodsId: goodsId
+                goodsId: $("#goodsId").val()
             },
             success: function(data) {
                 if (data.code == 0) {
@@ -150,31 +154,30 @@
                     seckill(path);
                 }
             },
-            error: function() {
-                layer.msg("客户端请求异常");
+            error: function(data) {
+                layer.msg(data.msg);
             }
         });
     }
 
     function seckill(path) {
-        var goodsId = $("#goodsId").val();
-
         $.ajax({
             url: "/seckill/" + path + "/better",
             type: "POST",
             data: {
-                goodsId: goodsId
+                goodsId: $("#goodsId").val(),
+                inputCode: $("#inputCode").val()
             },
             success: function(data) {
                 if (data.code == 0) {
                     // window.location.href = "/order_detail.htm?orderId=" + data.data.id;
                     getSeckillResult(goodsId);
                 } else {
-                    layer.msg("服务端异常");
+                    layer.msg(data.msg);
                 }
             },
-            error: function() {
-                layer.msg("服务端异常");
+            error: function(data) {
+                layer.msg(data.msg);
             }
         });
     }

@@ -19,6 +19,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 
@@ -106,11 +107,17 @@ public class SeckillController implements InitializingBean {
 
     @RequestMapping(value = "/{path}/better", method = RequestMethod.POST)
     @ResponseBody
-    public Result<Integer> betterSeckill(Model model, SecKillUser user,
+    public Result<String> betterSeckill(HttpServletRequest request, Model model, SecKillUser user,
                                          @RequestParam("goodsId") long goodsId,
+                                         @RequestParam("inputCode") String inputCode,
                                          @PathVariable("path") String path) {
         if (user == null) {
             return Result.error(CodeMsg.SESSION_ERROR);
+        }
+        // 验证验证码
+        String rightCode = (String) request.getSession().getAttribute("rightCode");
+        if (!rightCode.equals(inputCode)) {
+            return Result.error(CodeMsg.VERIFY_FAILED);
         }
         // 验证path
         boolean isChecked = seckillService.checkPath(user, goodsId, path);
@@ -139,7 +146,7 @@ public class SeckillController implements InitializingBean {
         sm.setGoodsId(goodsId);
         sender.send(sm);
 
-        return Result.success(0);
+        return Result.success("秒杀成功");
     }
 
     @RequestMapping(value = "/result", method = RequestMethod.GET)
