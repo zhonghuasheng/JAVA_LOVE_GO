@@ -1,6 +1,7 @@
 ### 慕课网秒杀商城项目
 
 #### 项目架构图
+![](src/main/docs/seckill_architecture.PNG)
 
 #### 项目业务流程图
 
