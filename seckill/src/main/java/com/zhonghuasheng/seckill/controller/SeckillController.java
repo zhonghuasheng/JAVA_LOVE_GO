@@ -130,16 +130,16 @@ public class SeckillController implements InitializingBean {
         if (over) {
             return Result.error(CodeMsg.SECKILL_OVER);
         }
+        // 判断是否已经秒杀到了
+        SeckillOrder order = orderService.getSeckillOrderByUserIdAndGoodsId(user.getId(), goodsId);
+        if (order != null) {
+            return Result.error(CodeMsg.REPEATE_SECKILL);
+        }
         // 预减库存
         long stock = redisService.decr(GoodsKey.getSeckillGoodsStock, String.valueOf(goodsId));
         if(stock < 0) { // 注意这里是小于0，当剩下1个商品时，此时有用户下单，并锁定该商品，预减库存后stock=0，下次再有用户下单stock=-1，此时是下单不成功的
             localOverMap.put(goodsId, true);
             return Result.error(CodeMsg.SECKILL_OVER);
-        }
-        // 判断是否已经秒杀到了
-        SeckillOrder order = orderService.getSeckillOrderByUserIdAndGoodsId(user.getId(), goodsId);
-        if (order != null) {
-            return Result.error(CodeMsg.REPEATE_SECKILL);
         }
         // 入队
         SeckillMessage sm = new SeckillMessage();
