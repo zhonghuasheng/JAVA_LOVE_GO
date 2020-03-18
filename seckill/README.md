@@ -2,10 +2,8 @@
 
 系统访问地址： http://seckill.anythy.cn/
 
-#### 项目架构图
-![](src/main/docs/seckill_architecture.PNG)
-
-#### 项目业务流程图
+#### 项目架构图 && 业务流程图
+![](src/main/docs/seckill_architecture.jpg)
 
 #### 学习笔记
 
