@@ -1,5 +1,7 @@
 ### 慕课网秒杀商城项目
 
+系统访问地址： http://seckill.anythy.cn/
+
 #### 项目架构图
 ![](src/main/docs/seckill_architecture.PNG)
 
