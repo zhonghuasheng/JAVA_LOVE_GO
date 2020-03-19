@@ -16,5 +16,6 @@
 |[rabbitmq](https://github.com/zhonghuasheng/JAVA/tree/master/rabbitmq)| Java集成Rabbitmq的练习，Rabbitmq是被广泛使用的消息队列框架，庞大的群众基础 |
 |[spark](https://github.com/zhonghuasheng/JAVA/tree/master/spark)| Java集成Spark的练习，咸鱼也有大数据的梦 |
 |[ssm](https://github.com/zhonghuasheng/JAVA/tree/master/ssm)| Spring3 + SpringMVC + Mybatis的框架搭建，在实际工作中有些老的系统使用的是这种架构，需要熟悉下 |
+|[thinking](https://github.com/zhonghuasheng/JAVA/tree/master/thinking)| 内功练习，算法和数据结构，设计模式的练习 |
 |[秒杀项目](https://github.com/zhonghuasheng/JAVA/tree/master/seckill)| 秒杀项目实战，来自慕课网的实战课程，使用SpringBoot2 + Redis + RabbitMQ + MySQL + Thymeleaf技术 |
-|[basic](https://github.com/zhonghuasheng/JAVA/tree/master/test)| 平时各种测试例子 |
+|[test](https://github.com/zhonghuasheng/JAVA/tree/master/test)| 平时各种测试例子 |
