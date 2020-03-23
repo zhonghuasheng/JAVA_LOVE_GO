@@ -21,6 +21,7 @@
         <module>springboot-log</module>
         <module>springboot-config</module>
         <module>springboot-web</module>
+        <module>springboot-redis</module>
     </modules>
 
 </project>
