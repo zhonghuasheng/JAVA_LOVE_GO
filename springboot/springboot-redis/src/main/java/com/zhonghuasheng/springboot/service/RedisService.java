@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisSentinelPool;
 
+import java.util.concurrent.TimeUnit;
+
 @Service
 public class RedisService {
 
@@ -17,7 +19,7 @@ public class RedisService {
         return true;
     }
 
-    private Jedis getJedis() {
+    public Jedis getJedis() {
         return jedisSentinelPool.getResource();
     }
 
