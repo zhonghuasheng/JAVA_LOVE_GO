@@ -1,6 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 import redis.clients.jedis.HostAndPort;
+import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisPoolConfig;
 
@@ -20,13 +21,38 @@ public class JedisClusterTest {
         nodes.add(new HostAndPort("47.107.153.16", 7004));
         nodes.add(new HostAndPort("47.107.153.16", 7005));
         JedisPoolConfig config = new JedisPoolConfig();
-        JedisCluster jedisCluster = new JedisCluster(nodes, 30, 3, config);
+        config.setMaxTotal(100);
+        config.setMaxIdle(10);
+        config.setTestOnBorrow(true);
+        // timeout和maxAttempts要设置的大些，设置小了容易获取不到，应该是JedisCluster效率的问题
+        JedisCluster jedisCluster = new JedisCluster(nodes, 300, 30,
+                config);
         String value = jedisCluster.get("hello");
         System.out.println(value);
-        Assert.assertEquals("word", value);
+        Assert.assertEquals("world", value);
     }
 
+    @Test
     public void set() {
+        Set<HostAndPort> nodes = new HashSet<HostAndPort>();
+        nodes.add(new HostAndPort("47.107.153.16", 7000));
+        nodes.add(new HostAndPort("47.107.153.16", 7001));
+        nodes.add(new HostAndPort("47.107.153.16", 7002));
+        nodes.add(new HostAndPort("47.107.153.16", 7003));
+        nodes.add(new HostAndPort("47.107.153.16", 7004));
+        nodes.add(new HostAndPort("47.107.153.16", 7005));
+        JedisPoolConfig config = new JedisPoolConfig();
+        config.setMaxTotal(100);
+        config.setMaxIdle(10);
+        config.setTestOnBorrow(true);
+        JedisCluster jedisCluster = new JedisCluster(nodes, 300, 30,
+                config);
+        String value = jedisCluster.set("k11", "value11");
+    }
 
+    @Test
+    public void singleMode() {
+        Jedis jedis = new Jedis("47.107.153.16", 7002);
+        System.out.println(jedis.get("test"));
     }
 }
