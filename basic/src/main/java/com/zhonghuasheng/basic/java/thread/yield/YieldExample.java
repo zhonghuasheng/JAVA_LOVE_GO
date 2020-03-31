@@ -24,7 +24,7 @@ public class YieldExample {
 
 class Yeild {
 
-    public synchronized void call() {
+    public void call() {
         for (int i = 0; i < 20; i++) {
             System.out.println(Thread.currentThread().getName() + i);
             if(i % 4 == 0) {
