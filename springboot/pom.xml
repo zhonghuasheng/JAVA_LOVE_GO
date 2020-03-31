@@ -22,6 +22,7 @@
         <module>springboot-config</module>
         <module>springboot-web</module>
         <module>springboot-redis</module>
+        <module>springboot-data-redis</module>
     </modules>
 
 </project>
