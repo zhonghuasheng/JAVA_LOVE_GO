@@ -14,12 +14,12 @@ public class JedisClusterTest {
     @Test
     public void get() {
         Set<HostAndPort> nodes = new HashSet<HostAndPort>();
-        nodes.add(new HostAndPort("47.107.153.16", 7000));
-        nodes.add(new HostAndPort("47.107.153.16", 7001));
-        nodes.add(new HostAndPort("47.107.153.16", 7002));
-        nodes.add(new HostAndPort("47.107.153.16", 7003));
-        nodes.add(new HostAndPort("47.107.153.16", 7004));
-        nodes.add(new HostAndPort("47.107.153.16", 7005));
+        nodes.add(new HostAndPort("myserver.com", 7000));
+        nodes.add(new HostAndPort("myserver.com", 7001));
+        nodes.add(new HostAndPort("myserver.com", 7002));
+        nodes.add(new HostAndPort("myserver.com", 7003));
+        nodes.add(new HostAndPort("myserver.com", 7004));
+        nodes.add(new HostAndPort("myserver.com", 7005));
         JedisPoolConfig config = new JedisPoolConfig();
         config.setMaxTotal(100);
         config.setMaxIdle(10);
@@ -35,12 +35,12 @@ public class JedisClusterTest {
     @Test
     public void set() {
         Set<HostAndPort> nodes = new HashSet<HostAndPort>();
-        nodes.add(new HostAndPort("47.107.153.16", 7000));
-        nodes.add(new HostAndPort("47.107.153.16", 7001));
-        nodes.add(new HostAndPort("47.107.153.16", 7002));
-        nodes.add(new HostAndPort("47.107.153.16", 7003));
-        nodes.add(new HostAndPort("47.107.153.16", 7004));
-        nodes.add(new HostAndPort("47.107.153.16", 7005));
+        nodes.add(new HostAndPort("myserver.com", 7000));
+        nodes.add(new HostAndPort("myserver.com", 7001));
+        nodes.add(new HostAndPort("myserver.com", 7002));
+        nodes.add(new HostAndPort("myserver.com", 7003));
+        nodes.add(new HostAndPort("myserver.com", 7004));
+        nodes.add(new HostAndPort("myserver.com", 7005));
         JedisPoolConfig config = new JedisPoolConfig();
         config.setMaxTotal(100);
         config.setMaxIdle(10);
@@ -52,7 +52,7 @@ public class JedisClusterTest {
 
     @Test
     public void singleMode() {
-        Jedis jedis = new Jedis("47.107.153.16", 7002);
+        Jedis jedis = new Jedis("myserver.com", 7002);
         System.out.println(jedis.get("test"));
     }
 }
