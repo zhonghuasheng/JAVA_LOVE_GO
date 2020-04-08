@@ -22,9 +22,9 @@ public class JedisConnectionTest {
         config.setTestWhileIdle(true);
         config.setTestOnReturn(true);
         Set<String> sentinels = new HashSet<String>();
-        sentinels.add(new HostAndPort("47.107.153.16", 26379).toString());
-        sentinels.add(new HostAndPort("47.107.153.16", 26380).toString());
-        sentinels.add(new HostAndPort("47.107.153.16", 26381).toString());
+        sentinels.add(new HostAndPort("myserver.com", 26379).toString());
+        sentinels.add(new HostAndPort("myserver.com", 26380).toString());
+        sentinels.add(new HostAndPort("myserver.com", 26381).toString());
         JedisSentinelPool pool = new JedisSentinelPool(
                 "mymaster", sentinels, config, 10000);
         Jedis jedis = pool.getResource();
@@ -80,9 +80,9 @@ public class JedisConnectionTest {
         config.setTestWhileIdle(true);
         config.setTestOnReturn(true);
         Set<String> sentinels = new HashSet<String>();
-        sentinels.add(new HostAndPort("47.107.153.16", 26379).toString());
-        sentinels.add(new HostAndPort("47.107.153.16", 26380).toString());
-        sentinels.add(new HostAndPort("47.107.153.16", 26381).toString());
+        sentinels.add(new HostAndPort("myserver.com", 26379).toString());
+        sentinels.add(new HostAndPort("myserver.com", 26380).toString());
+        sentinels.add(new HostAndPort("myserver.com", 26381).toString());
         JedisSentinelPool pool = new JedisSentinelPool(
                 "mymaster", sentinels, config, 10000);
 

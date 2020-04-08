@@ -2,7 +2,7 @@ server:
   port: 8080
 
 redis:
-  nodes: 47.107.153.16:26379,47.107.153.16:26380,47.107.153.16:26381
+  nodes: myserver.com:26379,myserver.com:26380,myserver.com:26381
   masterName: mymaster
   maxTotal: 100
   maxIdle: 10
