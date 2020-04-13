@@ -25,6 +25,5 @@
         <module>spring4</module>
         <module>springmvc</module>
         <module>springboot</module>
-        <module>seckill</module>
     </modules>
 </project>
