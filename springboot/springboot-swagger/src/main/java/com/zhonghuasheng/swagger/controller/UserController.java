@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Api(value = "UserController", tags = {"用户操作接口"})
 @RestController
 @RequestMapping("/user")
 public class UserController {
