@@ -23,6 +23,7 @@
         <module>springboot-web</module>
         <module>springboot-redis</module>
         <module>springboot-data-redis</module>
+        <module>springboot-swagger</module>
     </modules>
 
 </project>
