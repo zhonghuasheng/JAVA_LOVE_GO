@@ -13,6 +13,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>eureka-server</module>
+        <module>eureka-client</module>
     </modules>
     <artifactId>eureka</artifactId>
     <modelVersion>4.0.0</modelVersion>

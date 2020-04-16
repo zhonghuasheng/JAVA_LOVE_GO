@@ -3,4 +3,5 @@ RemoteSystemsTempFiles/*
 Servers/*
 .recommenders/*
 eureka-server/target/*
+eureka-client/target/*
 
