@@ -25,5 +25,6 @@
         <module>spring4</module>
         <module>springmvc</module>
         <module>springboot</module>
+        <module>springcloud</module>
     </modules>
 </project>
