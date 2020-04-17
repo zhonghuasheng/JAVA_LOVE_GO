@@ -12,6 +12,7 @@
     <modules>
         <module>eureka</module>
         <module>ribbon</module>
+        <module>feign</module>
     </modules>
 
     <parent>
