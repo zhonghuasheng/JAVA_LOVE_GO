@@ -1,5 +1,7 @@
 package com.zhonghuasheng.datastructure.customer;
 
+import java.util.ArrayList;
+
 public class ArrayInsert {
 
     public static void main(String[] args) {
@@ -26,8 +28,10 @@ class MyArray {
     public MyArray(int capacity) {
         this.array = new int[capacity];
         this.size = 0;
-    }
+        ArrayList arrayList = new ArrayList();
+        arrayList.add(0);
 
+    }
     public void insert(int element, int index) {
         if (index > array.length || index < 0) {
             throw new IndexOutOfBoundsException("数组越界");
