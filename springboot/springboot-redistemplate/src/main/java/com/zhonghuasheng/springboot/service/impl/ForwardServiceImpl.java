@@ -26,7 +26,12 @@ public class ForwardServiceImpl implements ForwardService {
     }
 
     public synchronized void setKey(String key, String value) {
-        stringRedisTemplate.opsForValue().setIfAbsent(key, value, 24, TimeUnit.HOURS);
+        if (!stringRedisTemplate.hasKey(PREFIX)) {
+            stringRedisTemplate.opsForValue().setIfAbsent(key, value, 24, TimeUnit.HOURS);
+        } else {
+            stringRedisTemplate.opsForValue().increment(PREFIX, 1);
+        }
+
         System.out.println("After execute setKey method, the value is: " + stringRedisTemplate.opsForValue().get(key));
     }
 }
