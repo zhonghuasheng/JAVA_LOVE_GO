@@ -26,5 +26,6 @@
         <module>springmvc</module>
         <module>springboot</module>
         <module>springcloud</module>
+        <module>springcloud-alibaba</module>
     </modules>
 </project>
