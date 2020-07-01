@@ -11,7 +11,7 @@
     <junit.version>4.10</junit.version>
     <postgresql.version>9.4-1201-jdbc41</postgresql.version>
     <mybatis.version>3.4.1</mybatis.version>
-    <mysql.version>5.1.29</mysql.version>
+    <mysql.version>8.0.16</mysql.version>
   </properties>
 
   <dependencies>
