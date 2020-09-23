@@ -25,6 +25,7 @@
         <module>springboot-data-redis</module>
         <module>springboot-swagger</module>
         <module>springboot-redistemplate</module>
+        <module>springboot-rabbitmq</module>
     </modules>
 
 </project>
