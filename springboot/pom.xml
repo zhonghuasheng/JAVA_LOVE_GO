@@ -26,6 +26,7 @@
         <module>springboot-swagger</module>
         <module>springboot-redistemplate</module>
         <module>springboot-rabbitmq</module>
+        <module>springboot-mybatisplus</module>
     </modules>
 
 </project>
