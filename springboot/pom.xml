@@ -27,6 +27,7 @@
         <module>springboot-redistemplate</module>
         <module>springboot-rabbitmq</module>
         <module>springboot-mybatisplus</module>
+        <module>springboot-redis-lock</module>
     </modules>
 
 </project>
