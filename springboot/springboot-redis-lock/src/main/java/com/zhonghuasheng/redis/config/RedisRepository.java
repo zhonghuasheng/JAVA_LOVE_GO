@@ -3,27 +3,45 @@ package com.zhonghuasheng.redis.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
+import org.springframework.data.redis.serializer.RedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
+@Slf4j
 @Component
 public class RedisRepository {
+
     @Autowired
     private RedisTemplate redisTemplate;
+
+    public RedisRepository(RedisTemplate redisTemplate) {
+        RedisSerializer redisSerializer = new StringRedisSerializer();
+        redisTemplate.setKeySerializer(redisSerializer);
+        redisTemplate.setValueSerializer(redisSerializer);
+        redisTemplate.setHashKeySerializer(redisSerializer);
+        redisTemplate.setHashValueSerializer(redisSerializer);
+        this.redisTemplate = redisTemplate;
+    }
 
     /**
      * 加锁，自旋重试三次
      *
      * @return
      */
-    public boolean lock(String key, String requestId) {
+    public boolean lock(String key, String requestId, int expireTime) {
         boolean locked = false;
         int tryCount = 3;
         while (!locked && tryCount > 0) {
-            locked = redisTemplate.opsForValue().setIfAbsent(key, requestId, 2, TimeUnit.MINUTES);
+            locked = redisTemplate.opsForValue().setIfAbsent(key, requestId, expireTime, TimeUnit.MICROSECONDS);
             tryCount--;
+        }
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+
         }
         return locked;
     }
