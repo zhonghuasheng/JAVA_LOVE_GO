@@ -36,6 +36,8 @@ public class OrderService {
                     log.info("库存为0， {}", stock);
                 }
                 result = true;
+            } else {
+                log.info("没获取到锁");
             }
         } catch (Exception e) {
             log.error("下单异常，{}", e);

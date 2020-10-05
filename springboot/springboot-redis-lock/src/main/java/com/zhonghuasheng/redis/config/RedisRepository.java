@@ -8,6 +8,7 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
 
+import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
@@ -71,16 +72,18 @@ public class RedisRepository {
         boolean locked = false;
         int tryCount = 3;
         while (!locked && tryCount > 0) {
-            locked = redisTemplate.opsForValue().setIfAbsent(key, requestId, expireTime, TimeUnit.MICROSECONDS);
+            try {
+                locked = redisTemplate.opsForValue().setIfAbsent(key, requestId, expireTime, TimeUnit.MICROSECONDS);
 
-            if (!locked) {
-                tryCount--;
-
-                try {
+                if (!locked) {
+                    tryCount--;
                     Thread.sleep(300);
-                } catch (InterruptedException e) {
-                    log.error("获取分布式锁失败, {}", e);
                 }
+            } catch (InterruptedException e) {
+                log.error("获取分布式锁失败, {}", e);
+            } catch (Exception e) {
+                // 获取锁是容易发生SocketTimeoutException
+                log.warn("获取锁超时, {}", e);
             }
         }
 
