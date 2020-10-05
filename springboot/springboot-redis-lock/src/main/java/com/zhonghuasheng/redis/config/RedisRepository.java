@@ -8,12 +8,36 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @Component
 public class RedisRepository {
+
+    private final String REDIS_LOCK = new StringBuilder()
+            .append("if redis.call('get',KEYS[1]) == ARGV[1] then")
+            .append("    return redis.call('del',KEYS[1]);")
+            .append("else")
+            .append("    return 0;")
+            .append("end;")
+            .toString();
+
+    private final String REDUCE_STOCK = new StringBuilder()
+            .append("if (redis.call('exists', KEYS[1]) == 1) then")
+            .append("    local stock = tonumber(redis.call('get', KEYS[1]));")
+            .append("    if (stock == -1) then")
+            .append("        return -1;")
+            .append("    end;")
+            .append("    if (stock > 0) then")
+            .append("        redis.call('incrby', KEYS[1], -1);")
+            .append("        return stock;")
+            .append("    end;")
+            .append("    return 0;")
+            .append("end;")
+            .append("return -1;")
+            .toString();
 
     @Autowired
     private RedisTemplate redisTemplate;
@@ -48,19 +72,22 @@ public class RedisRepository {
         int tryCount = 3;
         while (!locked && tryCount > 0) {
             locked = redisTemplate.opsForValue().setIfAbsent(key, requestId, expireTime, TimeUnit.MICROSECONDS);
-            tryCount--;
 
-            try {
-                Thread.sleep(300);
-            } catch (InterruptedException e) {
-                log.error("获取分布式锁失败, {}", e);
+            if (!locked) {
+                tryCount--;
+
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    log.error("获取分布式锁失败, {}", e);
+                }
             }
         }
 
         return locked;
     }
 
-    /*
+    /**
      * @param key 锁
      * @param requestId 锁标识
      * @return 释放锁是否成功
@@ -72,10 +99,35 @@ public class RedisRepository {
 
         DefaultRedisScript<Long> redisScript = new DefaultRedisScript();
         // 用于解锁的lua脚本位置
-        redisScript.setScriptText("if redis.call('get',KEYS[1]) == ARGV[1] then return redis.call('del',KEYS[1]) else return 0 end");
+        redisScript.setScriptText(REDIS_LOCK);
         redisScript.setResultType(Long.class);
         // 没有指定序列化方式，默认使用上面配置的
         Object result = redisTemplate.execute(redisScript, Arrays.asList(key), requestId);
         return result.equals(Long.valueOf(1));
+    }
+
+    /**
+     * 通过key获取value
+     * @param key
+     * @return
+     */
+    public Object get(String key) {
+        if (null == key) {
+            return null;
+        }
+
+        return redisTemplate.opsForValue().get(key);
+    }
+
+    public int decrement(String key) {
+        if (null == key) {
+            return -1;
+        }
+
+        DefaultRedisScript<Integer> redisScript = new DefaultRedisScript<>();
+        redisScript.setScriptText(REDUCE_STOCK);
+        redisScript.setResultType(Integer.class);
+        Object result = redisTemplate.execute(redisScript, Arrays.asList(key),  "");
+        return Integer.valueOf(String.valueOf(result));
     }
 }
