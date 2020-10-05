@@ -122,6 +122,11 @@ public class RedisRepository {
         return redisTemplate.opsForValue().get(key);
     }
 
+    /**
+     * 减库存
+     * @param key
+     * @return 剩余库存数量，-1表示参数key为null
+     */
     public int decrement(String key) {
         if (null == key) {
             return -1;
