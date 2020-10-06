@@ -17,4 +17,11 @@ public class OrderController {
         String result = order ? "下单成功" : "下单失败";
         return result;
     }
+
+    @PostMapping("/2/{goodsId}")
+    public String order2(@PathVariable("goodsId") Integer goodsId) {
+        boolean order = orderService.order2(goodsId);
+        String result = order ? "下单成功" : "下单失败";
+        return result;
+    }
 }
