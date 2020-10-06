@@ -1,7 +1,11 @@
 package com.zhonghuasheng.redis.config;
 
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
+import org.redisson.config.Config;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.serializer.RedisSerializer;
@@ -42,6 +46,11 @@ public class RedisRepository {
 
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @Bean
+    public RedissonClient getRedissonClient() {
+        return Redisson.create();
+    }
 
     /**
      * 设置RedisTemplate的序列化
