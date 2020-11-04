@@ -1,0 +1,10 @@
+RemoteSystemsTempFiles/*
+.metadata/*
+Servers/*
+.recommenders/*
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+target/
