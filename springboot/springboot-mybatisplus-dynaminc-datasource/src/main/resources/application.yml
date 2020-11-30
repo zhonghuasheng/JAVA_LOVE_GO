@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      strict: false
+      datasource:
+        master:
+          url: jdbc:mysql://mysql.host:3306/guestdb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+          username: root
+          password: Abcde12345_
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        slave_1:
+          url: jdbc:mysql://mysql.host:3306/guestdb?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+          username: root
+          password: Abcde12345_
+          driver-class-name: com.mysql.cj.jdbc.Driver
+      druid:
+        initial-size: 1
+        max-active: 5
+        min-idle: 2
+        max-wait: 30000
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: com.zhonghuasheng.springboot.model
