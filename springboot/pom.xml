@@ -30,6 +30,7 @@
         <module>springboot-redis-lock</module>
         <module>springboot-basic</module>
         <module>demo-spring-boot-starter</module>
+        <module>springboot-mybatisplus-dynaminc-datasource</module>
     </modules>
 
 </project>
