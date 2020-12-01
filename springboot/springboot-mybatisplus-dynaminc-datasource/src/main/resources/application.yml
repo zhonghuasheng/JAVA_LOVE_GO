@@ -1,7 +1,7 @@
 spring:
   datasource:
     dynamic:
-      primary: master
+      primary: master # 设置主数据源
       strict: false
       datasource:
         master:
@@ -19,6 +19,16 @@ spring:
         max-active: 5
         min-idle: 2
         max-wait: 30000
+    druid:
+      keep-alive: true
+      stat-view-servlet: # 开启监控页面
+        login-username: root
+        login-password: Abcde12345_
+      filter:
+        slf4j:
+          enabled: true
+          statement-prepare-after-log-enabled: false # 关闭statement无用的信息
+
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
   type-aliases-package: com.zhonghuasheng.springboot.model
