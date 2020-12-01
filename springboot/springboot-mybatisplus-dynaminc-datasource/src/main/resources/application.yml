@@ -15,9 +15,9 @@ spring:
           password: Abcde12345_
           driver-class-name: com.mysql.cj.jdbc.Driver
       druid:
-        initial-size: 1
+        initial-size: 1 # 这里的配置对上面配置的两个数据源都是生效的
         max-active: 5
-        min-idle: 2
+        min-idle: 1
         max-wait: 30000
     druid:
       keep-alive: true
@@ -27,8 +27,14 @@ spring:
       filter:
         slf4j:
           enabled: true
-          statement-prepare-after-log-enabled: false # 关闭statement无用的信息
+        log4j2:
+          enabled: true
+      time-between-log-stats-millis: 30000
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
   type-aliases-package: com.zhonghuasheng.springboot.model
+logging:
+  config: classpath:log4j2.xml
+  level:
+    com.zhonghuasheng.springboot.mapper: debug
