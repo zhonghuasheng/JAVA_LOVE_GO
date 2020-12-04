@@ -5,4 +5,5 @@ spring:
     name: springboot-log4j2-demo
 logging:
   config: classpath:log4j2-spring.xml
-namee: springboot-log4j2-demo
+  file:
+    path: /var/logs/
