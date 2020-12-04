@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-log4j2-demo
+logging:
+  config: classpath:log4j2-spring.xml
+  file:
+    path: /var/logs/

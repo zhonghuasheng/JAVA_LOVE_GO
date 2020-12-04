@@ -16,13 +16,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @DS("slave_1")
     @Override
     public User getUserByPhone(String phone) {
-        try {
-            User user = baseMapper.selectOne(new QueryWrapper<User>().lambda().eq(User::getPhone, phone).last("LIMIT 1"));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return null;
+            return baseMapper.selectOne(new QueryWrapper<User>().lambda().eq(User::getPhone, phone).last("LIMIT 1"));
     }
 
     @Override
