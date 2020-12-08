@@ -7,3 +7,12 @@ spring:
     admin:
       client:
         url: http://localhost:9090
+# 暴露所有的actuator断点信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  file:
+    path: /var/logs/${spring.application.name}/admin-client.log
