@@ -31,6 +31,10 @@
         <module>springboot-basic</module>
         <module>demo-spring-boot-starter</module>
         <module>springboot-mybatisplus-dynaminc-datasource</module>
+        <module>springboot-admin</module>
+        <module>springboot-admin-server</module>
+        <module>springboot-admin</module>
+        <module>springboot-admin-server</module>
     </modules>
 
 </project>
