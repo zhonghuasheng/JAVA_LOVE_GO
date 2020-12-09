@@ -1,7 +1,0 @@
-server:
-  port: 8080
-spring:
-  redis:
-    host: myserver.com
-    port: 6379
-    password: Abcde12345_
