@@ -17,15 +17,13 @@ import java.io.IOException;
 import java.util.Properties;
 
 @SpringBootApplication
-public class Log4j2Application implements ApplicationRunner {
+public class Log4j2Application {
     /**
      * 这个demo是springboot集成log4j2，具有以下功能：
      * 1. 可以做到按应用名建立文件夹，分门别类的统计日记。具体可以看log4j2的lookup，主要是通过log4j2来读取配置的变量实现。
      * 2. 按文件大小或者按天来rolling日志文件
      * 3. 增加日志的格式化模式，比如前缀，这样的话可以方便后期集成到ELK中
      */
-
-    private static final Logger logger = LogManager.getLogger(Log4j2Application.class);
 
     public static void main(String[] args) {
         YamlPropertiesFactoryBean yaml = new YamlPropertiesFactoryBean();
@@ -34,17 +32,6 @@ public class Log4j2Application implements ApplicationRunner {
         System.setProperty("SERVICE_NAME", property.getProperty("spring.application.name"));
         System.setProperty("FILE_PATH", property.getProperty("logging.file.path"));
         SpringApplication.run(Log4j2Application.class, args);
-    }
-
-    @Override
-    public void run(ApplicationArguments args) throws Exception {
-        while (true) {
-            logger.debug("Debugging log-----------------------------------------------------------------------------");
-            logger.info("Info log-----------------------------------------------------------------------------");
-            logger.warn("Warning log-----------------------------------------------------------------------------");
-            logger.error("Error log-----------------------------------------------------------------------------");
-            logger.fatal("Fatal log-----------------------------------------------------------------------------");
-            Thread.sleep(20000);
-        }
+        System.out.println("项目启动完毕");
     }
 }

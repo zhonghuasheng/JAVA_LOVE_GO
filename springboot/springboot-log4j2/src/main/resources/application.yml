@@ -3,7 +3,17 @@ server:
 spring:
   application:
     name: springboot-log4j2-demo
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+# 暴露所有的actuator断点信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 logging:
   config: classpath:log4j2-spring.xml
   file:
-    path: /var/logs/
+    path: /var/logs/springboot-log4j2-demo/
