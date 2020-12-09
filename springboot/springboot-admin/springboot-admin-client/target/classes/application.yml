@@ -1,8 +1,8 @@
 server:
-  port: 8080
+  port: 9091
 spring:
   application:
-    name: springboot-log4j2-demo
+    name: springboot-admin-client
   boot:
     admin:
       client:
@@ -14,6 +14,6 @@ management:
       exposure:
         include: "*"
 logging:
-  config: classpath:log4j2-spring.xml
   file:
-    path: /var/logs/springboot-log4j2-demo/
+    path: /var/logs/${spring.application.name}/admin-client/
+    name: springboot-admin-client.log
