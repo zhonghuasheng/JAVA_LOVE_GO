@@ -3,3 +3,11 @@ server:
 spring:
   application:
     name: admin-server
+  boot:
+    admin:
+      ui:
+        title: "SpringBoot应用监控面板"
+  security:
+    user:
+      name: "admin"
+      password: "admin"

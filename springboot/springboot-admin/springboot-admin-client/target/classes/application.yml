@@ -6,7 +6,11 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:9090
+        url: http://localhost:9090 #server端地址
+        username: admin #对应server端的账号密码，不配置就监控不到这个client
+        password: admin
+        instance:
+          service-base-url: http://localhost:${server.port} #不配置的话，在admin界面显示的地址就是http://windows-5uovfeq:9091/
 # 暴露所有的actuator断点信息
 management:
   endpoints:
@@ -16,4 +20,4 @@ management:
 logging:
   file:
     path: /var/logs/${spring.application.name}/admin-client/
-    name: springboot-admin-client.log
+    name: ${logging.file.path}/springboot-admin-client.log
