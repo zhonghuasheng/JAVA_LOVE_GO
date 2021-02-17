@@ -35,6 +35,7 @@
         <module>springboot-admin-server</module>
         <module>springboot-admin</module>
         <module>springboot-admin-server</module>
+        <module>springboot-rocketmq</module>
     </modules>
 
 </project>
