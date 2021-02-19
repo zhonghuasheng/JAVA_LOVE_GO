@@ -17,6 +17,7 @@ public class Consumer {
         try {
             consumer.subscribe("demo", "*");
             consumer.subscribe("TopicTest", "*");
+            consumer.subscribe("TopicTestB", "*");
             consumer.registerMessageListener(new MessageListenerConcurrently() {
                 @Override
                 public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
