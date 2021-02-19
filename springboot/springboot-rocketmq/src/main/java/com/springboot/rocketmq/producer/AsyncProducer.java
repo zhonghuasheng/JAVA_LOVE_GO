@@ -46,7 +46,7 @@ public class AsyncProducer {
         } finally {
             // The producer service state not OK, SHUTDOWN_ALREADY
             // 异步发送，注意shutdown不能过早，否则消息还未发出，producer就关闭了
-            //producer.shutdown();
+            // producer.shutdown();
         }
     }
 }
