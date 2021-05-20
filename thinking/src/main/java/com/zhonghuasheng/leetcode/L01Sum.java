@@ -16,6 +16,9 @@ import java.util.Arrays;
  */
 public class L01Sum {
 
+    static {
+        System.out.println("测试静态代码块是否优于main方法先执行 - 是");
+    }
     public static void main(String[] args) {
         int[] array = {2, 7, 11, 15};
         int[] result = new L01Sum().twoSum(array, 9);

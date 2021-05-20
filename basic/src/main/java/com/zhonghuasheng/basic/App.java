@@ -14,6 +14,10 @@ import java.util.Map;
  */
 public class App 
 {
+    static {
+        System.out.println("static code");
+    }
+
     public static void main( String[] args ) throws ParseException {
         Date date = new SimpleDateFormat("yyyy-MM-dd").parse("2017-09-02");
         System.out.println(date);
