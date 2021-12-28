@@ -22,11 +22,11 @@ public class CountdownLatchExample {
             final int times = i;
             new Thread(()-> {
                 try {
-                    //System.out.println("子线程" + Thread.currentThread().getName() + "----正在路上");
+                    System.out.println("子线程" + Thread.currentThread().getName() + "----正在路上");
                     Thread.sleep(100 * times);
                     System.out.println("子线程" + Thread.currentThread().getName() + "到公司了");
                     latch.countDown();
-                    //System.out.println("子线程" + Thread.currentThread().getName() + "----开始工作");
+                    System.out.println("子线程" + Thread.currentThread().getName() + "----开始工作");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -36,6 +36,7 @@ public class CountdownLatchExample {
         try {
             // 主线程阻塞等待计数器归零
             latch.await();
+            System.out.println("主线程" + Thread.currentThread().getName() + "----");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
