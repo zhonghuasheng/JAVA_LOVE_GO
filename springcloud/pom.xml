@@ -14,6 +14,8 @@
         <module>ribbon</module>
         <module>feign</module>
         <module>turbine</module>
+        <module>gateway</module>
+        <module>hystrix</module>
     </modules>
 
     <parent>
