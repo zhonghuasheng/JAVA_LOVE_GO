@@ -3,6 +3,7 @@ RemoteSystemsTempFiles/*
 Servers/*
 .recommenders/*
 */target/*
-
+.project
+*/.factorypath
 
 

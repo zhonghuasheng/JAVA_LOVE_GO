@@ -12,7 +12,6 @@
     <artifactId>springboot</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>springboot-helloworld</module>
         <module>springboot-thymeleaf</module>
         <module>springboot-log4j2</module>
         <module>springboot-mybatis</module>
@@ -32,10 +31,9 @@
         <module>demo-spring-boot-starter</module>
         <module>springboot-mybatisplus-dynaminc-datasource</module>
         <module>springboot-admin</module>
-        <module>springboot-admin-server</module>
         <module>springboot-admin</module>
-        <module>springboot-admin-server</module>
         <module>springboot-rocketmq</module>
+        <module>springboot-office</module>
     </modules>
 
 </project>

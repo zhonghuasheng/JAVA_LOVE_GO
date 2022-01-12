@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway
+  # 开启Gateway服务注册发现，获取服务注册中心的服务列表，按照服务名进行转化
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+# Eureka Server配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+# 配置Gateway日志等级
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+

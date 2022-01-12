@@ -7,3 +7,7 @@ Servers/*
 *.iws
 *.iml
 *.ipr
+*/.classpath
+*/.project
+*/.settings
+*/*/.factorypath
