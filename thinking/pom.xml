@@ -9,6 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>thinking</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>provided</scope><!--只在编译阶段使用，不打入包内-->
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
