@@ -5,6 +5,10 @@ import java.util.HashMap;
 /**
  * @author Luke Chen
  * @description LRU算法实现类
+ * LRU Last Recently Used 最近最少使用算法，顾名思义就是最近不常用的要被移除掉，常用于淘汰机制。
+ * 算法实现逻辑： 使用双向链表来存储数据【解决插入和删除的时间复杂度，内存空间不需要连续】，定义一个HashMap来存储Key到Node的映射，
+ *             实现O(1)复杂度的查找节点，定义一个int类型的capacity，用于控制LRU的容量。定义一个head和end节点，Node类中的属性直接定义
+ *             不写get/set，否则toString的时候会报sof。head <-> Node1 <-> Node2 <-> Node3 <-> end
  * @date 2022/1/12
  **/
 public class LRUCache {
@@ -51,16 +55,8 @@ public class LRUCache {
      * @param node
      */
     private void remove(Node node) {
-        if (node.pre != null) {
-            node.pre.next = node.next;
-        } else {
-            head = node.next;
-        }
-        if (node.next != null) {
-            node.next.pre = node.pre;
-        } else {
-            end = node.pre;
-        }
+        node.pre.next = node.next;
+        node.next.pre = node.pre;
     }
 
     /**

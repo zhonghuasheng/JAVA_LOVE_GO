@@ -16,5 +16,7 @@ public class LRUMain {
         // get 2，结果为3，4，2
         Node node = lruCache.get(2);
         System.out.println(node.value);
+        Node node2 = lruCache.get(2);
+        System.out.println(node2.value);
     }
 }
