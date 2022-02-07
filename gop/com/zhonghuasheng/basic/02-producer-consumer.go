@@ -8,7 +8,7 @@ import (
     "time"
     _ "time"
 )
-func main() {
+func main2() {
     channel :=make(chan string)
     go producer("cat", channel)
     go producer("dog", channel)
