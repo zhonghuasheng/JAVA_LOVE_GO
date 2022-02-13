@@ -5,6 +5,7 @@ import "fmt"
 /**
 常量
 const可以定义枚举类型
+iota只能配合cons()一起使用
 */
 const (
 	BEIJING   = 0
