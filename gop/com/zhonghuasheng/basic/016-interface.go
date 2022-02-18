@@ -20,8 +20,15 @@ func (s Student) ReturnName() string {
 	return s.Name
 }
 
+func CheckPeople(test interface{}) {
+	if _, ok := test.(People); ok {
+		fmt.Println("Student implement People")
+	}
+}
+
 func main() {
 	cbs := Student{Name: "Luke Chen"}
+	CheckPeople(cbs)
 	var a People
 	// Student实现了接口People，所以可以直接赋值
 	// 如果没有实现呢？
