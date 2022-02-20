@@ -2,8 +2,10 @@ package main
 
 import "fmt"
 
+// 如果类的首字母大写，表示其他包能够访问
 type Human struct {
-	Name string
+	Name string // 首字母大写 public
+	age  int    // 首字母小写 private
 }
 
 func (people Human) getName() string {
