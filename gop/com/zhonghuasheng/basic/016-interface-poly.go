@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // 定义一个接口，本质是一个指针
 type Animal interface {
@@ -46,6 +48,10 @@ func main() {
 	// 第二种调用方式
 	Show(&Dog{color: "color1"})
 	Show(&Cat{color: "color2"})
+	//
+	cat := Cat{color: "xxx"}
+	var aaa interface{} = cat
+	fmt.Println(aaa.(Cat)) // 接口.(具体struct) 类似于Java向下转型
 }
 
 func Show(animal Animal) {
