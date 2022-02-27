@@ -4,6 +4,7 @@
 
 | 项目 | 备注 |
 |:----|:-----|
+|[gop](https://github.com/zhonghuasheng/JAVA/tree/master/gop)| gop = go practice 是笔者学习GO的代码示例 |
 |[basic](https://github.com/zhonghuasheng/JAVA/tree/master/basic)| 围绕JDK7基础语法，源码的学习 |
 |[java8](https://github.com/zhonghuasheng/JAVA/tree/master/java8)| 围绕JDK7基础语法，源码的学习 |
 |[jdbc](https://github.com/zhonghuasheng/JAVA/tree/master/jdbc)| JDBC的练习，同时抽出来通用的JDBC模板，通用模板用于[musicstore-jsp](https://github.com/zhonghuasheng)这个项目 |
