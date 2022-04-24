@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// 场景二：需要主动通知并停止正在跑的job
 func main() {
 	stop := make(chan bool)
 
@@ -13,7 +14,7 @@ func main() {
 			select {
 			case <-stop:
 				fmt.Println("get stop sign")
-				return
+				return // 通过return来终止程序
 			default:
 				fmt.Println("go go go 向前走")
 				time.Sleep(1 * time.Second)
