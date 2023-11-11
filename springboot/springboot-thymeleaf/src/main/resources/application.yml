@@ -1,4 +1,0 @@
-spring:
-  thymeleaf:
-    cache: false #关闭焕春
-    prefix: classpath:/views/ #添加路径前缀

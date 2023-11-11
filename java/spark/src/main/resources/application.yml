@@ -1,0 +1,7 @@
+server:
+  port: 8054
+
+spark:
+  spark-home: .
+  app-name: sparkTest
+  master: local[4]

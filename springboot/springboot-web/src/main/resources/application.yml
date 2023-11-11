@@ -1,4 +1,0 @@
-spring:
-  mvc:
-    view:
-      prefix: /templates/

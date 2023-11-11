@@ -1,2 +1,0 @@
-* http://localhost:8080/jsp/login-demo/login.jsp
-* 输入用户名admin，密码admin

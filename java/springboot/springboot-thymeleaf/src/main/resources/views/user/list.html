@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>User List</h2>
+    <div th:each="user:${userList}">
+        <label th:text="${user.userId}"/>
+        <label th:text="${user.username}"/>
+        <label th:text="${user.password}"/>
+        <!--thymeleaf动态标签使用-->
+        <a th:href="@{'/user/edit/' + ${user.userId}}">Edit</a>
+    </div>
+</body>
+</html>

@@ -1,9 +1,0 @@
-RemoteSystemsTempFiles/*
-.metadata/*
-Servers/*
-.recommenders/*
-*/target/*
-.project
-*/.factorypath
-
-
