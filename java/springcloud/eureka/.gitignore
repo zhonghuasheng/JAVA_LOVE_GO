@@ -1,0 +1,7 @@
+RemoteSystemsTempFiles/*
+.metadata/*
+Servers/*
+.recommenders/*
+eureka-server/target/*
+eureka-client/target/*
+

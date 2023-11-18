@@ -1,0 +1,66 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+      <filter-name>AuthenticationFilter</filter-name>
+      <display-name>AuthenticationFilter</display-name>
+      <description></description>
+      <filter-class>com.servlet.filter.AuthenticationFilter</filter-class>
+  </filter>
+  <filter>
+      <filter-name>DataCompressionFilter</filter-name>
+      <display-name>DataCompressionFilter</display-name>
+      <description></description>
+      <filter-class>com.servlet.filter.DataCompressionFilter</filter-class>
+  </filter>
+  <filter>
+      <filter-name>EncryptionFilter</filter-name>
+      <display-name>EncryptionFilter</display-name>
+      <description></description>
+      <filter-class>com.servlet.filter.EncryptionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>AuthenticationFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+      <filter-name>DataCompressionFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+      <filter-name>EncryptionFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <listener>
+  	<listener-class>com.servlet.listener.MyHttpSessionAttibuteListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <display-name>HelloServlet</display-name>
+    <description></description>
+    <servlet-class>com.servlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomDispatcherServlet</servlet-name>
+    <display-name>Custom Dispatcher Servlet</display-name>
+    <servlet-class>com.servlet.CustomDispatcherServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>HttpSessionAttributeServlet</servlet-name>
+  	<display-name>HttpSessionAttributeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.HttpSessionAttributeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/helloservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomDispatcherServlet</servlet-name>
+    <url-pattern>/customDispatcherServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
+
