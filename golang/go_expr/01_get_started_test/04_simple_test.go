@@ -36,6 +36,7 @@ func TestStruct(t *testing.T) {
 		ps,
 	}
 	code := `map(Posts, Format(.Date) + ":" + .Body)`
+	// 使用struct作为env
 	program, err := expr.Compile(code, expr.Env(EnvA{}))
 
 	if err != nil {
