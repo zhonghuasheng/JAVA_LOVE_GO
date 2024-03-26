@@ -24,7 +24,7 @@ func (EnvA) Format(t time.Time) string {
 func TestStruct(t *testing.T) {
 	ps := []Post{
 		{
-			"test1",
+			"",
 			time.Now(),
 		},
 		{
@@ -35,7 +35,7 @@ func TestStruct(t *testing.T) {
 	env := EnvA{
 		ps,
 	}
-	code := `map(Posts, Format(.Date) + ":" + .Body)`
+	code := `map(filter(Posts, {len(.Body) > 0}), { Format(.Date) + ":" + .Body})`
 	// 使用struct作为env
 	program, err := expr.Compile(code, expr.Env(EnvA{}))
 
