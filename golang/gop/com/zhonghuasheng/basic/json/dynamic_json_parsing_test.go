@@ -7,6 +7,7 @@ import (
 )
 
 /**
+https://mp.weixin.qq.com/s/mW1Dgj6bZ0gDOwEhCc6jzg
 Go 语言的空接口(interface{})为动态 JSON 解析提供了一种灵活的解决方案，允许我们使用任意数据类型。
 此外，这种方法消除了定义结构体的需求，使代码能够适应不断变化的 JSON 结构。
 注意： json强转到map时携带了数据类型
