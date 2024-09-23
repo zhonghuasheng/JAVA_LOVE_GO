@@ -2,8 +2,10 @@ package getstartedtest
 
 import (
 	"fmt"
-	"github.com/antonmedv/expr"
 	"testing"
+	"time"
+
+	"github.com/antonmedv/expr"
 )
 
 func TestSimple1(t *testing.T) {
@@ -16,4 +18,15 @@ func TestSimple1(t *testing.T) {
 		panic(err)
 	}
 	fmt.Println(output)
+}
+
+func TestTime(t *testing.T) {
+	timeStr := "2024-04-08T10:53:04.810343499+08:00"
+	layout := "2006-01-02T15:04:05.999999999-07:00"
+
+	t2, err := time.Parse(layout, timeStr)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(t2.Format("2006-01-02 15:04:05"))
 }
